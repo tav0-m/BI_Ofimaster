@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual002",
+  "position": {
+    "x": 375,
+    "y": 20,
+    "width": 330,
+    "height": 120,
+    "z": 2,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Proveedores con OC"
+                }
+              },
+              "queryRef": "FactOC.Proveedores con OC",
+              "nativeQueryRef": "Proveedores con OC"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Proveedores con OC'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

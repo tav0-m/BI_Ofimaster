@@ -1,0 +1,278 @@
+{
+  "rows_all": 6775,
+  "sociedades": {
+    "8000": 6774,
+    "": 1
+  },
+  "dte": {
+    "33": 6677,
+    "61": 93,
+    "34": 4,
+    "": 1
+  },
+  "rows_nc_8000": 93,
+  "documents_nc_8000": 49,
+  "suppliers_nc_8000": 12,
+  "documents_multiline": 13,
+  "max_lines_document": 11,
+  "date_min": "2026-03-27",
+  "date_max": "2026-11-04",
+  "header_conflicts": [],
+  "columns": [
+    {
+      "index": 0,
+      "field": "Folio Referencia",
+      "nonempty_all": 6718,
+      "nonempty_nc": 91,
+      "distinct_nc": 41
+    },
+    {
+      "index": 1,
+      "field": "Nro de Folio",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 49
+    },
+    {
+      "index": 2,
+      "field": "Tipo de DTE",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 3,
+      "field": "Rut del emisor",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 12
+    },
+    {
+      "index": 4,
+      "field": "Interloc.comercial",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 12
+    },
+    {
+      "index": 5,
+      "field": "Razón social",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 12
+    },
+    {
+      "index": 6,
+      "field": "Sociedad",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 7,
+      "field": "Fecha Emisión",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 32
+    },
+    {
+      "index": 8,
+      "field": "Monto neto",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 49
+    },
+    {
+      "index": 9,
+      "field": "Moneda",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 10,
+      "field": "Monto no afecto o exento",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 11,
+      "field": "Moneda",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 12,
+      "field": "Tasa IVA",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 2
+    },
+    {
+      "index": 13,
+      "field": "IVA",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 49
+    },
+    {
+      "index": 14,
+      "field": "Moneda",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 15,
+      "field": "Monto Total",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 49
+    },
+    {
+      "index": 16,
+      "field": "Moneda",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 17,
+      "field": "Monto no Facturable",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 18,
+      "field": "Moneda",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 19,
+      "field": "Moneda",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 20,
+      "field": "URI",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 1
+    },
+    {
+      "index": 21,
+      "field": "Material",
+      "nonempty_all": 6133,
+      "nonempty_nc": 71,
+      "distinct_nc": 62
+    },
+    {
+      "index": 22,
+      "field": "Texto breve material",
+      "nonempty_all": 6774,
+      "nonempty_nc": 93,
+      "distinct_nc": 75
+    },
+    {
+      "index": 23,
+      "field": "Cantidad de pedido",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 18
+    },
+    {
+      "index": 24,
+      "field": "Un.medida venta",
+      "nonempty_all": 0,
+      "nonempty_nc": 0,
+      "distinct_nc": 0
+    },
+    {
+      "index": 25,
+      "field": "Valor neto",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 69
+    },
+    {
+      "index": 26,
+      "field": "Moneda del documento",
+      "nonempty_all": 0,
+      "nonempty_nc": 0,
+      "distinct_nc": 0
+    },
+    {
+      "index": 27,
+      "field": "Monto",
+      "nonempty_all": 6775,
+      "nonempty_nc": 93,
+      "distinct_nc": 75
+    },
+    {
+      "index": 28,
+      "field": "Moneda del documento",
+      "nonempty_all": 0,
+      "nonempty_nc": 0,
+      "distinct_nc": 0
+    }
+  ],
+  "header_net_to_sum_line_monto_ratios": {
+    "100.0000": 49
+  },
+  "sums_raw_not_validated": {
+    "Monto neto@8": "3619046100",
+    "IVA@13": "687618700",
+    "Monto Total@15": "4306664800",
+    "Valor neto@25": "11312409.42",
+    "Monto@27": "36190461"
+  },
+  "line_q_times_valorneto_matches_monto": 70,
+  "line_q_times_valorneto_mismatches": 23,
+  "line_q_times_valorneto_evaluated": 93,
+  "supplier_missing_local": [],
+  "supplier_rut_conflicts_local": [],
+  "reference_blank": 2,
+  "reference_distinct": 42,
+  "nc_reference_matches_oc_local": 0,
+  "currencies_nc": [
+    "CLP"
+  ],
+  "header_currency_columns_equal": true,
+  "numeric_format_sample": [
+    {
+      "cell": "H3891",
+      "format": "14"
+    },
+    {
+      "cell": "I3891",
+      "format": "3"
+    },
+    {
+      "cell": "N3891",
+      "format": "3"
+    },
+    {
+      "cell": "P3891",
+      "format": "3"
+    },
+    {
+      "cell": "X3891",
+      "format": "#,##0.000"
+    },
+    {
+      "cell": "Z3891",
+      "format": "4"
+    },
+    {
+      "cell": "AB3891",
+      "format": "4"
+    }
+  ]
+}

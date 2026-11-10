@@ -1,0 +1,1382 @@
+{
+  "name": "Supplier360",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "es-CL",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "ControlCarga",
+        "columns": [
+          {
+            "name": "Archivo",
+            "dataType": "string",
+            "sourceColumn": "Archivo",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ControlCarga",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"ControlCarga.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+                "in",
+                "    Headers"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimFecha",
+        "columns": [
+          {
+            "name": "Fecha",
+            "dataType": "dateTime",
+            "sourceColumn": "Fecha",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "Anio",
+            "dataType": "double",
+            "sourceColumn": "Anio",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mes",
+            "dataType": "double",
+            "sourceColumn": "Mes",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AnioMes",
+            "dataType": "string",
+            "sourceColumn": "AnioMes",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Trimestre",
+            "dataType": "double",
+            "sourceColumn": "Trimestre",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimFecha",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"DimFecha.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumns(Headers, {",
+                "        {\"Fecha\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"Anio\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"Mes\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"Trimestre\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number}",
+                "    })",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimMoneda",
+        "columns": [
+          {
+            "name": "Moneda",
+            "dataType": "string",
+            "sourceColumn": "Moneda",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimMoneda",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"DimMoneda.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+                "in",
+                "    Headers"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProducto",
+        "columns": [
+          {
+            "name": "ClaveProducto",
+            "dataType": "string",
+            "sourceColumn": "ClaveProducto",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Sociedad",
+            "dataType": "string",
+            "sourceColumn": "Sociedad",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Material",
+            "dataType": "string",
+            "sourceColumn": "Material",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Descripcion",
+            "dataType": "string",
+            "sourceColumn": "Descripcion",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Linea",
+            "dataType": "string",
+            "sourceColumn": "Linea",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Rubro",
+            "dataType": "string",
+            "sourceColumn": "Rubro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Marca",
+            "dataType": "string",
+            "sourceColumn": "Marca",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnidadBase",
+            "dataType": "string",
+            "sourceColumn": "UnidadBase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Importado",
+            "dataType": "string",
+            "sourceColumn": "Importado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ExisteMaestro",
+            "dataType": "double",
+            "sourceColumn": "ExisteMaestro",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimProducto",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"DimProducto.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumns(Headers, {",
+                "        {\"ExisteMaestro\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number}",
+                "    })",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProveedor",
+        "columns": [
+          {
+            "name": "ClaveProveedor",
+            "dataType": "string",
+            "sourceColumn": "ClaveProveedor",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "ProveedorSAP",
+            "dataType": "string",
+            "sourceColumn": "ProveedorSAP",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sociedad",
+            "dataType": "string",
+            "sourceColumn": "Sociedad",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Nombre",
+            "dataType": "string",
+            "sourceColumn": "Nombre",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RUT",
+            "dataType": "string",
+            "sourceColumn": "RUT",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Pais",
+            "dataType": "string",
+            "sourceColumn": "Pais",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PlazoPago",
+            "dataType": "string",
+            "sourceColumn": "PlazoPago",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BloqueoCompra",
+            "dataType": "string",
+            "sourceColumn": "BloqueoCompra",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ExisteMaestro",
+            "dataType": "double",
+            "sourceColumn": "ExisteMaestro",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimProveedor",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"DimProveedor.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumns(Headers, {",
+                "        {\"ExisteMaestro\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number}",
+                "    })",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProveedorNC",
+        "columns": [
+          {
+            "name": "ProveedorTexto",
+            "dataType": "string",
+            "sourceColumn": "ProveedorTexto",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimProveedorNC",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"DimProveedorNC.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true])",
+                "in",
+                "    Headers"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "FactMovimientos",
+        "columns": [
+          {
+            "name": "ClaveOC",
+            "dataType": "string",
+            "sourceColumn": "ClaveOC",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "ClaveProveedor",
+            "dataType": "string",
+            "sourceColumn": "ClaveProveedor",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "ClaveProducto",
+            "dataType": "string",
+            "sourceColumn": "ClaveProducto",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "DocumentoMaterial",
+            "dataType": "string",
+            "sourceColumn": "DocumentoMaterial",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PosicionMovimiento",
+            "dataType": "string",
+            "sourceColumn": "PosicionMovimiento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FechaContable",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaContable",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FechaDocumento",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaDocumento",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "TipoMovimiento",
+            "dataType": "string",
+            "sourceColumn": "TipoMovimiento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Glosa",
+            "dataType": "string",
+            "sourceColumn": "Glosa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Entrada",
+            "dataType": "double",
+            "sourceColumn": "Entrada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Salida",
+            "dataType": "double",
+            "sourceColumn": "Salida",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadNetaBase",
+            "dataType": "double",
+            "sourceColumn": "CantidadNetaBase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnidadBase",
+            "dataType": "string",
+            "sourceColumn": "UnidadBase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnidadOC",
+            "dataType": "string",
+            "sourceColumn": "UnidadOC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Centro",
+            "dataType": "string",
+            "sourceColumn": "Centro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Almacen",
+            "dataType": "string",
+            "sourceColumn": "Almacen",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Moneda",
+            "dataType": "string",
+            "sourceColumn": "Moneda",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ImporteOrigen",
+            "dataType": "double",
+            "sourceColumn": "ImporteOrigen",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FechaExtraccion",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaExtraccion",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactMovimientos",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"FactMovimientos.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumns(Headers, {",
+                "        {\"FechaContable\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"FechaDocumento\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"Entrada\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"Salida\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadNetaBase\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ImporteOrigen\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"FechaExtraccion\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date}",
+                "    })",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "FactOC",
+        "columns": [
+          {
+            "name": "ClaveOC",
+            "dataType": "string",
+            "sourceColumn": "ClaveOC",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "OC",
+            "dataType": "string",
+            "sourceColumn": "OC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Posicion",
+            "dataType": "string",
+            "sourceColumn": "Posicion",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClaveProveedor",
+            "dataType": "string",
+            "sourceColumn": "ClaveProveedor",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "ClaveProducto",
+            "dataType": "string",
+            "sourceColumn": "ClaveProducto",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Sociedad",
+            "dataType": "string",
+            "sourceColumn": "Sociedad",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProveedorSAP",
+            "dataType": "string",
+            "sourceColumn": "ProveedorSAP",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Material",
+            "dataType": "string",
+            "sourceColumn": "Material",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Descripcion",
+            "dataType": "string",
+            "sourceColumn": "Descripcion",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Centro",
+            "dataType": "string",
+            "sourceColumn": "Centro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Almacen",
+            "dataType": "string",
+            "sourceColumn": "Almacen",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TipoOC",
+            "dataType": "string",
+            "sourceColumn": "TipoOC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GrupoCompras",
+            "dataType": "string",
+            "sourceColumn": "GrupoCompras",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FechaPedido",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaPedido",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FechaCorte",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaCorte",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FechaPromesaMin",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaPromesaMin",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FechaPromesaMax",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaPromesaMax",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "Moneda",
+            "dataType": "string",
+            "sourceColumn": "Moneda",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnidadOC",
+            "dataType": "string",
+            "sourceColumn": "UnidadOC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadPedida",
+            "dataType": "double",
+            "sourceColumn": "CantidadPedida",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadProgramada",
+            "dataType": "double",
+            "sourceColumn": "CantidadProgramada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadRecibidaAcumulada",
+            "dataType": "double",
+            "sourceColumn": "CantidadRecibidaAcumulada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadCubierta",
+            "dataType": "double",
+            "sourceColumn": "CantidadCubierta",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadElegible",
+            "dataType": "double",
+            "sourceColumn": "CantidadElegible",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadFaltante",
+            "dataType": "double",
+            "sourceColumn": "CantidadFaltante",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadPendienteAbierta",
+            "dataType": "double",
+            "sourceColumn": "CantidadPendienteAbierta",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ValorNetoOC",
+            "dataType": "double",
+            "sourceColumn": "ValorNetoOC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ValorPendienteMonedaOC",
+            "dataType": "double",
+            "sourceColumn": "ValorPendienteMonedaOC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Borrada",
+            "dataType": "double",
+            "sourceColumn": "Borrada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EntregaFinal",
+            "dataType": "double",
+            "sourceColumn": "EntregaFinal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ElegibleCompras",
+            "dataType": "double",
+            "sourceColumn": "ElegibleCompras",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ElegibleFillRate",
+            "dataType": "double",
+            "sourceColumn": "ElegibleFillRate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Repartos",
+            "dataType": "double",
+            "sourceColumn": "Repartos",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DescuadreRepartos",
+            "dataType": "double",
+            "sourceColumn": "DescuadreRepartos",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProveedorEnMaestro",
+            "dataType": "double",
+            "sourceColumn": "ProveedorEnMaestro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductoEnMaestro",
+            "dataType": "double",
+            "sourceColumn": "ProductoEnMaestro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadEntregadaVista",
+            "dataType": "double",
+            "sourceColumn": "CantidadEntregadaVista",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FechaEmbarqueCandidata",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaEmbarqueCandidata",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FechaArriboCandidata",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaArriboCandidata",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "EstadoTransito",
+            "dataType": "string",
+            "sourceColumn": "EstadoTransito",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OTIFEvaluable",
+            "dataType": "double",
+            "sourceColumn": "OTIFEvaluable",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OTIFCumple",
+            "dataType": "double",
+            "sourceColumn": "OTIFCumple",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MotivoOTIF",
+            "dataType": "string",
+            "sourceColumn": "MotivoOTIF",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactOC",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"FactOC.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumns(Headers, {",
+                "        {\"FechaPedido\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"FechaCorte\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"FechaPromesaMin\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"FechaPromesaMax\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"CantidadPedida\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadProgramada\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadRecibidaAcumulada\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadCubierta\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadElegible\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadFaltante\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadPendienteAbierta\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ValorNetoOC\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ValorPendienteMonedaOC\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"Borrada\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"EntregaFinal\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ElegibleCompras\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ElegibleFillRate\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"Repartos\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"DescuadreRepartos\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ProveedorEnMaestro\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ProductoEnMaestro\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadEntregadaVista\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"FechaEmbarqueCandidata\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"FechaArriboCandidata\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"OTIFEvaluable\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"OTIFCumple\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number}",
+                "    })",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Posiciones OC",
+            "expression": "COUNTROWS(FactOC)",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "OC distintas",
+            "expression": "DISTINCTCOUNT(FactOC[OC])",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Proveedores con OC",
+            "expression": "DISTINCTCOUNT(FactOC[ClaveProveedor])",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Cobertura datos Fill Rate",
+            "expression": "DIVIDE(SUM(FactOC[ElegibleFillRate]), SUM(FactOC[ElegibleCompras]))",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Cantidad pedida evaluable",
+            "expression": "IF(HASONEVALUE(FactOC[UnidadOC]), SUM(FactOC[CantidadElegible]))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Cantidad cubierta",
+            "expression": "IF(HASONEVALUE(FactOC[UnidadOC]), SUM(FactOC[CantidadCubierta]))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Fill Rate acumulado unidades",
+            "expression": "DIVIDE([Cantidad cubierta], [Cantidad pedida evaluable])",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Fill Rate promedio posiciones",
+            "expression": "AVERAGEX(FILTER(FactOC, FactOC[ElegibleFillRate] = 1), DIVIDE(FactOC[CantidadCubierta], FactOC[CantidadElegible]))",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Posiciones completas",
+            "expression": "COUNTROWS(FILTER(FactOC, FactOC[ElegibleFillRate] = 1 && FactOC[CantidadFaltante] = 0))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Porcentaje posiciones completas",
+            "expression": "DIVIDE([Posiciones completas], SUM(FactOC[ElegibleFillRate]))",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Valor OC moneda origen",
+            "expression": "IF(HASONEVALUE(FactOC[Moneda]), SUM(FactOC[ValorNetoOC]))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Valor pendiente moneda origen",
+            "expression": "IF(HASONEVALUE(FactRepartos[Moneda]), SUM(FactRepartos[ValorPendienteMonedaOC]))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Valor pendiente vencido",
+            "expression": "CALCULATE([Valor pendiente moneda origen], FactRepartos[VencidoAlCorte] = 1)",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Repartos pendientes",
+            "expression": "COUNTROWS(FILTER(FactRepartos, FactRepartos[Elegible] = 1 && FactRepartos[CantidadPendienteAbierta] > 0))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Repartos vencidos",
+            "expression": "COUNTROWS(FILTER(FactRepartos, FactRepartos[Elegible] = 1 && FactRepartos[CantidadPendienteAbierta] > 0 && FactRepartos[VencidoAlCorte] = 1))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Maximo atraso dias",
+            "expression": "MAXX(FILTER(FactRepartos, FactRepartos[Elegible] = 1 && FactRepartos[CantidadPendienteAbierta] > 0), FactRepartos[DiasAtraso])",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "OTIF repartos",
+            "expression": "DIVIDE(SUM(FactRepartos[OTIFCumple]), SUM(FactRepartos[OTIFEvaluable]))",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Repartos evaluables OTIF",
+            "expression": "SUM(FactRepartos[OTIFEvaluable])",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Casos reclamo",
+            "expression": "COUNTROWS(FactReclamosNC)",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Casos con referencia NC",
+            "expression": "COUNTROWS(FILTER(FactReclamosNC, NOT ISBLANK(FactReclamosNC[NCReferencia]) && FactReclamosNC[NCReferencia] <> \"\"))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Casos sin resolucion informada",
+            "expression": "CALCULATE([Casos reclamo], FactReclamosNC[EstadoDocumental] = \"Sin resolucion informada\")",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Monto reclamado confirmado",
+            "expression": "IF(HASONEVALUE(FactReclamosNC[Moneda]) && SELECTEDVALUE(FactReclamosNC[Moneda]) <> \"SIN_CONFIRMAR\", SUM(FactReclamosNC[MontoReclamado]))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Monto NC contabilizado",
+            "expression": "IF(HASONEVALUE(FactReclamosNC[Moneda]) && SELECTEDVALUE(FactReclamosNC[Moneda]) <> \"SIN_CONFIRMAR\", CALCULATE(SUM(FactReclamosNC[MontoNCContable]), FactReclamosNC[ContabilizadaVerificada] = 1))",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Fecha corte compras",
+            "expression": "MAX(FactOC[FechaCorte])",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "Posiciones sin proveedor maestro",
+            "expression": "CALCULATE([Posiciones OC], FactOC[ProveedorEnMaestro] = 0)",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Posiciones con descuadre",
+            "expression": "SUM(FactOC[DescuadreRepartos])",
+            "formatString": "#,0.##"
+          },
+          {
+            "name": "Estado OTIF",
+            "expression": "\"No evaluable: falta validar historia y promesa\""
+          },
+          {
+            "name": "Estado transito",
+            "expression": "\"Sin evidencia de embarque en las fuentes\""
+          },
+          {
+            "name": "Estado NC",
+            "expression": "\"Reclamos; referencias NC sin conciliacion contable\""
+          }
+        ]
+      },
+      {
+        "name": "FactReclamosNC",
+        "columns": [
+          {
+            "name": "IdCaso",
+            "dataType": "string",
+            "sourceColumn": "IdCaso",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FilaOrigen",
+            "dataType": "double",
+            "sourceColumn": "FilaOrigen",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProveedorTexto",
+            "dataType": "string",
+            "sourceColumn": "ProveedorTexto",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClaveProveedor",
+            "dataType": "string",
+            "sourceColumn": "ClaveProveedor",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "FechaCaso",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaCaso",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FacturaReferencia",
+            "dataType": "string",
+            "sourceColumn": "FacturaReferencia",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Motivo",
+            "dataType": "string",
+            "sourceColumn": "Motivo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductoTexto",
+            "dataType": "string",
+            "sourceColumn": "ProductoTexto",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Descripcion",
+            "dataType": "string",
+            "sourceColumn": "Descripcion",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MontoReclamado",
+            "dataType": "double",
+            "sourceColumn": "MontoReclamado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MontoOrigenTexto",
+            "dataType": "string",
+            "sourceColumn": "MontoOrigenTexto",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Moneda",
+            "dataType": "string",
+            "sourceColumn": "Moneda",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OCReferencia",
+            "dataType": "string",
+            "sourceColumn": "OCReferencia",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ResolucionTexto",
+            "dataType": "string",
+            "sourceColumn": "ResolucionTexto",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NCReferencia",
+            "dataType": "string",
+            "sourceColumn": "NCReferencia",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EstadoDocumental",
+            "dataType": "string",
+            "sourceColumn": "EstadoDocumental",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ContabilizadaVerificada",
+            "dataType": "double",
+            "sourceColumn": "ContabilizadaVerificada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FechaContabilizacion",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaContabilizacion",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "MontoNCContable",
+            "dataType": "double",
+            "sourceColumn": "MontoNCContable",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SaldoNCContable",
+            "dataType": "double",
+            "sourceColumn": "SaldoNCContable",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactReclamosNC",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"FactReclamosNC.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumns(Headers, {",
+                "        {\"FilaOrigen\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"FechaCaso\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"MontoReclamado\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ContabilizadaVerificada\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"FechaContabilizacion\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"MontoNCContable\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"SaldoNCContable\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number}",
+                "    })",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "FactRepartos",
+        "columns": [
+          {
+            "name": "ClaveReparto",
+            "dataType": "string",
+            "sourceColumn": "ClaveReparto",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "ClaveOC",
+            "dataType": "string",
+            "sourceColumn": "ClaveOC",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "ClaveProveedor",
+            "dataType": "string",
+            "sourceColumn": "ClaveProveedor",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "ClaveProducto",
+            "dataType": "string",
+            "sourceColumn": "ClaveProducto",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "Sociedad",
+            "dataType": "string",
+            "sourceColumn": "Sociedad",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Moneda",
+            "dataType": "string",
+            "sourceColumn": "Moneda",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnidadOC",
+            "dataType": "string",
+            "sourceColumn": "UnidadOC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FechaCorte",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaCorte",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FechaPromesa",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaPromesa",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "FechaPromesaEstadistica",
+            "dataType": "dateTime",
+            "sourceColumn": "FechaPromesaEstadistica",
+            "summarizeBy": "none",
+            "formatString": "yyyy-MM-dd"
+          },
+          {
+            "name": "CantidadProgramada",
+            "dataType": "double",
+            "sourceColumn": "CantidadProgramada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadRecibidaAcumulada",
+            "dataType": "double",
+            "sourceColumn": "CantidadRecibidaAcumulada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CantidadPendienteAbierta",
+            "dataType": "double",
+            "sourceColumn": "CantidadPendienteAbierta",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ValorPendienteMonedaOC",
+            "dataType": "double",
+            "sourceColumn": "ValorPendienteMonedaOC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "VencidoAlCorte",
+            "dataType": "double",
+            "sourceColumn": "VencidoAlCorte",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DiasAtraso",
+            "dataType": "double",
+            "sourceColumn": "DiasAtraso",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Elegible",
+            "dataType": "double",
+            "sourceColumn": "Elegible",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OTIFEvaluable",
+            "dataType": "double",
+            "sourceColumn": "OTIFEvaluable",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OTIFCumple",
+            "dataType": "double",
+            "sourceColumn": "OTIFCumple",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactRepartos",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(pRutaModelo & \"FactRepartos.csv\"), [Delimiter=\",\", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumns(Headers, {",
+                "        {\"FechaCorte\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"FechaPromesa\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"FechaPromesaEstadistica\", each if _ = \"\" then null else Date.FromText(_, [Format=\"yyyy-MM-dd\", Culture=\"en-US\"]), type date},",
+                "        {\"CantidadProgramada\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadRecibidaAcumulada\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"CantidadPendienteAbierta\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"ValorPendienteMonedaOC\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"VencidoAlCorte\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"DiasAtraso\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"Elegible\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"OTIFEvaluable\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number},",
+                "        {\"OTIFCumple\", each if _ = \"\" then null else Number.FromText(_, \"en-US\"), type number}",
+                "    })",
+                "in",
+                "    Typed"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "2b57650e-3335-5645-89e0-86728e6533fb",
+        "fromTable": "FactOC",
+        "fromColumn": "ClaveProveedor",
+        "toTable": "DimProveedor",
+        "toColumn": "ClaveProveedor",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "df8cf19d-7d90-530f-b7ab-522d3c99ceaa",
+        "fromTable": "FactOC",
+        "fromColumn": "ClaveProducto",
+        "toTable": "DimProducto",
+        "toColumn": "ClaveProducto",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "c4d33fd0-a561-5439-92bb-f6fb010ea9e8",
+        "fromTable": "FactOC",
+        "fromColumn": "Moneda",
+        "toTable": "DimMoneda",
+        "toColumn": "Moneda",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "9a62bf4d-441c-57cf-ba89-118708101f74",
+        "fromTable": "FactRepartos",
+        "fromColumn": "ClaveProveedor",
+        "toTable": "DimProveedor",
+        "toColumn": "ClaveProveedor",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "84310aef-5b5e-5902-8dae-70b8d3014182",
+        "fromTable": "FactRepartos",
+        "fromColumn": "ClaveProducto",
+        "toTable": "DimProducto",
+        "toColumn": "ClaveProducto",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "dccfc778-a846-54a4-8190-6abb46af302d",
+        "fromTable": "FactRepartos",
+        "fromColumn": "Moneda",
+        "toTable": "DimMoneda",
+        "toColumn": "Moneda",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "c7608e0e-4229-5405-9ba9-087f3179fbe5",
+        "fromTable": "FactMovimientos",
+        "fromColumn": "ClaveProveedor",
+        "toTable": "DimProveedor",
+        "toColumn": "ClaveProveedor",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "55bfde09-4ebf-5f47-9111-4256f827db7a",
+        "fromTable": "FactMovimientos",
+        "fromColumn": "ClaveProducto",
+        "toTable": "DimProducto",
+        "toColumn": "ClaveProducto",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "3518f5da-e534-5bc9-913b-39850f26552c",
+        "fromTable": "FactMovimientos",
+        "fromColumn": "Moneda",
+        "toTable": "DimMoneda",
+        "toColumn": "Moneda",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "28c2f5d3-2ec3-5405-8484-d8d1fb9860f1",
+        "fromTable": "FactOC",
+        "fromColumn": "FechaPedido",
+        "toTable": "DimFecha",
+        "toColumn": "Fecha",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "41ca8464-dc0e-5f48-b4b2-fd105d24a024",
+        "fromTable": "FactRepartos",
+        "fromColumn": "FechaPromesa",
+        "toTable": "DimFecha",
+        "toColumn": "Fecha",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "a062cb5d-bdfb-5e97-9159-5be45d48c854",
+        "fromTable": "FactMovimientos",
+        "fromColumn": "FechaContable",
+        "toTable": "DimFecha",
+        "toColumn": "Fecha",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "4fd66fd0-4ef0-50ff-a333-fd2d2d877259",
+        "fromTable": "FactReclamosNC",
+        "fromColumn": "FechaCaso",
+        "toTable": "DimFecha",
+        "toColumn": "Fecha",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      },
+      {
+        "name": "1b5a3367-03ef-5177-a1d5-0b31c4174fe8",
+        "fromTable": "FactReclamosNC",
+        "fromColumn": "ProveedorTexto",
+        "toTable": "DimProveedorNC",
+        "toColumn": "ProveedorTexto",
+        "crossFilteringBehavior": "oneDirection",
+        "fromCardinality": "many",
+        "toCardinality": "one"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "pRutaModelo",
+        "kind": "m",
+        "expression": "\"C:\\Users\\gustavo.chuquiviguel\\Downloads\\BI_Ofimaster\\Supplier360\\modelo\\\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      }
+    ]
+  }
+}

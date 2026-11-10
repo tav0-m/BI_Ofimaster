@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual013",
+  "position": {
+    "x": 730,
+    "y": 20,
+    "width": 330,
+    "height": 120,
+    "z": 13,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Valor pendiente moneda origen"
+                }
+              },
+              "queryRef": "FactOC.Valor pendiente moneda origen",
+              "nativeQueryRef": "Valor pendiente moneda origen"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Valor pendiente moneda origen'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

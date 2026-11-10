@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual038",
+  "position": {
+    "x": 20,
+    "y": 160,
+    "width": 1400,
+    "height": 330,
+    "z": 38,
+    "tabOrder": 38
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ControlCarga"
+                    }
+                  },
+                  "Property": "Archivo"
+                }
+              },
+              "queryRef": "ControlCarga.Archivo",
+              "nativeQueryRef": "Archivo"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Archivos usados en el modelo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

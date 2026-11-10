@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual021",
+  "position": {
+    "x": 960,
+    "y": 20,
+    "width": 450,
+    "height": 120,
+    "z": 21,
+    "tabOrder": 21
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Casos sin resolucion informada"
+                }
+              },
+              "queryRef": "FactOC.Casos sin resolucion informada",
+              "nativeQueryRef": "Casos sin resolucion informada"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Casos sin resolucion informada'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

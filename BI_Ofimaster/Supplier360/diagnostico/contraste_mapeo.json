@@ -1,0 +1,16 @@
+{
+  "EKKO_sociedad_organizacion": [
+    {
+      "BUKRS": "8000",
+      "EKORG": "8000",
+      "filas": 2131
+    }
+  ],
+  "RUSA_centros": {
+    "8001": 259581
+  },
+  "KARDEX_con_OC": 12935,
+  "KARDEX_con_OC_XBLNR_igual_EBELN": 23,
+  "KARDEX_con_OC_FOLIO_vacio": 7696,
+  "DOC_TRIBUTARIO_archivos": []
+}

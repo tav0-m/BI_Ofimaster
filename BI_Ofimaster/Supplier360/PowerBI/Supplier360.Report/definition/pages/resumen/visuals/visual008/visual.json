@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual008",
+  "position": {
+    "x": 20,
+    "y": 280,
+    "width": 1400,
+    "height": 390,
+    "z": 8,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProveedor"
+                    }
+                  },
+                  "Property": "Nombre"
+                }
+              },
+              "queryRef": "DimProveedor.Nombre",
+              "nativeQueryRef": "Nombre"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Posiciones OC"
+                }
+              },
+              "queryRef": "FactOC.Posiciones OC",
+              "nativeQueryRef": "Posiciones OC"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Fill Rate promedio posiciones"
+                }
+              },
+              "queryRef": "FactOC.Fill Rate promedio posiciones",
+              "nativeQueryRef": "Fill Rate promedio posiciones"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Valor OC moneda origen"
+                }
+              },
+              "queryRef": "FactOC.Valor OC moneda origen",
+              "nativeQueryRef": "Valor OC moneda origen"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Cobertura datos Fill Rate"
+                }
+              },
+              "queryRef": "FactOC.Cobertura datos Fill Rate",
+              "nativeQueryRef": "Cobertura datos Fill Rate"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Desempeno acumulado por proveedor — seleccionar moneda y unidad'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

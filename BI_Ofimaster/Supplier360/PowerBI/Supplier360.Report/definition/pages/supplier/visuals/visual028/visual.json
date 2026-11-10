@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual028",
+  "position": {
+    "x": 20,
+    "y": 150,
+    "width": 330,
+    "height": 120,
+    "z": 28,
+    "tabOrder": 28
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Fill Rate promedio posiciones"
+                }
+              },
+              "queryRef": "FactOC.Fill Rate promedio posiciones",
+              "nativeQueryRef": "Fill Rate promedio posiciones"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Fill Rate promedio posiciones'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

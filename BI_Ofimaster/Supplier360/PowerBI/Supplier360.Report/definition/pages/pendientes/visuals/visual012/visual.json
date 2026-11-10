@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual012",
+  "position": {
+    "x": 375,
+    "y": 20,
+    "width": 330,
+    "height": 120,
+    "z": 12,
+    "tabOrder": 12
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Repartos vencidos"
+                }
+              },
+              "queryRef": "FactOC.Repartos vencidos",
+              "nativeQueryRef": "Repartos vencidos"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Repartos vencidos'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

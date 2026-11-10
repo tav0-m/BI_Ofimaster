@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual029",
+  "position": {
+    "x": 375,
+    "y": 150,
+    "width": 330,
+    "height": 120,
+    "z": 29,
+    "tabOrder": 29
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Porcentaje posiciones completas"
+                }
+              },
+              "queryRef": "FactOC.Porcentaje posiciones completas",
+              "nativeQueryRef": "Porcentaje posiciones completas"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Porcentaje posiciones completas'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

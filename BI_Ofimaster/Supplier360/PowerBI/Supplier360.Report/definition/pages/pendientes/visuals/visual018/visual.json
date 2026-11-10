@@ -1,0 +1,143 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual018",
+  "position": {
+    "x": 20,
+    "y": 280,
+    "width": 1400,
+    "height": 570,
+    "z": 18,
+    "tabOrder": 18
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "ClaveOC"
+                }
+              },
+              "queryRef": "FactRepartos.ClaveOC",
+              "nativeQueryRef": "ClaveOC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "FechaPromesa"
+                }
+              },
+              "queryRef": "FactRepartos.FechaPromesa",
+              "nativeQueryRef": "FechaPromesa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "UnidadOC"
+                }
+              },
+              "queryRef": "FactRepartos.UnidadOC",
+              "nativeQueryRef": "UnidadOC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "CantidadPendienteAbierta"
+                }
+              },
+              "queryRef": "FactRepartos.CantidadPendienteAbierta",
+              "nativeQueryRef": "CantidadPendienteAbierta"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "DiasAtraso"
+                }
+              },
+              "queryRef": "FactRepartos.DiasAtraso",
+              "nativeQueryRef": "DiasAtraso"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "Moneda"
+                }
+              },
+              "queryRef": "FactRepartos.Moneda",
+              "nativeQueryRef": "Moneda"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "ValorPendienteMonedaOC"
+                }
+              },
+              "queryRef": "FactRepartos.ValorPendienteMonedaOC",
+              "nativeQueryRef": "ValorPendienteMonedaOC"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Pendiente de recepcion al corte; transito no confirmado'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual031",
+  "position": {
+    "x": 1085,
+    "y": 150,
+    "width": 330,
+    "height": 120,
+    "z": 31,
+    "tabOrder": 31
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "OTIF repartos"
+                }
+              },
+              "queryRef": "FactOC.OTIF repartos",
+              "nativeQueryRef": "OTIF repartos"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'OTIF repartos'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual036",
+  "position": {
+    "x": 730,
+    "y": 20,
+    "width": 330,
+    "height": 120,
+    "z": 36,
+    "tabOrder": 36
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Posiciones con descuadre"
+                }
+              },
+              "queryRef": "FactOC.Posiciones con descuadre",
+              "nativeQueryRef": "Posiciones con descuadre"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Posiciones con descuadre'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

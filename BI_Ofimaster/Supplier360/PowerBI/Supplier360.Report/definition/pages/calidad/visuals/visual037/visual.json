@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual037",
+  "position": {
+    "x": 1085,
+    "y": 20,
+    "width": 330,
+    "height": 120,
+    "z": 37,
+    "tabOrder": 37
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Repartos evaluables OTIF"
+                }
+              },
+              "queryRef": "FactOC.Repartos evaluables OTIF",
+              "nativeQueryRef": "Repartos evaluables OTIF"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Repartos evaluables OTIF'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,590 @@
+[
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "303672"
+    ],
+    "rows": 2,
+    "header_net_raw": "94311200",
+    "line_monto_sum_raw": "943112",
+    "line_valorneto_sum_raw": "37362"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1637867"
+    ],
+    "rows": 1,
+    "header_net_raw": "6239700",
+    "line_monto_sum_raw": "62397",
+    "line_valorneto_sum_raw": "62397"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "303132"
+    ],
+    "rows": 1,
+    "header_net_raw": "77351400",
+    "line_monto_sum_raw": "773514",
+    "line_valorneto_sum_raw": "36834"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "305499"
+    ],
+    "rows": 1,
+    "header_net_raw": "4982400",
+    "line_monto_sum_raw": "49824",
+    "line_valorneto_sum_raw": "16608"
+  },
+  {
+    "key": [
+      "8000",
+      "89912300-K",
+      "61",
+      "66527"
+    ],
+    "rows": 1,
+    "header_net_raw": "11278000",
+    "line_monto_sum_raw": "112780",
+    "line_valorneto_sum_raw": "112780"
+  },
+  {
+    "key": [
+      "8000",
+      "78003922-1",
+      "61",
+      "25"
+    ],
+    "rows": 1,
+    "header_net_raw": "24576000",
+    "line_monto_sum_raw": "245760",
+    "line_valorneto_sum_raw": "15360"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "306784"
+    ],
+    "rows": 1,
+    "header_net_raw": "4104000",
+    "line_monto_sum_raw": "41040",
+    "line_valorneto_sum_raw": "20520"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "306785"
+    ],
+    "rows": 1,
+    "header_net_raw": "2415600",
+    "line_monto_sum_raw": "24156",
+    "line_valorneto_sum_raw": "24156"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "307542"
+    ],
+    "rows": 3,
+    "header_net_raw": "116679600",
+    "line_monto_sum_raw": "1166796",
+    "line_valorneto_sum_raw": "79492"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "307541"
+    ],
+    "rows": 1,
+    "header_net_raw": "11395200",
+    "line_monto_sum_raw": "113952",
+    "line_valorneto_sum_raw": "28488"
+  },
+  {
+    "key": [
+      "8000",
+      "76188587-1",
+      "61",
+      "23732"
+    ],
+    "rows": 2,
+    "header_net_raw": "1542900",
+    "line_monto_sum_raw": "15429",
+    "line_valorneto_sum_raw": "1714.33"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "308321"
+    ],
+    "rows": 1,
+    "header_net_raw": "31849000",
+    "line_monto_sum_raw": "318490",
+    "line_valorneto_sum_raw": "31849"
+  },
+  {
+    "key": [
+      "8000",
+      "78809560-0",
+      "61",
+      "2974505"
+    ],
+    "rows": 11,
+    "header_net_raw": "8629800",
+    "line_monto_sum_raw": "86298",
+    "line_valorneto_sum_raw": "57571"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1636409"
+    ],
+    "rows": 1,
+    "header_net_raw": "10410200",
+    "line_monto_sum_raw": "104102",
+    "line_valorneto_sum_raw": "104102"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1636536"
+    ],
+    "rows": 1,
+    "header_net_raw": "133776000",
+    "line_monto_sum_raw": "1337760",
+    "line_valorneto_sum_raw": "1337760"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1636535"
+    ],
+    "rows": 1,
+    "header_net_raw": "207529900",
+    "line_monto_sum_raw": "2075299",
+    "line_valorneto_sum_raw": "2075299"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1637858"
+    ],
+    "rows": 1,
+    "header_net_raw": "191715200",
+    "line_monto_sum_raw": "1917152",
+    "line_valorneto_sum_raw": "1917152"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1637857"
+    ],
+    "rows": 1,
+    "header_net_raw": "601000",
+    "line_monto_sum_raw": "6010",
+    "line_valorneto_sum_raw": "6010"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "309594"
+    ],
+    "rows": 1,
+    "header_net_raw": "20527700",
+    "line_monto_sum_raw": "205277",
+    "line_valorneto_sum_raw": "205277"
+  },
+  {
+    "key": [
+      "8000",
+      "14040808-5",
+      "61",
+      "17"
+    ],
+    "rows": 6,
+    "header_net_raw": "814000000",
+    "line_monto_sum_raw": "8140000",
+    "line_valorneto_sum_raw": "900000"
+  },
+  {
+    "key": [
+      "8000",
+      "14040808-5",
+      "61",
+      "19"
+    ],
+    "rows": 7,
+    "header_net_raw": "763000000",
+    "line_monto_sum_raw": "7630000",
+    "line_valorneto_sum_raw": "1030000"
+  },
+  {
+    "key": [
+      "8000",
+      "14040808-5",
+      "61",
+      "21"
+    ],
+    "rows": 9,
+    "header_net_raw": "717590000",
+    "line_monto_sum_raw": "7175900",
+    "line_valorneto_sum_raw": "1075900"
+  },
+  {
+    "key": [
+      "8000",
+      "76540963-2",
+      "61",
+      "1153"
+    ],
+    "rows": 1,
+    "header_net_raw": "555200",
+    "line_monto_sum_raw": "5552",
+    "line_valorneto_sum_raw": "5552"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "76775"
+    ],
+    "rows": 2,
+    "header_net_raw": "2480000",
+    "line_monto_sum_raw": "24800",
+    "line_valorneto_sum_raw": "24800"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "76773"
+    ],
+    "rows": 3,
+    "header_net_raw": "10490000",
+    "line_monto_sum_raw": "104900",
+    "line_valorneto_sum_raw": "104900"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "76774"
+    ],
+    "rows": 5,
+    "header_net_raw": "13260000",
+    "line_monto_sum_raw": "132600",
+    "line_valorneto_sum_raw": "132600"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "77961"
+    ],
+    "rows": 2,
+    "header_net_raw": "760000",
+    "line_monto_sum_raw": "7600",
+    "line_valorneto_sum_raw": "7600"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "76744"
+    ],
+    "rows": 1,
+    "header_net_raw": "2100000",
+    "line_monto_sum_raw": "21000",
+    "line_valorneto_sum_raw": "6"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "76776"
+    ],
+    "rows": 1,
+    "header_net_raw": "656000",
+    "line_monto_sum_raw": "6560",
+    "line_valorneto_sum_raw": "3280"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "77896"
+    ],
+    "rows": 1,
+    "header_net_raw": "29400000",
+    "line_monto_sum_raw": "294000",
+    "line_valorneto_sum_raw": "4200"
+  },
+  {
+    "key": [
+      "8000",
+      "76756768-5",
+      "61",
+      "77907"
+    ],
+    "rows": 1,
+    "header_net_raw": "12600000",
+    "line_monto_sum_raw": "126000",
+    "line_valorneto_sum_raw": "4200"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1622475"
+    ],
+    "rows": 1,
+    "header_net_raw": "7132200",
+    "line_monto_sum_raw": "71322",
+    "line_valorneto_sum_raw": "62590"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1633759"
+    ],
+    "rows": 1,
+    "header_net_raw": "42793200",
+    "line_monto_sum_raw": "427932",
+    "line_valorneto_sum_raw": "62590"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1637395"
+    ],
+    "rows": 1,
+    "header_net_raw": "15513400",
+    "line_monto_sum_raw": "155134",
+    "line_valorneto_sum_raw": "74586"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "968829"
+    ],
+    "rows": 1,
+    "header_net_raw": "24667700",
+    "line_monto_sum_raw": "246677",
+    "line_valorneto_sum_raw": "31889"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "968830"
+    ],
+    "rows": 1,
+    "header_net_raw": "2085500",
+    "line_monto_sum_raw": "20855",
+    "line_valorneto_sum_raw": "13480"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "969306"
+    ],
+    "rows": 1,
+    "header_net_raw": "2857000",
+    "line_monto_sum_raw": "28570",
+    "line_valorneto_sum_raw": "33240"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "969343"
+    ],
+    "rows": 1,
+    "header_net_raw": "1606800",
+    "line_monto_sum_raw": "16068",
+    "line_valorneto_sum_raw": "10160"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "969758"
+    ],
+    "rows": 1,
+    "header_net_raw": "847400",
+    "line_monto_sum_raw": "8474",
+    "line_valorneto_sum_raw": "12972"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "969917"
+    ],
+    "rows": 1,
+    "header_net_raw": "1944500",
+    "line_monto_sum_raw": "19445",
+    "line_valorneto_sum_raw": "22624"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "971051"
+    ],
+    "rows": 1,
+    "header_net_raw": "520800",
+    "line_monto_sum_raw": "5208",
+    "line_valorneto_sum_raw": "6770"
+  },
+  {
+    "key": [
+      "8000",
+      "93550000-1",
+      "61",
+      "971442"
+    ],
+    "rows": 2,
+    "header_net_raw": "2316600",
+    "line_monto_sum_raw": "23166",
+    "line_valorneto_sum_raw": "21636"
+  },
+  {
+    "key": [
+      "8000",
+      "90727000-9",
+      "61",
+      "115102"
+    ],
+    "rows": 1,
+    "header_net_raw": "3552200",
+    "line_monto_sum_raw": "35522",
+    "line_valorneto_sum_raw": "24132"
+  },
+  {
+    "key": [
+      "8000",
+      "90727000-9",
+      "61",
+      "115388"
+    ],
+    "rows": 1,
+    "header_net_raw": "824700",
+    "line_monto_sum_raw": "8247",
+    "line_valorneto_sum_raw": "9960"
+  },
+  {
+    "key": [
+      "8000",
+      "88566900-K",
+      "61",
+      "38053"
+    ],
+    "rows": 3,
+    "header_net_raw": "39581600",
+    "line_monto_sum_raw": "395816",
+    "line_valorneto_sum_raw": "1979.09"
+  },
+  {
+    "key": [
+      "8000",
+      "78809560-0",
+      "61",
+      "3016513"
+    ],
+    "rows": 1,
+    "header_net_raw": "665400",
+    "line_monto_sum_raw": "6654",
+    "line_valorneto_sum_raw": "6721"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1642061"
+    ],
+    "rows": 1,
+    "header_net_raw": "140782200",
+    "line_monto_sum_raw": "1407822",
+    "line_valorneto_sum_raw": "1407822"
+  },
+  {
+    "key": [
+      "8000",
+      "96529310-8",
+      "61",
+      "1642060"
+    ],
+    "rows": 1,
+    "header_net_raw": "865500",
+    "line_monto_sum_raw": "8655",
+    "line_valorneto_sum_raw": "8655"
+  },
+  {
+    "key": [
+      "8000",
+      "94282000-3",
+      "61",
+      "310561"
+    ],
+    "rows": 1,
+    "header_net_raw": "3683400",
+    "line_monto_sum_raw": "36834",
+    "line_valorneto_sum_raw": "36834"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual040",
+  "position": {
+    "x": 20,
+    "y": 630,
+    "width": 1400,
+    "height": 110,
+    "z": 40,
+    "tabOrder": 40
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Estado transito"
+                }
+              },
+              "queryRef": "FactOC.Estado transito",
+              "nativeQueryRef": "Estado transito"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Estado transito'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

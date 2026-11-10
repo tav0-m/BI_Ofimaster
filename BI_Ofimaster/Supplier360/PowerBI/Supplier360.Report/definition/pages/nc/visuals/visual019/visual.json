@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual019",
+  "position": {
+    "x": 20,
+    "y": 20,
+    "width": 450,
+    "height": 120,
+    "z": 19,
+    "tabOrder": 19
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Casos reclamo"
+                }
+              },
+              "queryRef": "FactOC.Casos reclamo",
+              "nativeQueryRef": "Casos reclamo"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Casos reclamo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

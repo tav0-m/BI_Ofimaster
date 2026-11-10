@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual032",
+  "position": {
+    "x": 20,
+    "y": 290,
+    "width": 1400,
+    "height": 160,
+    "z": 32,
+    "tabOrder": 32
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProveedor"
+                    }
+                  },
+                  "Property": "Nombre"
+                }
+              },
+              "queryRef": "DimProveedor.Nombre",
+              "nativeQueryRef": "Nombre"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProveedor"
+                    }
+                  },
+                  "Property": "RUT"
+                }
+              },
+              "queryRef": "DimProveedor.RUT",
+              "nativeQueryRef": "RUT"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProveedor"
+                    }
+                  },
+                  "Property": "Sociedad"
+                }
+              },
+              "queryRef": "DimProveedor.Sociedad",
+              "nativeQueryRef": "Sociedad"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProveedor"
+                    }
+                  },
+                  "Property": "PlazoPago"
+                }
+              },
+              "queryRef": "DimProveedor.PlazoPago",
+              "nativeQueryRef": "PlazoPago"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProveedor"
+                    }
+                  },
+                  "Property": "BloqueoCompra"
+                }
+              },
+              "queryRef": "DimProveedor.BloqueoCompra",
+              "nativeQueryRef": "BloqueoCompra"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ficha de proveedor SAP'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

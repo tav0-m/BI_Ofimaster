@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "supplier",
+  "displayName": "04 Supplier 360",
+  "displayOption": "FitToPage",
+  "height": 900,
+  "width": 1440
+}

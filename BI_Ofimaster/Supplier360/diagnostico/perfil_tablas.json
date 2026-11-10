@@ -1,0 +1,10475 @@
+[
+  {
+    "file": "FBL5N_202610291012.csv",
+    "bytes": 1385052,
+    "rows_examined": 2366,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "SOCIEDAD",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "ID_CLIENTE",
+        "nulls": 2,
+        "samples": [
+          "0000010020",
+          "0001001288",
+          "0001005987"
+        ]
+      },
+      {
+        "name": "NUMDOC",
+        "nulls": 0,
+        "samples": [
+          "1400001589003",
+          "1400001590002",
+          "1400002809002"
+        ]
+      },
+      {
+        "name": "ASIGNACION",
+        "nulls": 82,
+        "samples": [
+          "00000000106862",
+          "0000000084669",
+          "0000000080549"
+        ]
+      },
+      {
+        "name": "IMPORTE_DIARIO",
+        "nulls": 0,
+        "samples": [
+          "-106862.00",
+          "-84669.00",
+          "-80549.00"
+        ]
+      },
+      {
+        "name": "CALCULO_PROV_HOY",
+        "nulls": 0,
+        "samples": [
+          "-106862.00",
+          "-84669.00",
+          "-80549.00"
+        ]
+      },
+      {
+        "name": "DIAS_VENC",
+        "nulls": 0,
+        "samples": [
+          "3",
+          "0"
+        ]
+      },
+      {
+        "name": "CDIAS_VEN2",
+        "nulls": 0,
+        "samples": [
+          "564",
+          "494",
+          "426"
+        ]
+      },
+      {
+        "name": "DEMORAV",
+        "nulls": 0,
+        "samples": [
+          "561",
+          "491",
+          "423"
+        ]
+      },
+      {
+        "name": "CMORO",
+        "nulls": 0,
+        "samples": [
+          "8. Vencida 181 y mas.",
+          "2. Vencida 0-60.",
+          "1. No Vencida."
+        ]
+      },
+      {
+        "name": "IMPORTE_CIERRE",
+        "nulls": 0,
+        "samples": [
+          "-106862.00",
+          "-84669.00",
+          "-80549.00"
+        ]
+      },
+      {
+        "name": "CALCULO_PROV_CIERRE",
+        "nulls": 0,
+        "samples": [
+          "-106862.00",
+          "-84669.00",
+          "-80549.00"
+        ]
+      },
+      {
+        "name": "DEMORAV_CIERRE",
+        "nulls": 0,
+        "samples": [
+          "533",
+          "463",
+          "395"
+        ]
+      },
+      {
+        "name": "CMORO_CIERRE",
+        "nulls": 0,
+        "samples": [
+          "8. Vencida 181 y mas.",
+          "2. Vencida 0-60.",
+          "1. No Vencida."
+        ]
+      },
+      {
+        "name": "PROYSOC_CONSOLIDADO",
+        "nulls": 0,
+        "samples": [
+          "-106862.00",
+          "-84669.00",
+          "-80549.00"
+        ]
+      },
+      {
+        "name": "CUENTA_DE_MAYOR",
+        "nulls": 0,
+        "samples": [
+          "1104011001",
+          "1104011005",
+          "1104013001"
+        ]
+      },
+      {
+        "name": "RANGOS_PROYECCION",
+        "nulls": 0,
+        "samples": [
+          "8.Vencida 181 y mas.",
+          "3. Vencida 61-90.",
+          "2. Vencida 0-60."
+        ]
+      },
+      {
+        "name": "DELTA",
+        "nulls": 0,
+        "samples": [
+          "0.00",
+          "-1.07",
+          "-1.49"
+        ]
+      },
+      {
+        "name": "EMPRESA",
+        "nulls": 0,
+        "samples": [
+          "OFIMASTER"
+        ]
+      },
+      {
+        "name": "RUTCLI",
+        "nulls": 2,
+        "samples": [
+          "66666666-6      ",
+          "94282000-3      ",
+          "77137270-8      "
+        ]
+      },
+      {
+        "name": "NAME1",
+        "nulls": 2,
+        "samples": [
+          "DEVOLUCION A CLIENTES ESPORADICOS",
+          "ESSITY CHILE S.A.",
+          "ESTIMACION PROVISION DE INCOBRABLES"
+        ]
+      },
+      {
+        "name": "NAME2",
+        "nulls": 2039,
+        "samples": [
+          "DA",
+          "PROFESIONAL",
+          "BUCO"
+        ]
+      },
+      {
+        "name": "KVGR2",
+        "nulls": 15,
+        "samples": [
+          "107",
+          "106",
+          "109"
+        ]
+      },
+      {
+        "name": "KVGR3",
+        "nulls": 15,
+        "samples": [
+          "217",
+          "208",
+          "214"
+        ]
+      },
+      {
+        "name": "KVGR4",
+        "nulls": 26,
+        "samples": [
+          "307",
+          "300",
+          "308"
+        ]
+      },
+      {
+        "name": "KVGR2T",
+        "nulls": 15,
+        "samples": [
+          "PYME",
+          "GRANDES CUENTAS",
+          "PERSONA NATURAL"
+        ]
+      },
+      {
+        "name": "KVGR3T",
+        "nulls": 15,
+        "samples": [
+          "PYME MASIVO",
+          "GRAN EMPRESA",
+          "PERSONA NATURAL"
+        ]
+      },
+      {
+        "name": "KVGR4T",
+        "nulls": 26,
+        "samples": [
+          "PYME MICRO",
+          "GRAN EMPRESA",
+          "PYME PEQUENA"
+        ]
+      },
+      {
+        "name": "Grupo_cliente",
+        "nulls": 29,
+        "samples": [
+          "08",
+          "14",
+          "05"
+        ]
+      },
+      {
+        "name": "Desc_Grupo_cli",
+        "nulls": 29,
+        "samples": [
+          "PYME MICRO",
+          "EMPRESAS RELACIONADA",
+          "GRAN EMPRESA"
+        ]
+      },
+      {
+        "name": "ORIGEN",
+        "nulls": 0,
+        "samples": [
+          "FBL5N",
+          "FBL3N",
+          "FB3N2"
+        ]
+      },
+      {
+        "name": "RUT_NOM",
+        "nulls": 2,
+        "samples": [
+          "66666666-6 DEVOLUCION A CLIENTES ESPORADICOS",
+          "94282000-3 ESSITY CHILE S.A.",
+          "66666666-6 ESTIMACION PROVISION DE INCOBRABLES"
+        ]
+      },
+      {
+        "name": "FECHA_PAC",
+        "nulls": 0,
+        "samples": [
+          "30-09-2026"
+        ]
+      },
+      {
+        "name": "FECHA_PAA",
+        "nulls": 0,
+        "samples": [
+          "28-10-2026"
+        ]
+      },
+      {
+        "name": "NOMBRE_CTA_MAYOR",
+        "nulls": 0,
+        "samples": [
+          "DEUDORES POR VENTA NO RELACIONADOS NACIONALES",
+          "DEUDORES RAPPEL",
+          "ESTIMACION DEUDORES INCOBRABLES"
+        ]
+      },
+      {
+        "name": "CLASE_DOC",
+        "nulls": 0,
+        "samples": [
+          "DZ",
+          "AB",
+          "SA"
+        ]
+      },
+      {
+        "name": "NOMBRE_CLASE_DOC",
+        "nulls": 0,
+        "samples": [
+          "PAGO DE CLIENTE",
+          "DOCUMENTO CONTABLE",
+          "DOCUMENTO CTA.MAYOR"
+        ]
+      },
+      {
+        "name": "MONEDA",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "agno",
+        "nulls": 0,
+        "samples": [
+          "2025",
+          "2026"
+        ]
+      },
+      {
+        "name": "cmoro_cobranza",
+        "nulls": 0,
+        "samples": [
+          "5. Superior a 90.",
+          "3. Vencida 31-60.",
+          "2. Vencida 1-30."
+        ]
+      },
+      {
+        "name": "estado",
+        "nulls": 1456,
+        "samples": [
+          "ELIMINA",
+          "NETEADO",
+          "NO-D"
+        ]
+      },
+      {
+        "name": "abc",
+        "nulls": 116,
+        "samples": [
+          "C"
+        ]
+      },
+      {
+        "name": "incremental",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "TIPO_CAMBIO",
+        "nulls": 0,
+        "samples": [
+          "1.00"
+        ]
+      },
+      {
+        "name": "FOLIO_ACEPTA",
+        "nulls": 33,
+        "samples": [
+          "PAGO TRANSBANK",
+          "TICKET 148867",
+          "TICKET 168195"
+        ]
+      },
+      {
+        "name": "FECHA_CREA",
+        "nulls": 0,
+        "samples": [
+          "15-04-2025",
+          "24-06-2025",
+          "28-02-2025"
+        ]
+      },
+      {
+        "name": "REFACTURA",
+        "nulls": 2204,
+        "samples": [
+          "CARGA INICIAL",
+          "REFACTURA"
+        ]
+      },
+      {
+        "name": "ESTADO_DIF",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "REF_FECEMI",
+        "nulls": 2293,
+        "samples": [
+          "24/09/2025",
+          "30/06/2026",
+          "31/08/2026"
+        ]
+      },
+      {
+        "name": "REF_FECVEN",
+        "nulls": 2293,
+        "samples": [
+          "24/10/2025",
+          "30/07/2026",
+          "30/09/2026"
+        ]
+      },
+      {
+        "name": "REF_ORIGEN",
+        "nulls": 2293,
+        "samples": [
+          "206713",
+          "216073",
+          "217265"
+        ]
+      },
+      {
+        "name": "REF_ITERACION",
+        "nulls": 2280,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "REF_antiguedad",
+        "nulls": 2280,
+        "samples": [
+          "395",
+          "30",
+          "2"
+        ]
+      },
+      {
+        "name": "VENDEDOR",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "COBRADOR",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "GRUPO",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "VENDEDOR_SAP",
+        "nulls": 1568,
+        "samples": [
+          "0005002709",
+          "0005002495",
+          "0005006509"
+        ]
+      },
+      {
+        "name": "COBRADOR_SAP",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "GRUPO_SAP",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "INDICE",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "SUPERVISOR",
+        "nulls": 2366,
+        "samples": []
+      },
+      {
+        "name": "DIAS_PLAZO",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "30",
+          "45"
+        ]
+      },
+      {
+        "name": "FECHA_VENC",
+        "nulls": 0,
+        "samples": [
+          "15-04-2025",
+          "24-06-2025",
+          "31-08-2025"
+        ]
+      },
+      {
+        "name": "CEBE",
+        "nulls": 92,
+        "samples": [
+          "ADG14SCL",
+          "PY1S4SCL",
+          "ADG00SCL"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-29"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "FBL5N_2000__20261028_1_de_1_20261029_054333.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Inventario_dia_anterior_202610061525.csv",
+    "bytes": 13925,
+    "rows_examined": 308,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "FECHA_DOC",
+        "nulls": 0,
+        "samples": [
+          "2026-10-05"
+        ]
+      },
+      {
+        "name": "CODPRO",
+        "nulls": 0,
+        "samples": [
+          "100023",
+          "100078",
+          "101244"
+        ]
+      },
+      {
+        "name": "CENTRO",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "ALMACEN",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM06"
+        ]
+      },
+      {
+        "name": "STOCK_ANTERIOR",
+        "nulls": 0,
+        "samples": [
+          "108.00",
+          "35.00",
+          "74.00"
+        ]
+      },
+      {
+        "name": "COSPRO",
+        "nulls": 0,
+        "samples": [
+          "1848.00",
+          "672.00",
+          "495.00"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "KARDEX_202609301553.csv",
+    "bytes": 35150240,
+    "rows_examined": 118726,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "SOCIEDAD",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "CENTRO",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "CODPRO",
+        "nulls": 655,
+        "samples": [
+          "453740",
+          "528838",
+          "535788"
+        ]
+      },
+      {
+        "name": "FECHA_DOC",
+        "nulls": 0,
+        "samples": [
+          "2025-02-27",
+          "2025-02-28",
+          "2025-03-10"
+        ]
+      },
+      {
+        "name": "ENTRA",
+        "nulls": 0,
+        "samples": [
+          "0.00",
+          "20.00",
+          "40.00"
+        ]
+      },
+      {
+        "name": "SALE",
+        "nulls": 0,
+        "samples": [
+          "20.00",
+          "12.00",
+          "40.00"
+        ]
+      },
+      {
+        "name": "SECUEN",
+        "nulls": 0,
+        "samples": [
+          "4910633177",
+          "4910633163",
+          "4910613578"
+        ]
+      },
+      {
+        "name": "CODGLOSA",
+        "nulls": 0,
+        "samples": [
+          "562",
+          "561",
+          "309"
+        ]
+      },
+      {
+        "name": "GLOSA",
+        "nulls": 45514,
+        "samples": [
+          "Anul.: Recibo por entrada inicial de bal.stock en stock uso no restr.",
+          "Stock de subcontrataciÃ³n en stock de proyecto",
+          "Recibo por entrada inicial de bal.stock en stock consignaciÃ³n cliente"
+        ]
+      },
+      {
+        "name": "COSPRO",
+        "nulls": 0,
+        "samples": [
+          "18387.00",
+          "9121.00",
+          "4593.00"
+        ]
+      },
+      {
+        "name": "FOLIO",
+        "nulls": 104853,
+        "samples": [
+          "5291533",
+          "5291961",
+          "5290999"
+        ]
+      },
+      {
+        "name": "FECHA_REG",
+        "nulls": 0,
+        "samples": [
+          "2025-03-01",
+          "2025-02-27",
+          "2025-03-04"
+        ]
+      },
+      {
+        "name": "ALMACEN",
+        "nulls": 655,
+        "samples": [
+          "OM01",
+          "OM06",
+          "OM05"
+        ]
+      },
+      {
+        "name": "FECHA_CONTAB",
+        "nulls": 0,
+        "samples": [
+          "2025-02-27",
+          "2025-02-28",
+          "2025-03-01"
+        ]
+      },
+      {
+        "name": "HORA_CONTAB",
+        "nulls": 0,
+        "samples": [
+          "083811",
+          "083725",
+          "124658"
+        ]
+      },
+      {
+        "name": "NOMUSU",
+        "nulls": 0,
+        "samples": [
+          "JGARCIA",
+          "BESPINOZA",
+          "SD060"
+        ]
+      },
+      {
+        "name": "MONEDA",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "IMPORTE",
+        "nulls": 0,
+        "samples": [
+          "367740.00",
+          "109452.00",
+          "183720.00"
+        ]
+      },
+      {
+        "name": "UM_BASE",
+        "nulls": 655,
+        "samples": [
+          "EA"
+        ]
+      },
+      {
+        "name": "STOCK_ANTERIOR",
+        "nulls": 0,
+        "samples": [
+          "20.00",
+          "12.00",
+          "40.00"
+        ]
+      },
+      {
+        "name": "VAL_STOCK_ANTERIOR",
+        "nulls": 0,
+        "samples": [
+          "367740.00",
+          "109452.00",
+          "183720.00"
+        ]
+      },
+      {
+        "name": "STOCK_TOTAL",
+        "nulls": 0,
+        "samples": [
+          "5.00",
+          "35.00",
+          "11.00"
+        ]
+      },
+      {
+        "name": "PRECIO_MED_VAR_ANT",
+        "nulls": 0,
+        "samples": [
+          "18387.00",
+          "9121.00",
+          "4593.00"
+        ]
+      },
+      {
+        "name": "PRECIO_MED_VAR_NVO",
+        "nulls": 0,
+        "samples": [
+          "0.00",
+          "10969.00",
+          "1797.00"
+        ]
+      },
+      {
+        "name": "DEBE_HABER",
+        "nulls": 0,
+        "samples": [
+          "H",
+          "S"
+        ]
+      },
+      {
+        "name": "FECHA_BULK",
+        "nulls": 0,
+        "samples": [
+          "2025-03-02 00:00:00.000",
+          "2025-02-28 00:00:00.000",
+          "2025-03-05 00:00:00.000"
+        ]
+      },
+      {
+        "name": "ARCHIVO_BULK",
+        "nulls": 0,
+        "samples": [
+          "KARDEX_KARDEX_1_de_1_20250302_021043.dat",
+          "KARDEX_KARDEX_1_de_1_20250228_021041.dat",
+          "KARDEX_KARDEX_1_de_1_20250305_021047.dat"
+        ]
+      },
+      {
+        "name": "CENTRO_RECEPTOR",
+        "nulls": 113796,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "ALMACEN_RECEPTOR",
+        "nulls": 113796,
+        "samples": [
+          "OM01",
+          "OM06",
+          "OM05"
+        ]
+      },
+      {
+        "name": "ENTREGA_FINAL",
+        "nulls": 106565,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "TIPO_STOCK",
+        "nulls": 118726,
+        "samples": []
+      },
+      {
+        "name": "EBELN",
+        "nulls": 105791,
+        "samples": [
+          "4500508923",
+          "4500509860",
+          "4500509861"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "290",
+          "280"
+        ]
+      },
+      {
+        "name": "ZEILE",
+        "nulls": 0,
+        "samples": [
+          "8",
+          "2",
+          "10"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 105791,
+        "samples": [
+          "0001001288",
+          "0001001289",
+          "0001110545"
+        ]
+      },
+      {
+        "name": "BUALT",
+        "nulls": 0,
+        "samples": [
+          "0.00"
+        ]
+      },
+      {
+        "name": "BPRME",
+        "nulls": 105791,
+        "samples": [
+          "EA",
+          "LE"
+        ]
+      },
+      {
+        "name": "VGART",
+        "nulls": 0,
+        "samples": [
+          "WA",
+          "WL",
+          "WE"
+        ]
+      },
+      {
+        "name": "XBLNR",
+        "nulls": 15629,
+        "samples": [
+          "PRUEBA",
+          "2003586606",
+          "9107435629"
+        ]
+      },
+      {
+        "name": "TCODE2",
+        "nulls": 0,
+        "samples": [
+          "MIGO_GI",
+          "MIGO_TR",
+          "MB1B"
+        ]
+      },
+      {
+        "name": "BKTXT",
+        "nulls": 100749,
+        "samples": [
+          "CARGA STOCK INICIAL",
+          "ERROR ASIGNACION COD SAP",
+          "CARGA INICIAL STOCK"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "KARDEX_COMP_202609301248.csv",
+    "bytes": 1044282,
+    "rows_examined": 23476,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "fecha_contab",
+        "nulls": 0,
+        "samples": [
+          "2025-04-29",
+          "2025-08-11",
+          "2025-07-01"
+        ]
+      },
+      {
+        "name": "codpro",
+        "nulls": 0,
+        "samples": [
+          "352700",
+          "427039",
+          "386024"
+        ]
+      },
+      {
+        "name": "sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "centro",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "almacen",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM06"
+        ]
+      },
+      {
+        "name": "importe",
+        "nulls": 0,
+        "samples": [
+          "7122.00",
+          "1100.00",
+          "16455.00"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "KARDEX_COMP_202610301503.csv",
+    "bytes": 1044282,
+    "rows_examined": 23476,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "fecha_contab",
+        "nulls": 0,
+        "samples": [
+          "2025-04-29",
+          "2025-08-11",
+          "2025-07-01"
+        ]
+      },
+      {
+        "name": "codpro",
+        "nulls": 0,
+        "samples": [
+          "352700",
+          "427039",
+          "386024"
+        ]
+      },
+      {
+        "name": "sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "centro",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "almacen",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM06"
+        ]
+      },
+      {
+        "name": "importe",
+        "nulls": 0,
+        "samples": [
+          "7122.00",
+          "1100.00",
+          "16455.00"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "kardex_RESUMEN_202610301503.csv",
+    "bytes": 148664,
+    "rows_examined": 2132,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "codpro",
+        "nulls": 1,
+        "samples": [
+          "382984",
+          "124104",
+          "383213"
+        ]
+      },
+      {
+        "name": "sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "centro",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "ultima_recepcion",
+        "nulls": 412,
+        "samples": [
+          "2026-02-23",
+          "2025-08-14",
+          "2026-04-13"
+        ]
+      },
+      {
+        "name": "Dias_Sin_Recepcion",
+        "nulls": 412,
+        "samples": [
+          "241",
+          "434",
+          "192"
+        ]
+      },
+      {
+        "name": "ultima_recepcion_stock0",
+        "nulls": 835,
+        "samples": [
+          "2025-04-24",
+          "2025-08-14",
+          "2025-04-01"
+        ]
+      },
+      {
+        "name": "Dias_Sin_Recepcion_stock0",
+        "nulls": 835,
+        "samples": [
+          "546",
+          "434",
+          "569"
+        ]
+      },
+      {
+        "name": "primera_recepcion",
+        "nulls": 6,
+        "samples": [
+          "2025-04-24",
+          "2025-02-28",
+          "2025-08-14"
+        ]
+      },
+      {
+        "name": "Dias_Desde_Primer_Ingreso",
+        "nulls": 6,
+        "samples": [
+          "546",
+          "601",
+          "434"
+        ]
+      },
+      {
+        "name": "ultima_venta",
+        "nulls": 199,
+        "samples": [
+          "2026-08-10",
+          "2026-08-31",
+          "2025-07-02"
+        ]
+      },
+      {
+        "name": "Dias_Sin_Ventas",
+        "nulls": 199,
+        "samples": [
+          "73",
+          "52",
+          "477"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "mat_202610061459.csv",
+    "bytes": 1111209,
+    "rows_examined": 2903,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "material",
+        "nulls": 0,
+        "samples": [
+          "000000000000100011",
+          "000000000000100021",
+          "000000000000100023"
+        ]
+      },
+      {
+        "name": "Nº antiguo material",
+        "nulls": 1596,
+        "samples": [
+          "Z190024",
+          "R201602",
+          "R201502"
+        ]
+      },
+      {
+        "name": "descripcion",
+        "nulls": 0,
+        "samples": [
+          "ACEITE VEGETAL 1 LT BELMONT",
+          "ARCHIVADOR PALANCA CTA LOMO ANGOSTO BURD",
+          "ARCHIVADOR PALANCA CTA LOMO ANCHO BURDEO"
+        ]
+      },
+      {
+        "name": "SOSTENIBILIDAD",
+        "nulls": 0,
+        "samples": [
+          "OTROS",
+          "SOSTENIBLE",
+          "RECICLADO"
+        ]
+      },
+      {
+        "name": "id_linea",
+        "nulls": 0,
+        "samples": [
+          "03",
+          "01",
+          "02"
+        ]
+      },
+      {
+        "name": "linea",
+        "nulls": 0,
+        "samples": [
+          "ALIMENTOS",
+          "OFICINA Y LIBRERIA",
+          "ASEO Y LIMPIEZA"
+        ]
+      },
+      {
+        "name": "id_seccion",
+        "nulls": 0,
+        "samples": [
+          "0303",
+          "0102",
+          "0109"
+        ]
+      },
+      {
+        "name": "seccion",
+        "nulls": 0,
+        "samples": [
+          "DESPENSA",
+          "ARCHIVO, CARPETAS Y ENCUADERNACION",
+          "MANUALIDADES Y ARTES"
+        ]
+      },
+      {
+        "name": "id_rubro",
+        "nulls": 0,
+        "samples": [
+          "030301",
+          "010205",
+          "010204"
+        ]
+      },
+      {
+        "name": "rubro",
+        "nulls": 0,
+        "samples": [
+          "ACEITES",
+          "ARCHIVADOR PALANCA",
+          "ARCHIVADOR LETRA"
+        ]
+      },
+      {
+        "name": "id_subrubro",
+        "nulls": 0,
+        "samples": [
+          "03030102",
+          "01020503",
+          "01020401"
+        ]
+      },
+      {
+        "name": "subrubro",
+        "nulls": 0,
+        "samples": [
+          "VEGETAL",
+          "ARCHIVADOR PALANCA CARTA",
+          "ARCHIVADOR LETRA"
+        ]
+      },
+      {
+        "name": "id_grupo",
+        "nulls": 0,
+        "samples": [
+          "0303010201",
+          "0102050302",
+          "0102050301"
+        ]
+      },
+      {
+        "name": "grupo",
+        "nulls": 0,
+        "samples": [
+          "ACEITE VEG 1 LITRO",
+          "ARCHIVADOR PALANCA CARTA LOMO ANGOSTO",
+          "ARCHIVADOR PALANCA CARTA LOMO ANCHO"
+        ]
+      },
+      {
+        "name": "id_marca",
+        "nulls": 0,
+        "samples": [
+          "00128",
+          "01085",
+          "00926"
+        ]
+      },
+      {
+        "name": "marca",
+        "nulls": 0,
+        "samples": [
+          "BELMONT",
+          "TORRE",
+          "RHEIN"
+        ]
+      },
+      {
+        "name": "tipo_prod",
+        "nulls": 0,
+        "samples": [
+          "ZMER",
+          "ZPRO",
+          "ZOPL"
+        ]
+      },
+      {
+        "name": "Grupo_articulos",
+        "nulls": 0,
+        "samples": [
+          "L03-ALI",
+          "L01-OYL",
+          "L02-AYL"
+        ]
+      },
+      {
+        "name": "Unidad_medida_base",
+        "nulls": 0,
+        "samples": [
+          "EA"
+        ]
+      },
+      {
+        "name": "Denom.estandar",
+        "nulls": 1127,
+        "samples": [
+          "50151513",
+          "44122003",
+          "31201610"
+        ]
+      },
+      {
+        "name": "Peso_bruto",
+        "nulls": 0,
+        "samples": [
+          "0.953",
+          "0.380",
+          "0.410"
+        ]
+      },
+      {
+        "name": "Peso_neto",
+        "nulls": 0,
+        "samples": [
+          "0.953",
+          "0.380",
+          "0.410"
+        ]
+      },
+      {
+        "name": "Unidad_peso",
+        "nulls": 0,
+        "samples": [
+          "KG"
+        ]
+      },
+      {
+        "name": "Volumen",
+        "nulls": 0,
+        "samples": [
+          "1560.000",
+          "5460.000",
+          "7830.000"
+        ]
+      },
+      {
+        "name": "Unidad_volumen",
+        "nulls": 0,
+        "samples": [
+          "CCM",
+          "M3"
+        ]
+      },
+      {
+        "name": "Sector",
+        "nulls": 17,
+        "samples": [
+          "10"
+        ]
+      },
+      {
+        "name": "Numero_EAN",
+        "nulls": 2903,
+        "samples": []
+      },
+      {
+        "name": "Código_EAN/UPC",
+        "nulls": 101,
+        "samples": [
+          "7802810012029",
+          "57806505010357",
+          "37806505010407"
+        ]
+      },
+      {
+        "name": "Tipo_EAN",
+        "nulls": 101,
+        "samples": [
+          "HE",
+          "IC",
+          "UC"
+        ]
+      },
+      {
+        "name": "Longitud_",
+        "nulls": 0,
+        "samples": [
+          "26.000",
+          "28.000",
+          "30.000"
+        ]
+      },
+      {
+        "name": "Ancho_",
+        "nulls": 0,
+        "samples": [
+          "10.000",
+          "30.000",
+          "29.000"
+        ]
+      },
+      {
+        "name": "Altura",
+        "nulls": 0,
+        "samples": [
+          "6.000",
+          "6.500",
+          "9.000"
+        ]
+      },
+      {
+        "name": "Unidad dimensión",
+        "nulls": 22,
+        "samples": [
+          "CM"
+        ]
+      },
+      {
+        "name": "MVGR1",
+        "nulls": 0,
+        "samples": [
+          "Z01",
+          "Z02"
+        ]
+      },
+      {
+        "name": "grupomat1",
+        "nulls": 0,
+        "samples": [
+          "SOBREVENTA",
+          "HASTA AGOTAR STOCK"
+        ]
+      },
+      {
+        "name": "MVGR2",
+        "nulls": 0,
+        "samples": [
+          "Z00"
+        ]
+      },
+      {
+        "name": "grupomat2",
+        "nulls": 0,
+        "samples": [
+          "NORMAL"
+        ]
+      },
+      {
+        "name": "MVGR3",
+        "nulls": 0,
+        "samples": [
+          "Z01",
+          "Z03",
+          "Z05"
+        ]
+      },
+      {
+        "name": "grupomat3",
+        "nulls": 0,
+        "samples": [
+          "ACTIVO DIMERC",
+          "DESCONTINUADO DIMERC",
+          "NO VISIBLE POR VENTAS"
+        ]
+      },
+      {
+        "name": "Importado",
+        "nulls": 2672,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "Marca Propia",
+        "nulls": 2607,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "Licencias",
+        "nulls": 2903,
+        "samples": []
+      },
+      {
+        "name": "Drogueria",
+        "nulls": 2903,
+        "samples": []
+      },
+      {
+        "name": "Multivendor",
+        "nulls": 2903,
+        "samples": []
+      },
+      {
+        "name": "comision",
+        "nulls": 112,
+        "samples": [
+          "ZC",
+          "ZA",
+          "ZB"
+        ]
+      },
+      {
+        "name": "sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "mat_fisica_202609301743.csv",
+    "bytes": 498189,
+    "rows_examined": 1408,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "material",
+        "nulls": 0,
+        "samples": [
+          "100024.0",
+          "100026.0",
+          "100027.0"
+        ]
+      },
+      {
+        "name": "Nº antiguo material",
+        "nulls": 650,
+        "samples": [
+          "R200402",
+          "R201302",
+          "R200102"
+        ]
+      },
+      {
+        "name": "descripcion",
+        "nulls": 0,
+        "samples": [
+          "ARCHIVADOR PALANCA LETRA LOMO ANCHO BUR.",
+          "ARCHIVADOR PALANCA OF LOMO ANCHO BURDEO",
+          "ADHESIVO EN BARRA 40 GRS"
+        ]
+      },
+      {
+        "name": "SOSTENIBILIDAD",
+        "nulls": 0,
+        "samples": [
+          "OTROS",
+          "SOSTENIBLE",
+          "RECICLADO"
+        ]
+      },
+      {
+        "name": "id_linea",
+        "nulls": 0,
+        "samples": [
+          "01",
+          "02",
+          "03"
+        ]
+      },
+      {
+        "name": "linea",
+        "nulls": 0,
+        "samples": [
+          "OFICINA Y LIBRERIA",
+          "ASEO Y LIMPIEZA",
+          "ALIMENTOS"
+        ]
+      },
+      {
+        "name": "id_seccion",
+        "nulls": 0,
+        "samples": [
+          "0102",
+          "0109",
+          "0202"
+        ]
+      },
+      {
+        "name": "seccion",
+        "nulls": 0,
+        "samples": [
+          "ARCHIVO, CARPETAS Y ENCUADERNACION",
+          "MANUALIDADES Y ARTES",
+          "ASEO"
+        ]
+      },
+      {
+        "name": "id_rubro",
+        "nulls": 0,
+        "samples": [
+          "010204",
+          "010205",
+          "010903"
+        ]
+      },
+      {
+        "name": "rubro",
+        "nulls": 0,
+        "samples": [
+          "ARCHIVADOR LETRA",
+          "ARCHIVADOR PALANCA",
+          "ADHESIVOS"
+        ]
+      },
+      {
+        "name": "id_subrubro",
+        "nulls": 0,
+        "samples": [
+          "01020401",
+          "01020504",
+          "01090301"
+        ]
+      },
+      {
+        "name": "subrubro",
+        "nulls": 0,
+        "samples": [
+          "ARCHIVADOR LETRA",
+          "ARCHIVADOR PALANCA OFICIO",
+          "ADHESIVO EN BARRA"
+        ]
+      },
+      {
+        "name": "id_grupo",
+        "nulls": 0,
+        "samples": [
+          "0102040101",
+          "0102050401",
+          "0109030108"
+        ]
+      },
+      {
+        "name": "grupo",
+        "nulls": 0,
+        "samples": [
+          "ARCHIVADOR LETRA ANCHO",
+          "ARCHIVADOR PALANCA OFICIO LOMO ANCHO",
+          "ADH. EN BARRA 40 GRS."
+        ]
+      },
+      {
+        "name": "id_marca",
+        "nulls": 0,
+        "samples": [
+          "00926",
+          "01085",
+          "00890"
+        ]
+      },
+      {
+        "name": "marca",
+        "nulls": 0,
+        "samples": [
+          "RHEIN",
+          "TORRE",
+          "PRITT"
+        ]
+      },
+      {
+        "name": "tipo_prod",
+        "nulls": 0,
+        "samples": [
+          "ZMER",
+          "ZPRO",
+          "ZOPL"
+        ]
+      },
+      {
+        "name": "Grupo_articulos",
+        "nulls": 0,
+        "samples": [
+          "L01-OYL",
+          "L02-AYL",
+          "L03-ALI"
+        ]
+      },
+      {
+        "name": "Unidad_medida_base",
+        "nulls": 0,
+        "samples": [
+          "EA"
+        ]
+      },
+      {
+        "name": "Denom.estandar",
+        "nulls": 446,
+        "samples": [
+          "44122003",
+          "31201610",
+          "44111914"
+        ]
+      },
+      {
+        "name": "Peso_bruto",
+        "nulls": 0,
+        "samples": [
+          "0.255",
+          "0.43",
+          "0.395"
+        ]
+      },
+      {
+        "name": "Peso_neto",
+        "nulls": 0,
+        "samples": [
+          "0.255",
+          "0.43",
+          "0.395"
+        ]
+      },
+      {
+        "name": "Unidad_peso",
+        "nulls": 0,
+        "samples": [
+          "KG"
+        ]
+      },
+      {
+        "name": "Volumen",
+        "nulls": 0,
+        "samples": [
+          "5044.5",
+          "8160.0",
+          "9135.0"
+        ]
+      },
+      {
+        "name": "Unidad_volumen",
+        "nulls": 0,
+        "samples": [
+          "CCM",
+          "M3"
+        ]
+      },
+      {
+        "name": "Sector",
+        "nulls": 1,
+        "samples": [
+          "10"
+        ]
+      },
+      {
+        "name": "Numero_EAN",
+        "nulls": 1408,
+        "samples": []
+      },
+      {
+        "name": "Código_EAN/UPC",
+        "nulls": 114,
+        "samples": [
+          "7806610111449",
+          "77806505010603",
+          "7806610111463"
+        ]
+      },
+      {
+        "name": "Tipo_EAN",
+        "nulls": 114,
+        "samples": [
+          "HE",
+          "IC",
+          "UC"
+        ]
+      },
+      {
+        "name": "Longitud_",
+        "nulls": 0,
+        "samples": [
+          "29.5",
+          "34.0",
+          "35.0"
+        ]
+      },
+      {
+        "name": "Ancho_",
+        "nulls": 0,
+        "samples": [
+          "19.0",
+          "30.0",
+          "29.0"
+        ]
+      },
+      {
+        "name": "Altura",
+        "nulls": 0,
+        "samples": [
+          "9.0",
+          "8.0",
+          "11.0"
+        ]
+      },
+      {
+        "name": "Unidad dimensión",
+        "nulls": 23,
+        "samples": [
+          "CM"
+        ]
+      },
+      {
+        "name": "MVGR1",
+        "nulls": 0,
+        "samples": [
+          "Z01",
+          "Z02"
+        ]
+      },
+      {
+        "name": "grupomat1",
+        "nulls": 0,
+        "samples": [
+          "SOBREVENTA",
+          "HASTA AGOTAR STOCK"
+        ]
+      },
+      {
+        "name": "MVGR2",
+        "nulls": 0,
+        "samples": [
+          "Z00",
+          "Z04"
+        ]
+      },
+      {
+        "name": "grupomat2",
+        "nulls": 0,
+        "samples": [
+          "NORMAL",
+          "A PEDIDO"
+        ]
+      },
+      {
+        "name": "MVGR3",
+        "nulls": 0,
+        "samples": [
+          "Z01",
+          "Z05",
+          "Z00"
+        ]
+      },
+      {
+        "name": "grupomat3",
+        "nulls": 0,
+        "samples": [
+          "ACTIVO DIMERC",
+          "NO VISIBLE POR VENTAS",
+          "ARTICULO NUEVO"
+        ]
+      },
+      {
+        "name": "Importado",
+        "nulls": 1408,
+        "samples": []
+      },
+      {
+        "name": "Marca Propia",
+        "nulls": 133,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "Licencias",
+        "nulls": 1408,
+        "samples": []
+      },
+      {
+        "name": "Drogueria",
+        "nulls": 1408,
+        "samples": []
+      },
+      {
+        "name": "Multivendor",
+        "nulls": 1408,
+        "samples": []
+      },
+      {
+        "name": "comision",
+        "nulls": 0,
+        "samples": [
+          "ZC",
+          "ZA",
+          "ZB"
+        ]
+      },
+      {
+        "name": "sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "oc_202610061550.csv",
+    "bytes": 3192554,
+    "rows_examined": 13789,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "Documento_compras",
+        "nulls": 0,
+        "samples": [
+          "4500519526",
+          "4500519529",
+          "4500519530"
+        ]
+      },
+      {
+        "name": "posicion",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "name": "Material",
+        "nulls": 651,
+        "samples": [
+          "000000000000100023",
+          "000000000000100040",
+          "000000000000100071"
+        ]
+      },
+      {
+        "name": "descripcion",
+        "nulls": 0,
+        "samples": [
+          "BOLETIN COMERCIAL ABRIL",
+          "BOLETIN COMERCIAL MARZO",
+          "BOLETIN COMERCIAL FEBRERO"
+        ]
+      },
+      {
+        "name": "ultima_modificacion",
+        "nulls": 0,
+        "samples": [
+          "20250424",
+          "20250901",
+          "20250908"
+        ]
+      },
+      {
+        "name": "fecha_llegada",
+        "nulls": 0,
+        "samples": [
+          "20250430",
+          "20250930",
+          "20250530"
+        ]
+      },
+      {
+        "name": "Sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "Centro",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "Almacen",
+        "nulls": 652,
+        "samples": [
+          "OM01",
+          "OM05"
+        ]
+      },
+      {
+        "name": "Reg.info_de_compras",
+        "nulls": 651,
+        "samples": [
+          "5300100352",
+          "5300164769",
+          "5300086997"
+        ]
+      },
+      {
+        "name": "Id_proveedor",
+        "nulls": 651,
+        "samples": [
+          "0000002000",
+          "0001746477",
+          "0001001118"
+        ]
+      },
+      {
+        "name": "proveedor",
+        "nulls": 651,
+        "samples": [
+          "DIMERC S A",
+          "COMERCIAL E INDUSTRIAL LIBESA LIMIT",
+          "EMPRESAS DEMARIA S.A."
+        ]
+      },
+      {
+        "name": "Pais",
+        "nulls": 651,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "Cantidad_de_pedido",
+        "nulls": 0,
+        "samples": [
+          "1.000",
+          "40.000",
+          "20.000"
+        ]
+      },
+      {
+        "name": "Precio_neto_pedido",
+        "nulls": 0,
+        "samples": [
+          "779.440",
+          "775.980",
+          "768.740"
+        ]
+      },
+      {
+        "name": "Cantidad_base",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "Valor_neto_de_pedido",
+        "nulls": 0,
+        "samples": [
+          "779.44",
+          "775.98",
+          "768.74"
+        ]
+      },
+      {
+        "name": "Val.bruto_pedido",
+        "nulls": 0,
+        "samples": [
+          "779.44",
+          "775.98",
+          "768.74"
+        ]
+      },
+      {
+        "name": "Cantidad_entregada",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0",
+          "300"
+        ]
+      },
+      {
+        "name": "Entrega_final",
+        "nulls": 961,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "Indicador_de_borrado",
+        "nulls": 13408,
+        "samples": [
+          "L",
+          "S"
+        ]
+      },
+      {
+        "name": "MONEDA",
+        "nulls": 2,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "TIPO_CAMBIO",
+        "nulls": 0,
+        "samples": [
+          "1.00000",
+          "0.00000"
+        ]
+      },
+      {
+        "name": "Tipo_Documento",
+        "nulls": 0,
+        "samples": [
+          "ZSER",
+          "ZACF",
+          "ZCOM"
+        ]
+      },
+      {
+        "name": "Centro_origen",
+        "nulls": 6005,
+        "samples": [
+          "2001"
+        ]
+      },
+      {
+        "name": "id_prov",
+        "nulls": 0,
+        "samples": [
+          "0003293364",
+          "0003923754",
+          "0001005112"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "oc_202610081744.csv",
+    "bytes": 3193231,
+    "rows_examined": 13793,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "Documento_compras",
+        "nulls": 0,
+        "samples": [
+          "4500607734",
+          "4500603009",
+          "4500603579"
+        ]
+      },
+      {
+        "name": "posicion",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "name": "Material",
+        "nulls": 655,
+        "samples": [
+          "000000000000100023",
+          "000000000000100040",
+          "000000000000100263"
+        ]
+      },
+      {
+        "name": "descripcion",
+        "nulls": 0,
+        "samples": [
+          "Stein 14695",
+          "Crell 1041136",
+          "Getnet 5672076"
+        ]
+      },
+      {
+        "name": "ultima_modificacion",
+        "nulls": 0,
+        "samples": [
+          "20260526",
+          "20260429",
+          "20260504"
+        ]
+      },
+      {
+        "name": "fecha_llegada",
+        "nulls": 0,
+        "samples": [
+          "20260625",
+          "20260520",
+          "20260507"
+        ]
+      },
+      {
+        "name": "Sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "Centro",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "Almacen",
+        "nulls": 656,
+        "samples": [
+          "OM01",
+          "OM05"
+        ]
+      },
+      {
+        "name": "Reg.info_de_compras",
+        "nulls": 655,
+        "samples": [
+          "5300100352",
+          "5300164769",
+          "5300100969"
+        ]
+      },
+      {
+        "name": "Id_proveedor",
+        "nulls": 655,
+        "samples": [
+          "0000002000",
+          "0001746477",
+          "0001746279"
+        ]
+      },
+      {
+        "name": "proveedor",
+        "nulls": 655,
+        "samples": [
+          "DIMERC S A",
+          "COMERCIAL E INDUSTRIAL LIBESA LIMIT",
+          "NESTLE CHILE SA"
+        ]
+      },
+      {
+        "name": "Pais",
+        "nulls": 655,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "Cantidad_de_pedido",
+        "nulls": 0,
+        "samples": [
+          "1.000",
+          "20.000",
+          "40.000"
+        ]
+      },
+      {
+        "name": "Precio_neto_pedido",
+        "nulls": 0,
+        "samples": [
+          "562.000",
+          "1177.670",
+          "2541.570"
+        ]
+      },
+      {
+        "name": "Cantidad_base",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "Valor_neto_de_pedido",
+        "nulls": 0,
+        "samples": [
+          "562.00",
+          "1177.67",
+          "2541.57"
+        ]
+      },
+      {
+        "name": "Val.bruto_pedido",
+        "nulls": 0,
+        "samples": [
+          "562.00",
+          "1177.67",
+          "2541.57"
+        ]
+      },
+      {
+        "name": "Cantidad_entregada",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0",
+          "4"
+        ]
+      },
+      {
+        "name": "Entrega_final",
+        "nulls": 933,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "Indicador_de_borrado",
+        "nulls": 13412,
+        "samples": [
+          "L",
+          "S"
+        ]
+      },
+      {
+        "name": "MONEDA",
+        "nulls": 2,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "TIPO_CAMBIO",
+        "nulls": 0,
+        "samples": [
+          "1.00000",
+          "0.00000"
+        ]
+      },
+      {
+        "name": "Tipo_Documento",
+        "nulls": 0,
+        "samples": [
+          "ZSER",
+          "ZACF",
+          "ZCOM"
+        ]
+      },
+      {
+        "name": "Centro_origen",
+        "nulls": 6009,
+        "samples": [
+          "2001"
+        ]
+      },
+      {
+        "name": "id_prov",
+        "nulls": 0,
+        "samples": [
+          "0004070927",
+          "0001318915",
+          "0003923754"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "prov_202610061552.csv",
+    "bytes": 36873,
+    "rows_examined": 212,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "rut",
+        "nulls": 0,
+        "samples": [
+          "97036000",
+          "76596744",
+          "96861280"
+        ]
+      },
+      {
+        "name": "STCD1",
+        "nulls": 0,
+        "samples": [
+          "97036000-K",
+          "76596744-9",
+          "96861280-8"
+        ]
+      },
+      {
+        "name": "id_proveedor",
+        "nulls": 0,
+        "samples": [
+          "0000000226",
+          "0000000253",
+          "0000000269"
+        ]
+      },
+      {
+        "name": "nombre",
+        "nulls": 0,
+        "samples": [
+          "BANCO SANTANDER",
+          "CHITA SPA.",
+          "EUROCAPITAL S.A."
+        ]
+      },
+      {
+        "name": "direccion",
+        "nulls": 7,
+        "samples": [
+          "BANDERA 201",
+          "CALLE ALBERTO PEPPER 1784 1784",
+          "Avenida Alonso De CÃ³rdova, Of. 703"
+        ]
+      },
+      {
+        "name": "fecga_creac",
+        "nulls": 0,
+        "samples": [
+          "20181230",
+          "20210428",
+          "20181217"
+        ]
+      },
+      {
+        "name": "id_sap",
+        "nulls": 192,
+        "samples": [
+          "0000003100",
+          "0001000988",
+          "0001001014"
+        ]
+      },
+      {
+        "name": "sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "moneda",
+        "nulls": 87,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "id_grupo_tesoreria",
+        "nulls": 0,
+        "samples": [
+          "Z001",
+          "Z002",
+          "Z008"
+        ]
+      },
+      {
+        "name": "pais",
+        "nulls": 0,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "grupo_tesoreria",
+        "nulls": 0,
+        "samples": [
+          "Z001",
+          "Z002",
+          "Z008"
+        ]
+      },
+      {
+        "name": "cuenta_de_mayor_prov",
+        "nulls": 0,
+        "samples": [
+          "2102011003",
+          "2102011001",
+          "2102024008"
+        ]
+      },
+      {
+        "name": "id_forma_de_pago_prove",
+        "nulls": 31,
+        "samples": [
+          "V",
+          "T",
+          "CETV"
+        ]
+      },
+      {
+        "name": "id_plazo_pago_prov",
+        "nulls": 24,
+        "samples": [
+          "Z001",
+          "Z030",
+          "Z090"
+        ]
+      },
+      {
+        "name": "tipo_prov",
+        "nulls": 212,
+        "samples": []
+      },
+      {
+        "name": "Cuenta_bancaria",
+        "nulls": 124,
+        "samples": [
+          "3100021110",
+          "76596744",
+          "3560214705"
+        ]
+      },
+      {
+        "name": "Banco",
+        "nulls": 124,
+        "samples": [
+          "37",
+          "504",
+          "1"
+        ]
+      },
+      {
+        "name": "Pais_banco",
+        "nulls": 124,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "banco_algo",
+        "nulls": 124,
+        "samples": [
+          "CC",
+          "0"
+        ]
+      },
+      {
+        "name": "Grupo_esquema_proveedores",
+        "nulls": 0,
+        "samples": [
+          "DIMERC CHILE NACIONAL",
+          "OTROS"
+        ]
+      },
+      {
+        "name": "bloqueo_compra",
+        "nulls": 212,
+        "samples": []
+      }
+    ]
+  },
+  {
+    "file": "PROV_PROD_202609301559.csv",
+    "bytes": 1267744,
+    "rows_examined": 10665,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "RUTPRV",
+        "nulls": 0,
+        "samples": [
+          "0001001289",
+          "0001001118",
+          "0001001288"
+        ]
+      },
+      {
+        "name": "CODPRO",
+        "nulls": 0,
+        "samples": [
+          "000000000000108003",
+          "000000000000191893",
+          "000000000000355064"
+        ]
+      },
+      {
+        "name": "CODPRV",
+        "nulls": 4145,
+        "samples": [
+          "C201305",
+          "1000535",
+          "1008685"
+        ]
+      },
+      {
+        "name": "COSTOS",
+        "nulls": 0,
+        "samples": [
+          "3117.00",
+          "0.00",
+          "257.00"
+        ]
+      },
+      {
+        "name": "CODEMP",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "UNICOM",
+        "nulls": 0,
+        "samples": [
+          "C/U"
+        ]
+      },
+      {
+        "name": "MONEDA",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "FECHA_REG",
+        "nulls": 0,
+        "samples": [
+          "2025-03-16",
+          "2025-03-18",
+          "2025-03-23"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "PROVEEPRODUCT_CL_20250316_20250316_034001.txt",
+          "PROVEEPRODUCT_CL_20250318_20250318_034002.txt",
+          "PROVEEPRODUCT_CL_20250323_20250323_034007.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "PROVEEDOR_X_SOCIEDAD_202609301558.csv",
+    "bytes": 2032329,
+    "rows_examined": 36751,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "SOCIEDAD",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "PXS",
+        "nulls": 0,
+        "samples": [
+          "NO",
+          "SI"
+        ]
+      },
+      {
+        "name": "MATERIAL",
+        "nulls": 0,
+        "samples": [
+          "525066",
+          "558766",
+          "565960"
+        ]
+      },
+      {
+        "name": "PROVEEDOR",
+        "nulls": 0,
+        "samples": [
+          "100915",
+          "100441",
+          "100452"
+        ]
+      },
+      {
+        "name": "REGISTRO_INFO",
+        "nulls": 0,
+        "samples": [
+          "5300107532",
+          "5300158196",
+          "5300166506"
+        ]
+      },
+      {
+        "name": "BLOQUEADO",
+        "nulls": 36707,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MWSKZ",
+        "nulls": 35346,
+        "samples": [
+          "C1"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "REG_Info_202610061526.csv",
+    "bytes": 3924441,
+    "rows_examined": 18930,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "Material",
+        "nulls": 0,
+        "samples": [
+          "000000000000100011",
+          "000000000000100021",
+          "000000000000100023"
+        ]
+      },
+      {
+        "name": "Descripcion",
+        "nulls": 0,
+        "samples": [
+          "ACEITE VEGETAL 1 LT BELMONT",
+          "ARCHIVADOR PALANCA CTA LOMO ANGOSTO BURD",
+          "ARCHIVADOR PALANCA CTA LOMO ANCHO BURDEO"
+        ]
+      },
+      {
+        "name": "id_cod_proveedor",
+        "nulls": 2993,
+        "samples": [
+          "100011",
+          "100023",
+          "100026"
+        ]
+      },
+      {
+        "name": "id_Proveedor",
+        "nulls": 0,
+        "samples": [
+          "0000002000",
+          "0001001118",
+          "0001298633"
+        ]
+      },
+      {
+        "name": "nombre",
+        "nulls": 0,
+        "samples": [
+          "DIMERC S A",
+          "EMPRESAS DEMARIA S.A.",
+          "DISTRIBUIDORA Y COMERCIAL DIMAK LIM"
+        ]
+      },
+      {
+        "name": "LAND1",
+        "nulls": 0,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "rut",
+        "nulls": 0,
+        "samples": [
+          "96670840-9",
+          "90727000-9",
+          "78809560-0"
+        ]
+      },
+      {
+        "name": "Sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "INFNR",
+        "nulls": 1,
+        "samples": [
+          "5300087059",
+          "5300164702",
+          "5300100352"
+        ]
+      },
+      {
+        "name": "RI_SOC_Precio neto",
+        "nulls": 1,
+        "samples": [
+          "24.23",
+          "19.59",
+          "18.25"
+        ]
+      },
+      {
+        "name": "RI_SOC_Validez_desde",
+        "nulls": 1,
+        "samples": [
+          "2025-07-07",
+          "2025-04-07",
+          "2025-04-08"
+        ]
+      },
+      {
+        "name": "RI_SOC_Validez_a",
+        "nulls": 1,
+        "samples": [
+          "20990731",
+          "99991231",
+          "20990803"
+        ]
+      },
+      {
+        "name": "RI_SOC_Marcado_para_borrado",
+        "nulls": 18910,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "EC_SOC_Validez_desde",
+        "nulls": 35,
+        "samples": [
+          "20200327",
+          "20250923",
+          "20250407"
+        ]
+      },
+      {
+        "name": "EC_SOC_Validez_a",
+        "nulls": 35,
+        "samples": [
+          "99991231",
+          "20990731",
+          "20260521"
+        ]
+      },
+      {
+        "name": "EC_SOC_costo",
+        "nulls": 35,
+        "samples": [
+          "12.13",
+          "24.23",
+          "19.59"
+        ]
+      },
+      {
+        "name": "EC_SOC_moneda",
+        "nulls": 35,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "EC_SOC_Marcado_para_borrado",
+        "nulls": 18930,
+        "samples": []
+      },
+      {
+        "name": "RI_CENTRO",
+        "nulls": 18564,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "RI_CEN_Precio neto",
+        "nulls": 18564,
+        "samples": [
+          "0.00",
+          "19.92",
+          "134.37"
+        ]
+      },
+      {
+        "name": "RI_CEN_Validez_desde",
+        "nulls": 18564,
+        "samples": [
+          "2025-06-23",
+          "2026-05-14",
+          "2025-06-25"
+        ]
+      },
+      {
+        "name": "RI_CEN_Validez_a",
+        "nulls": 18564,
+        "samples": [
+          "99991231"
+        ]
+      },
+      {
+        "name": "RI_CEN_Marcado_para_borrado",
+        "nulls": 18929,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "EC_CENTRO",
+        "nulls": 18564,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "EC_CEN_Validez_desde",
+        "nulls": 18564,
+        "samples": [
+          "20250623",
+          "20260514",
+          "20250625"
+        ]
+      },
+      {
+        "name": "EC_CEN_Validez_a",
+        "nulls": 18564,
+        "samples": [
+          "99991231"
+        ]
+      },
+      {
+        "name": "EC_CEN_costo",
+        "nulls": 18564,
+        "samples": [
+          "149.06",
+          "19.92",
+          "134.37"
+        ]
+      },
+      {
+        "name": "EC_CEN_moneda",
+        "nulls": 18564,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "EC_CEN_Marcado_para_borrado",
+        "nulls": 18930,
+        "samples": []
+      }
+    ]
+  },
+  {
+    "file": "RUSA_GENERAL_INMOVILIZADO_202609301233.csv",
+    "bytes": 285439,
+    "rows_examined": 2628,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "121437",
+          "121447",
+          "121475"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM06",
+          "OM01",
+          "OM08"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "Q_FIN_PERIODO",
+        "nulls": 0,
+        "samples": [
+          "7",
+          "8",
+          "1"
+        ]
+      },
+      {
+        "name": "V_FIN_PERIODO",
+        "nulls": 0,
+        "samples": [
+          "12098.00",
+          "14704.00",
+          "545.00"
+        ]
+      },
+      {
+        "name": "BUDAT",
+        "nulls": 0,
+        "samples": [
+          "2026-09-09"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-10"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "RUSA_OFIMASTER_1_de_1_20260910_032733.dat"
+        ]
+      },
+      {
+        "name": "TIPO_CIERRE",
+        "nulls": 0,
+        "samples": [
+          "DIARIO"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_A017_202609301232.csv",
+    "bytes": 9287,
+    "rows_examined": 68,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "KSCHL",
+        "nulls": 0,
+        "samples": [
+          "PB00"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 0,
+        "samples": [
+          "0000002000",
+          "0001001151",
+          "0001001288"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000400385",
+          "000000000000416170",
+          "000000000000427039"
+        ]
+      },
+      {
+        "name": "EKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "ESOKZ",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "DATBI",
+        "nulls": 0,
+        "samples": [
+          "99991231"
+        ]
+      },
+      {
+        "name": "DATAB",
+        "nulls": 0,
+        "samples": [
+          "20260706",
+          "20250626",
+          "20250625"
+        ]
+      },
+      {
+        "name": "KNUMH",
+        "nulls": 0,
+        "samples": [
+          "0000844715",
+          "0000844714",
+          "0000844713"
+        ]
+      },
+      {
+        "name": "KAPPL",
+        "nulls": 0,
+        "samples": [
+          "M"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "A017_A017_20260930041220.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_A018_202609301232.csv",
+    "bytes": 1524066,
+    "rows_examined": 11906,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "KSCHL",
+        "nulls": 0,
+        "samples": [
+          "PB00"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 0,
+        "samples": [
+          "0000002000",
+          "0001000988",
+          "0001001014"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000100011",
+          "000000000000100021",
+          "000000000000100023"
+        ]
+      },
+      {
+        "name": "EKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "ESOKZ",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "DATBI",
+        "nulls": 0,
+        "samples": [
+          "20990731",
+          "99991231",
+          "20260521"
+        ]
+      },
+      {
+        "name": "DATAB",
+        "nulls": 0,
+        "samples": [
+          "20250923",
+          "20250407",
+          "20250731"
+        ]
+      },
+      {
+        "name": "KNUMH",
+        "nulls": 0,
+        "samples": [
+          "0000739602",
+          "0000723200",
+          "0000723688"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "A018_A018_20260930041020.dat"
+        ]
+      },
+      {
+        "name": "KPPL",
+        "nulls": 0,
+        "samples": [
+          "M"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_APORTES_PROVEEDOR_202609301226.csv",
+    "bytes": 47085731,
+    "rows_examined": 203960,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "REFRYEAR",
+        "nulls": 0,
+        "samples": [
+          "2026",
+          "2025"
+        ]
+      },
+      {
+        "name": "REFDOCNR",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "REFDOCLN",
+        "nulls": 0,
+        "samples": [
+          "000"
+        ]
+      },
+      {
+        "name": "POPER",
+        "nulls": 0,
+        "samples": [
+          "008",
+          "009",
+          "005"
+        ]
+      },
+      {
+        "name": "RPRCTR",
+        "nulls": 0,
+        "samples": [
+          "PY1S4SCL",
+          "ADG63SCL",
+          "ADG00SCL"
+        ]
+      },
+      {
+        "name": "RACCT",
+        "nulls": 0,
+        "samples": [
+          "3101011001",
+          "4102011001"
+        ]
+      },
+      {
+        "name": "TXT50",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "HSL",
+        "nulls": 0,
+        "samples": [
+          "-14300.00",
+          "0.00",
+          "-13841.00"
+        ]
+      },
+      {
+        "name": "RTCUR",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "SGTXT",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "USNAM",
+        "nulls": 0,
+        "samples": [
+          "SD050",
+          "SD060",
+          "ACUEVAS"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "KOSTL",
+        "nulls": 103946,
+        "samples": [
+          "80PY1S4SCL",
+          "80ADG63SCL",
+          "80ADC00SCL"
+        ]
+      },
+      {
+        "name": "BUDAT",
+        "nulls": 0,
+        "samples": [
+          "31-08-2026",
+          "21-09-2026",
+          "15-09-2026"
+        ]
+      },
+      {
+        "name": "CPUDT",
+        "nulls": 0,
+        "samples": [
+          "31-08-2026",
+          "21-09-2026",
+          "15-09-2026"
+        ]
+      },
+      {
+        "name": "CPUTM",
+        "nulls": 0,
+        "samples": [
+          "00:00:00"
+        ]
+      },
+      {
+        "name": "KUNNR",
+        "nulls": 240,
+        "samples": [
+          "0001004934",
+          "0003955609",
+          "0003955757"
+        ]
+      },
+      {
+        "name": "EBELN",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "EBELP",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "RBUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30",
+          "2025-06-30",
+          "2025-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "KE5Z_2000_008_1_de_3_20260930_001051.dat",
+          "KE5Z_2000_005_1_de_4_20250630_001125.dat",
+          "KE5Z_2000_008_1_de_3_20250930_001037.dat"
+        ]
+      },
+      {
+        "name": "Material",
+        "nulls": 3256,
+        "samples": [
+          "386282",
+          "519490",
+          "192613"
+        ]
+      },
+      {
+        "name": "BELNR",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "BLART",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "LTEXT",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "USNAM2",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "TCODE",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "XBLNR",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "AWREF_REV",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "4.000",
+          "1.000"
+        ]
+      },
+      {
+        "name": "XREVERSING",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "BKTXT",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "MSL",
+        "nulls": 0,
+        "samples": [
+          "-10.000",
+          "0.000",
+          "-1.000"
+        ]
+      },
+      {
+        "name": "AUBEL",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "AUPOS",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "WAVWR",
+        "nulls": 103946,
+        "samples": [
+          "41.05",
+          "239.35",
+          "144.59"
+        ]
+      },
+      {
+        "name": "WAERK",
+        "nulls": 203960,
+        "samples": []
+      },
+      {
+        "name": "BLART2",
+        "nulls": 0,
+        "samples": [
+          "DR",
+          "WL",
+          "DA"
+        ]
+      },
+      {
+        "name": "VTWEG",
+        "nulls": 103034,
+        "samples": [
+          "10",
+          "20"
+        ]
+      },
+      {
+        "name": "SPART",
+        "nulls": 3519,
+        "samples": [
+          "10"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_AUSP_202610011243.csv",
+    "bytes": 3077711,
+    "rows_examined": 36543,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "ATZHL",
+        "nulls": 0,
+        "samples": [
+          "000001"
+        ]
+      },
+      {
+        "name": "KLART",
+        "nulls": 0,
+        "samples": [
+          "057"
+        ]
+      },
+      {
+        "name": "ATINN",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "ATWRT",
+        "nulls": 0,
+        "samples": [
+          "NO",
+          "SI"
+        ]
+      },
+      {
+        "name": "OBJEK",
+        "nulls": 0,
+        "samples": [
+          "427461",
+          "427668",
+          "427669"
+        ]
+      },
+      {
+        "name": "PROV",
+        "nulls": 0,
+        "samples": [
+          "1729164",
+          "3000",
+          "1746279"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-01"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "AUSP_AUSP_20261001033015.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_BATICOSTOS_202609301222.csv",
+    "bytes": 155800,
+    "rows_examined": 2423,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "SAP_CENTRO",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000423726",
+          "000000000000556617",
+          "000000000000561140"
+        ]
+      },
+      {
+        "name": "CANTIDAD",
+        "nulls": 0,
+        "samples": [
+          "1.000",
+          "3.000",
+          "8.000"
+        ]
+      },
+      {
+        "name": "COSTO_SAP",
+        "nulls": 0,
+        "samples": [
+          "311.12",
+          "62.39",
+          "56.61"
+        ]
+      },
+      {
+        "name": "COSTO_LEGADO",
+        "nulls": 0,
+        "samples": [
+          "31112.00",
+          "6239.00",
+          "5661.00"
+        ]
+      },
+      {
+        "name": "FECHA",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_BSEG_202609301220.csv",
+    "bytes": 1352929,
+    "rows_examined": 13863,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "BURKS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "BELNR",
+        "nulls": 0,
+        "samples": [
+          "2500005026",
+          "2500005503",
+          "2500005504"
+        ]
+      },
+      {
+        "name": "GJAHR",
+        "nulls": 0,
+        "samples": [
+          "2025",
+          "2026"
+        ]
+      },
+      {
+        "name": "BUZEI",
+        "nulls": 0,
+        "samples": [
+          "3",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "name": "XREF1",
+        "nulls": 0,
+        "samples": [
+          "0.00",
+          "Riesgo Empre"
+        ]
+      },
+      {
+        "name": "AUGDT",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "AUGCP",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "ASEG_BSEG_20260930021020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "sap_devoluciones_202610291053.csv",
+    "bytes": 824549,
+    "rows_examined": 3265,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "SOCIEDAD",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "CLASE_DOC",
+        "nulls": 0,
+        "samples": [
+          "ZD01",
+          "ZD08",
+          "ZC10"
+        ]
+      },
+      {
+        "name": "NUMERO_SOL",
+        "nulls": 0,
+        "samples": [
+          "3000195432",
+          "3000195431",
+          "3000195429"
+        ]
+      },
+      {
+        "name": "FECHA_SOL",
+        "nulls": 0,
+        "samples": [
+          "20260814",
+          "20260817",
+          "20260819"
+        ]
+      },
+      {
+        "name": "MONTO_SOL",
+        "nulls": 0,
+        "samples": [
+          "3324.00",
+          "90524.00",
+          "1008.00"
+        ]
+      },
+      {
+        "name": "MOTIVO_SOL",
+        "nulls": 0,
+        "samples": [
+          "Z13",
+          "Z52",
+          "Z02"
+        ]
+      },
+      {
+        "name": "RUTCLI",
+        "nulls": 0,
+        "samples": [
+          "78193579-4",
+          "89171600-1",
+          "76453111-6"
+        ]
+      },
+      {
+        "name": "CLIENTE",
+        "nulls": 0,
+        "samples": [
+          "CONSTRUCCIONES RK SPA",
+          "CABANAS DEL LAGO LTDA",
+          "WG RESTAURANTES SPA."
+        ]
+      },
+      {
+        "name": "NUMERO_ENT",
+        "nulls": 1498,
+        "samples": [
+          "9008262767",
+          "9008262768",
+          "9008262769"
+        ]
+      },
+      {
+        "name": "FECHA_ENT",
+        "nulls": 0,
+        "samples": [
+          "20260817",
+          "00000000",
+          "20260821"
+        ]
+      },
+      {
+        "name": "NUMERO_NCR",
+        "nulls": 927,
+        "samples": [
+          "11845",
+          "11840",
+          "11844"
+        ]
+      },
+      {
+        "name": "FECHA_NCR",
+        "nulls": 0,
+        "samples": [
+          "20260818",
+          "20260819",
+          "20261027"
+        ]
+      },
+      {
+        "name": "MONTO_NCR",
+        "nulls": 0,
+        "samples": [
+          "3324.00",
+          "90524.00",
+          "1008.00"
+        ]
+      },
+      {
+        "name": "CAMPO1",
+        "nulls": 1279,
+        "samples": [
+          "1804127788",
+          "1804135627",
+          "1804137210"
+        ]
+      },
+      {
+        "name": "CAMPO2",
+        "nulls": 0,
+        "samples": [
+          "20260818",
+          "20260819",
+          "20261027"
+        ]
+      },
+      {
+        "name": "CAMPO3",
+        "nulls": 0,
+        "samples": [
+          "3324.00",
+          "90524.00",
+          "1008.00"
+        ]
+      },
+      {
+        "name": "CAMPO4",
+        "nulls": 3265,
+        "samples": []
+      },
+      {
+        "name": "CAMPO5",
+        "nulls": 962,
+        "samples": [
+          "0005009824",
+          "0005010251",
+          "0005009807"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-08-19",
+          "2026-08-20",
+          "2026-10-29"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "Ext_devolucion_mercancia_modif_20260819_024004.dat",
+          "Ext_devolucion_mercancia_20260820_023007.dat",
+          "Ext_devolucion_mercancia_20261029_023025.dat"
+        ]
+      },
+      {
+        "name": "ESTADO",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "5"
+        ]
+      },
+      {
+        "name": "ALMACEN",
+        "nulls": 1498,
+        "samples": [
+          "OM01",
+          "OM06"
+        ]
+      },
+      {
+        "name": "CENTRO",
+        "nulls": 1498,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "NUM_CONTABILIZADO",
+        "nulls": 1529,
+        "samples": [
+          "4913309867",
+          "4913309887",
+          "4913309919"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EINA_202609301213.csv",
+    "bytes": 40935815,
+    "rows_examined": 198798,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "INFNR",
+        "nulls": 0,
+        "samples": [
+          "5300071731",
+          "5300060409",
+          "5300060430"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 3,
+        "samples": [
+          "000000000000500635",
+          "000000000000469689",
+          "000000000000469906"
+        ]
+      },
+      {
+        "name": "MATKL",
+        "nulls": 198795,
+        "samples": [
+          "L05-CYS",
+          "L04-TEC",
+          "L01-OYL"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 0,
+        "samples": [
+          "0000003000",
+          "0003263784",
+          "0001116330"
+        ]
+      },
+      {
+        "name": "LOEKZ",
+        "nulls": 198134,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "ERDAT",
+        "nulls": 0,
+        "samples": [
+          "20190722",
+          "20190416",
+          "20190219"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 0,
+        "samples": [
+          "FCERECEDA",
+          "VAVENDANO",
+          "SAGUADO"
+        ]
+      },
+      {
+        "name": "TXZ01",
+        "nulls": 198795,
+        "samples": [
+          "1",
+          "1318582",
+          "."
+        ]
+      },
+      {
+        "name": "MEINS",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "%",
+          "PAA"
+        ]
+      },
+      {
+        "name": "UMREZ",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "UMREN",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "IDNLF",
+        "nulls": 50253,
+        "samples": [
+          "106R03746",
+          "W1510X",
+          "37066"
+        ]
+      },
+      {
+        "name": "VERKF",
+        "nulls": 109667,
+        "samples": [
+          "LNADALINI",
+          "FELIPE PARRA",
+          "Pablo Lobos"
+        ]
+      },
+      {
+        "name": "TELF1",
+        "nulls": 62487,
+        "samples": [
+          "4435680",
+          "2222222",
+          "938860310"
+        ]
+      },
+      {
+        "name": "MAHN1",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "30",
+          "90"
+        ]
+      },
+      {
+        "name": "MAHN2",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "5",
+          "45"
+        ]
+      },
+      {
+        "name": "MAHN3",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "10",
+          "5"
+        ]
+      },
+      {
+        "name": "URZNR",
+        "nulls": 198798,
+        "samples": []
+      },
+      {
+        "name": "URZDT",
+        "nulls": 0,
+        "samples": [
+          "00000000",
+          "20200330",
+          "20190430"
+        ]
+      },
+      {
+        "name": "URZLA",
+        "nulls": 16852,
+        "samples": [
+          "CL",
+          "PE",
+          "US"
+        ]
+      },
+      {
+        "name": "URZTP",
+        "nulls": 198796,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "URZZT",
+        "nulls": 198768,
+        "samples": [
+          "13",
+          "487",
+          "BN 30755317-001"
+        ]
+      },
+      {
+        "name": "LMEIN",
+        "nulls": 3,
+        "samples": [
+          "EA",
+          "PAA",
+          "ROL"
+        ]
+      },
+      {
+        "name": "REGIO",
+        "nulls": 38574,
+        "samples": [
+          "13",
+          "06",
+          "05"
+        ]
+      },
+      {
+        "name": "VABME",
+        "nulls": 198796,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "RUECK",
+        "nulls": 198798,
+        "samples": []
+      },
+      {
+        "name": "LIFAB",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "LIFBI",
+        "nulls": 0,
+        "samples": [
+          "00000000",
+          "99991231"
+        ]
+      },
+      {
+        "name": "KOLIF",
+        "nulls": 198798,
+        "samples": []
+      },
+      {
+        "name": "RELIF",
+        "nulls": 120539,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MFRNR",
+        "nulls": 198796,
+        "samples": [
+          "DURHAM MFG",
+          "LOUISVILLE"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "EINA_EINA_20260930022020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EINE_202609301213.csv",
+    "bytes": 527210,
+    "rows_examined": 2832,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "INFNR",
+        "nulls": 0,
+        "samples": [
+          "5300011326",
+          "5300011390",
+          "5300011609"
+        ]
+      },
+      {
+        "name": "EKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 2764,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LOEKZ",
+        "nulls": 2829,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "ERDAT",
+        "nulls": 0,
+        "samples": [
+          "2025-03-04",
+          "2025-03-20",
+          "2025-08-26"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 0,
+        "samples": [
+          "BESPINOZA",
+          "MHIGUERAS",
+          "FPARRA"
+        ]
+      },
+      {
+        "name": "EKGRP",
+        "nulls": 0,
+        "samples": [
+          "F03",
+          "F02",
+          "F06"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "MINBM",
+        "nulls": 0,
+        "samples": [
+          "70.000",
+          "1.000",
+          "24.000"
+        ]
+      },
+      {
+        "name": "NORBM",
+        "nulls": 0,
+        "samples": [
+          "70.000",
+          "1.000",
+          "24.000"
+        ]
+      },
+      {
+        "name": "APLFZ",
+        "nulls": 0,
+        "samples": [
+          "7",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "UEBTO",
+        "nulls": 0,
+        "samples": [
+          "1.0",
+          "0.0",
+          "5.0"
+        ]
+      },
+      {
+        "name": "UEBTK",
+        "nulls": 2831,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "UNTTO",
+        "nulls": 0,
+        "samples": [
+          "0.0"
+        ]
+      },
+      {
+        "name": "BSTYP",
+        "nulls": 808,
+        "samples": [
+          "F"
+        ]
+      },
+      {
+        "name": "EBELN",
+        "nulls": 808,
+        "samples": [
+          "4500632572",
+          "4500538975",
+          "4500538981"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "70",
+          "110",
+          "50"
+        ]
+      },
+      {
+        "name": "DATLB",
+        "nulls": 0,
+        "samples": [
+          "20260928",
+          "00000000",
+          "20250811"
+        ]
+      },
+      {
+        "name": "NETPR",
+        "nulls": 0,
+        "samples": [
+          "142.86",
+          "207.94",
+          "153.82"
+        ]
+      },
+      {
+        "name": "PEINH",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "BPRME",
+        "nulls": 0,
+        "samples": [
+          "EA"
+        ]
+      },
+      {
+        "name": "PRDAT",
+        "nulls": 0,
+        "samples": [
+          "20990306",
+          "20990316",
+          "20990618"
+        ]
+      },
+      {
+        "name": "BPUMZ",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "BPUMN",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "WEBRE",
+        "nulls": 1,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "EFFPR",
+        "nulls": 0,
+        "samples": [
+          "142.86",
+          "207.94",
+          "153.82"
+        ]
+      },
+      {
+        "name": "KZABS",
+        "nulls": 2832,
+        "samples": []
+      },
+      {
+        "name": "MWSKZ",
+        "nulls": 479,
+        "samples": [
+          "C1"
+        ]
+      },
+      {
+        "name": "INCO1",
+        "nulls": 2452,
+        "samples": [
+          "CFR"
+        ]
+      },
+      {
+        "name": "INCO2",
+        "nulls": 2452,
+        "samples": [
+          "PUERTO VALPARAISO"
+        ]
+      },
+      {
+        "name": "INCO2_L",
+        "nulls": 2452,
+        "samples": [
+          "PUERTO VALPARAISO"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "EINE_EINE_20260930023020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EIPA_202609301211.csv",
+    "bytes": 1600315,
+    "rows_examined": 12965,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "INFNR",
+        "nulls": 0,
+        "samples": [
+          "5300053931",
+          "5300057691",
+          "5300062025"
+        ]
+      },
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500516491",
+          "4500511892",
+          "4500530298"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "1740",
+          "720",
+          "1730"
+        ]
+      },
+      {
+        "name": "ESOKZ",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "EKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "BEDAT",
+        "nulls": 0,
+        "samples": [
+          "2025-04-09",
+          "2025-03-17",
+          "2025-06-25"
+        ]
+      },
+      {
+        "name": "PREIS",
+        "nulls": 0,
+        "samples": [
+          "16.15",
+          "0.97",
+          "29.96"
+        ]
+      },
+      {
+        "name": "PEINH",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "BPRME",
+        "nulls": 0,
+        "samples": [
+          "EA"
+        ]
+      },
+      {
+        "name": "BWAER",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "LPREI",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "LPEIN",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "LMEIN",
+        "nulls": 12965,
+        "samples": []
+      },
+      {
+        "name": "LWAER",
+        "nulls": 12965,
+        "samples": []
+      },
+      {
+        "name": "MENGE",
+        "nulls": 0,
+        "samples": [
+          "144",
+          "600",
+          "4000"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "EIPA_EIPA_20260930021020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EKET_202609301537.csv",
+    "bytes": 518868512,
+    "rows_examined": 10000,
+    "scope": "first_10000",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500286321",
+          "4500292408",
+          "4500286701"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "0000000250",
+          "0000000260",
+          "0000000220"
+        ]
+      },
+      {
+        "name": "ETENR",
+        "nulls": 0,
+        "samples": [
+          "00000001"
+        ]
+      },
+      {
+        "name": "EINDT",
+        "nulls": 0,
+        "samples": [
+          "20220330",
+          "20220430",
+          "20220331"
+        ]
+      },
+      {
+        "name": "BEDAT",
+        "nulls": 0,
+        "samples": [
+          "20220330",
+          "20220425",
+          "20220331"
+        ]
+      },
+      {
+        "name": "ELDA",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "EKET_EKET_20260930052020.dat",
+          "1EKET_EKET_20260930150520.dat"
+        ]
+      },
+      {
+        "name": "SLFDT",
+        "nulls": 0,
+        "samples": [
+          "20220330",
+          "20220430",
+          "20220331"
+        ]
+      },
+      {
+        "name": "LPEIN",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "MENGE",
+        "nulls": 0,
+        "samples": [
+          "12",
+          "48",
+          "288"
+        ]
+      },
+      {
+        "name": "AMENG",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "WEMNG",
+        "nulls": 0,
+        "samples": [
+          "12",
+          "0",
+          "48"
+        ]
+      },
+      {
+        "name": "BANFN",
+        "nulls": 10000,
+        "samples": []
+      },
+      {
+        "name": "BNFPO",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "ESTKZ",
+        "nulls": 0,
+        "samples": [
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EKET_202610081742.csv",
+    "bytes": 520463085,
+    "rows_examined": 10000,
+    "scope": "first_10000",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500501884",
+          "4500501890",
+          "4500501902"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "0000000010",
+          "0000000060",
+          "0000000050"
+        ]
+      },
+      {
+        "name": "ETENR",
+        "nulls": 0,
+        "samples": [
+          "00000001"
+        ]
+      },
+      {
+        "name": "EINDT",
+        "nulls": 0,
+        "samples": [
+          "20250212",
+          "20250814",
+          "20250106"
+        ]
+      },
+      {
+        "name": "BEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250212",
+          "20250814",
+          "20250106"
+        ]
+      },
+      {
+        "name": "ELDA",
+        "nulls": 0,
+        "samples": [
+          "00000000",
+          "20250829",
+          "20250502"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-08"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "1EKET_EKET_20261008170529.dat",
+          "EKET_EKET_20261008052018.dat"
+        ]
+      },
+      {
+        "name": "SLFDT",
+        "nulls": 0,
+        "samples": [
+          "20250212",
+          "20250814",
+          "20250106"
+        ]
+      },
+      {
+        "name": "LPEIN",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "MENGE",
+        "nulls": 0,
+        "samples": [
+          "12",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "name": "AMENG",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "WEMNG",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "name": "BANFN",
+        "nulls": 9870,
+        "samples": [
+          "0010905756",
+          "0010736768",
+          "0010736769"
+        ]
+      },
+      {
+        "name": "BNFPO",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "670",
+          "690"
+        ]
+      },
+      {
+        "name": "ESTKZ",
+        "nulls": 0,
+        "samples": [
+          "R"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EKKO_202609301536.csv",
+    "bytes": 539286,
+    "rows_examined": 2107,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "AEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250304",
+          "20250306",
+          "20250307"
+        ]
+      },
+      {
+        "name": "BEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250304",
+          "20250306",
+          "20250307"
+        ]
+      },
+      {
+        "name": "BSAKZ",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "BSART",
+        "nulls": 0,
+        "samples": [
+          "ZNAC",
+          "ZNAP",
+          "ZCOM"
+        ]
+      },
+      {
+        "name": "BSTYP",
+        "nulls": 0,
+        "samples": [
+          "F"
+        ]
+      },
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500508923",
+          "4500509860",
+          "4500509861"
+        ]
+      },
+      {
+        "name": "EKGRP",
+        "nulls": 0,
+        "samples": [
+          "F03",
+          "F02",
+          "F01"
+        ]
+      },
+      {
+        "name": "EKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 0,
+        "samples": [
+          "BESPINOZA",
+          "OZUNIGA",
+          "JMOLINA"
+        ]
+      },
+      {
+        "name": "GRWCU",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "IHREZ",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "KALSM",
+        "nulls": 0,
+        "samples": [
+          "ZN0001",
+          "RM0000"
+        ]
+      },
+      {
+        "name": "KNUMV",
+        "nulls": 2,
+        "samples": [
+          "1000846089",
+          "1000847587",
+          "1000847588"
+        ]
+      },
+      {
+        "name": "KUNNR",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "LANDS",
+        "nulls": 0,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 0,
+        "samples": [
+          "0001001288",
+          "0001001289",
+          "0001110545"
+        ]
+      },
+      {
+        "name": "LLIEF",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "LOEKZ",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "LPONR",
+        "nulls": 0,
+        "samples": [
+          "310",
+          "550",
+          "90"
+        ]
+      },
+      {
+        "name": "PINCR",
+        "nulls": 0,
+        "samples": [
+          "10"
+        ]
+      },
+      {
+        "name": "PROCSTAT",
+        "nulls": 0,
+        "samples": [
+          "02",
+          "05",
+          "03"
+        ]
+      },
+      {
+        "name": "RESWK",
+        "nulls": 1098,
+        "samples": [
+          "2001"
+        ]
+      },
+      {
+        "name": "SPRAS",
+        "nulls": 0,
+        "samples": [
+          "S"
+        ]
+      },
+      {
+        "name": "STATU",
+        "nulls": 0,
+        "samples": [
+          "9"
+        ]
+      },
+      {
+        "name": "STCEG_L",
+        "nulls": 0,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "TELF1",
+        "nulls": 1943,
+        "samples": [
+          "6405204",
+          "2700147"
+        ]
+      },
+      {
+        "name": "VERKF",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "WAERS",
+        "nulls": 2,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "WKURS",
+        "nulls": 0,
+        "samples": [
+          "1.00000",
+          "0.00000"
+        ]
+      },
+      {
+        "name": "ZTERM",
+        "nulls": 3,
+        "samples": [
+          "Z090",
+          "Z075",
+          "Z030"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "1EKKO_EKKO_20260930150020.dat"
+        ]
+      },
+      {
+        "name": "ZZFAEST",
+        "nulls": 0,
+        "samples": [
+          "09099999"
+        ]
+      },
+      {
+        "name": "ZZFEEMB",
+        "nulls": 0,
+        "samples": [
+          "09099999"
+        ]
+      },
+      {
+        "name": "ZZUFEMB",
+        "nulls": 0,
+        "samples": [
+          "09099999"
+        ]
+      },
+      {
+        "name": "ABSGR",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "KONNR",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "ZZPUEMB",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "ZZPUDES",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "ZZFEIMP",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "ZZTRANS",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "ZZDENTR",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "ZZNUMDI",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "ZZPACKA",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "ZZDBLA1",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "INCO1",
+        "nulls": 2107,
+        "samples": []
+      },
+      {
+        "name": "INCO2",
+        "nulls": 2107,
+        "samples": []
+      }
+    ]
+  },
+  {
+    "file": "SAP_EKKO_202610081740.csv",
+    "bytes": 545410,
+    "rows_examined": 2131,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "AEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250306",
+          "20250307",
+          "20250310"
+        ]
+      },
+      {
+        "name": "BEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250306",
+          "20250307",
+          "20250310"
+        ]
+      },
+      {
+        "name": "BSAKZ",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "BSART",
+        "nulls": 0,
+        "samples": [
+          "ZNAP",
+          "ZNAC",
+          "ZCOM"
+        ]
+      },
+      {
+        "name": "BSTYP",
+        "nulls": 0,
+        "samples": [
+          "F"
+        ]
+      },
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500509860",
+          "4500509861",
+          "4500510414"
+        ]
+      },
+      {
+        "name": "EKGRP",
+        "nulls": 0,
+        "samples": [
+          "F02",
+          "F03",
+          "F01"
+        ]
+      },
+      {
+        "name": "EKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 0,
+        "samples": [
+          "BESPINOZA",
+          "JMOLINA",
+          "FPARRA"
+        ]
+      },
+      {
+        "name": "GRWCU",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "IHREZ",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "KALSM",
+        "nulls": 0,
+        "samples": [
+          "ZN0001",
+          "RM0000"
+        ]
+      },
+      {
+        "name": "KNUMV",
+        "nulls": 2,
+        "samples": [
+          "1000847587",
+          "1000847588",
+          "1000848462"
+        ]
+      },
+      {
+        "name": "KUNNR",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "LANDS",
+        "nulls": 0,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 0,
+        "samples": [
+          "0001001289",
+          "0001001288",
+          "0001110545"
+        ]
+      },
+      {
+        "name": "LLIEF",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "LOEKZ",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "LPONR",
+        "nulls": 0,
+        "samples": [
+          "550",
+          "90",
+          "30"
+        ]
+      },
+      {
+        "name": "PINCR",
+        "nulls": 0,
+        "samples": [
+          "10"
+        ]
+      },
+      {
+        "name": "PROCSTAT",
+        "nulls": 0,
+        "samples": [
+          "02",
+          "05",
+          "03"
+        ]
+      },
+      {
+        "name": "RESWK",
+        "nulls": 1113,
+        "samples": [
+          "2001"
+        ]
+      },
+      {
+        "name": "SPRAS",
+        "nulls": 0,
+        "samples": [
+          "S"
+        ]
+      },
+      {
+        "name": "STATU",
+        "nulls": 0,
+        "samples": [
+          "9"
+        ]
+      },
+      {
+        "name": "STCEG_L",
+        "nulls": 0,
+        "samples": [
+          "CL"
+        ]
+      },
+      {
+        "name": "TELF1",
+        "nulls": 1965,
+        "samples": [
+          "2700147",
+          "6405204"
+        ]
+      },
+      {
+        "name": "VERKF",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "WAERS",
+        "nulls": 2,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "WKURS",
+        "nulls": 0,
+        "samples": [
+          "1.00000",
+          "0.00000"
+        ]
+      },
+      {
+        "name": "ZTERM",
+        "nulls": 3,
+        "samples": [
+          "Z075",
+          "Z090",
+          "Z030"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-08"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "1EKKO_EKKO_20261008170029.dat"
+        ]
+      },
+      {
+        "name": "ZZFAEST",
+        "nulls": 0,
+        "samples": [
+          "09099999"
+        ]
+      },
+      {
+        "name": "ZZFEEMB",
+        "nulls": 0,
+        "samples": [
+          "09099999"
+        ]
+      },
+      {
+        "name": "ZZUFEMB",
+        "nulls": 0,
+        "samples": [
+          "09099999"
+        ]
+      },
+      {
+        "name": "ABSGR",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "KONNR",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "ZZPUEMB",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "ZZPUDES",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "ZZFEIMP",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "ZZTRANS",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "ZZDENTR",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "ZZNUMDI",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "ZZPACKA",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "ZZDBLA1",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "INCO1",
+        "nulls": 2131,
+        "samples": []
+      },
+      {
+        "name": "INCO2",
+        "nulls": 2131,
+        "samples": []
+      }
+    ]
+  },
+  {
+    "file": "SAP_EKPO_1H_202609301208.csv",
+    "bytes": 4643541,
+    "rows_examined": 13632,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500531055",
+          "4500545064",
+          "4500554690"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "90",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "name": "LOEKZ",
+        "nulls": 13251,
+        "samples": [
+          "L",
+          "S"
+        ]
+      },
+      {
+        "name": "AEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250702",
+          "20250911",
+          "20251029"
+        ]
+      },
+      {
+        "name": "TXZ01",
+        "nulls": 0,
+        "samples": [
+          "MARCADOR PIZARRA PTA RED ROJO",
+          "CORRECTOR LAPIZ PTA METAL 7ML",
+          "CERA PISO MADERA BIDON 5 LT SUCIWAX REPA"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 642,
+        "samples": [
+          "000000000000424519",
+          "000000000000204812",
+          "000000000000561880"
+        ]
+      },
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 643,
+        "samples": [
+          "OM01",
+          "OM05"
+        ]
+      },
+      {
+        "name": "MATKL",
+        "nulls": 0,
+        "samples": [
+          "L01-OYL",
+          "L02-AYL",
+          "L11-NNE"
+        ]
+      },
+      {
+        "name": "INFNR",
+        "nulls": 642,
+        "samples": [
+          "5300076361",
+          "5300100871",
+          "5300163960"
+        ]
+      },
+      {
+        "name": "MENGE",
+        "nulls": 0,
+        "samples": [
+          "144.000",
+          "36.000",
+          "4.000"
+        ]
+      },
+      {
+        "name": "MEINS",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "LE"
+        ]
+      },
+      {
+        "name": "NETPR",
+        "nulls": 0,
+        "samples": [
+          "1.020",
+          "8.800",
+          "8.870"
+        ]
+      },
+      {
+        "name": "PEINH",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "NETWR",
+        "nulls": 0,
+        "samples": [
+          "146.88",
+          "1267.20",
+          "319.32"
+        ]
+      },
+      {
+        "name": "BRTWR",
+        "nulls": 0,
+        "samples": [
+          "146.88",
+          "1267.20",
+          "319.32"
+        ]
+      },
+      {
+        "name": "ELIKZ",
+        "nulls": 934,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "KONNR",
+        "nulls": 13632,
+        "samples": []
+      },
+      {
+        "name": "KTPNR",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "PRDAT",
+        "nulls": 0,
+        "samples": [
+          "20250630",
+          "20250908",
+          "20251027"
+        ]
+      },
+      {
+        "name": "BSTYP",
+        "nulls": 0,
+        "samples": [
+          "F"
+        ]
+      },
+      {
+        "name": "EFFWR",
+        "nulls": 0,
+        "samples": [
+          "146.88",
+          "1267.20",
+          "319.32"
+        ]
+      },
+      {
+        "name": "XOBLR",
+        "nulls": 2,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "FISTL",
+        "nulls": 642,
+        "samples": [
+          "80ADC04SCL"
+        ]
+      },
+      {
+        "name": "FIPOS",
+        "nulls": 642,
+        "samples": [
+          "1106021001",
+          "1106041001"
+        ]
+      },
+      {
+        "name": "BANFN",
+        "nulls": 38,
+        "samples": [
+          "0010872276",
+          "0010927455",
+          "0010972511"
+        ]
+      },
+      {
+        "name": "BNFPO",
+        "nulls": 0,
+        "samples": [
+          "90",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "name": "MTART",
+        "nulls": 642,
+        "samples": [
+          "ZMER",
+          "ZPRO"
+        ]
+      },
+      {
+        "name": "INCO2_L",
+        "nulls": 12766,
+        "samples": [
+          "PUERTO VALPARAISO"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30 11:31:54.987"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "1EKPO_EKPO_20260930110220.dat"
+        ]
+      },
+      {
+        "name": "BPRME",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "LE"
+        ]
+      },
+      {
+        "name": "EMATN",
+        "nulls": 642,
+        "samples": [
+          "000000000000424519",
+          "000000000000204812",
+          "000000000000561880"
+        ]
+      },
+      {
+        "name": "KTMNG",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "BPUMZ",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "BPUMN",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "UMREZ",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "UMREN",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "WEBAZ",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EKPO_202609301551.csv",
+    "bytes": 4466361,
+    "rows_examined": 13632,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500511808",
+          "4500516812",
+          "4500516793"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "140",
+          "80",
+          "100"
+        ]
+      },
+      {
+        "name": "LOEKZ",
+        "nulls": 13251,
+        "samples": [
+          "L",
+          "S"
+        ]
+      },
+      {
+        "name": "AEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250317",
+          "20250416",
+          "20250630"
+        ]
+      },
+      {
+        "name": "TXZ01",
+        "nulls": 0,
+        "samples": [
+          "DESTACADOR ESCRITORIO BIS ROSADO",
+          "LIMPIADOR PISO 4 LT ESPIRITU PLAY POETT",
+          "AGUA MINERAL SIN GAS 600 CC VITAL"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 642,
+        "samples": [
+          "000000000000424877",
+          "000000000000433274",
+          "000000000000100081"
+        ]
+      },
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 643,
+        "samples": [
+          "OM01",
+          "OM05"
+        ]
+      },
+      {
+        "name": "MATKL",
+        "nulls": 0,
+        "samples": [
+          "L01-OYL",
+          "L02-AYL",
+          "L03-ALI"
+        ]
+      },
+      {
+        "name": "INFNR",
+        "nulls": 642,
+        "samples": [
+          "5300074971",
+          "5300084861",
+          "5300084823"
+        ]
+      },
+      {
+        "name": "MENGE",
+        "nulls": 0,
+        "samples": [
+          "200.000",
+          "99.000",
+          "60.000"
+        ]
+      },
+      {
+        "name": "MEINS",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "LE"
+        ]
+      },
+      {
+        "name": "NETPR",
+        "nulls": 0,
+        "samples": [
+          "1.080",
+          "44.670",
+          "3.490"
+        ]
+      },
+      {
+        "name": "PEINH",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "NETWR",
+        "nulls": 0,
+        "samples": [
+          "216.00",
+          "4422.33",
+          "209.40"
+        ]
+      },
+      {
+        "name": "BRTWR",
+        "nulls": 0,
+        "samples": [
+          "216.00",
+          "4422.33",
+          "209.40"
+        ]
+      },
+      {
+        "name": "ELIKZ",
+        "nulls": 898,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "KONNR",
+        "nulls": 13632,
+        "samples": []
+      },
+      {
+        "name": "KTPNR",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "PRDAT",
+        "nulls": 0,
+        "samples": [
+          "20250317",
+          "20250411",
+          "20250630"
+        ]
+      },
+      {
+        "name": "BSTYP",
+        "nulls": 0,
+        "samples": [
+          "F"
+        ]
+      },
+      {
+        "name": "EFFWR",
+        "nulls": 0,
+        "samples": [
+          "216.00",
+          "4422.33",
+          "209.40"
+        ]
+      },
+      {
+        "name": "XOBLR",
+        "nulls": 2,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "FISTL",
+        "nulls": 642,
+        "samples": [
+          "80ADC04SCL"
+        ]
+      },
+      {
+        "name": "FIPOS",
+        "nulls": 642,
+        "samples": [
+          "1106021001",
+          "1106041001"
+        ]
+      },
+      {
+        "name": "BANFN",
+        "nulls": 38,
+        "samples": [
+          "0010767957",
+          "0010796440",
+          "0010796093"
+        ]
+      },
+      {
+        "name": "BNFPO",
+        "nulls": 0,
+        "samples": [
+          "140",
+          "80",
+          "100"
+        ]
+      },
+      {
+        "name": "MTART",
+        "nulls": 642,
+        "samples": [
+          "ZMER",
+          "ZPRO"
+        ]
+      },
+      {
+        "name": "INCO2_L",
+        "nulls": 12766,
+        "samples": [
+          "PUERTO VALPARAISO"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "1EKPO_EKPO_20260930150220.dat"
+        ]
+      },
+      {
+        "name": "BPRME",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "LE"
+        ]
+      },
+      {
+        "name": "EMATN",
+        "nulls": 642,
+        "samples": [
+          "000000000000424877",
+          "000000000000433274",
+          "000000000000100081"
+        ]
+      },
+      {
+        "name": "KTMNG",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "BPUMZ",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "BPUMN",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "UMREZ",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "UMREN",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "WEBAZ",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_EKPO_202610081741.csv",
+    "bytes": 4518427,
+    "rows_examined": 13793,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EBELN",
+        "nulls": 0,
+        "samples": [
+          "4500529072",
+          "4500551501",
+          "4500517903"
+        ]
+      },
+      {
+        "name": "EBELP",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "60",
+          "560"
+        ]
+      },
+      {
+        "name": "LOEKZ",
+        "nulls": 13412,
+        "samples": [
+          "L",
+          "S"
+        ]
+      },
+      {
+        "name": "AEDAT",
+        "nulls": 0,
+        "samples": [
+          "20250617",
+          "20251016",
+          "20250421"
+        ]
+      },
+      {
+        "name": "TXZ01",
+        "nulls": 0,
+        "samples": [
+          "MARCADOR PERM PTA REDONDA AZUL ISOFIT",
+          "TIJERA 7 (17,7CM) TORRE BLISTER",
+          "MARCADOR PIZARRA PTA RED ROJO ISOFIT"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 655,
+        "samples": [
+          "000000000000521343",
+          "000000000000498062",
+          "000000000000121411"
+        ]
+      },
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 656,
+        "samples": [
+          "OM01",
+          "OM05"
+        ]
+      },
+      {
+        "name": "MATKL",
+        "nulls": 0,
+        "samples": [
+          "L01-OYL",
+          "L02-AYL",
+          "L03-ALI"
+        ]
+      },
+      {
+        "name": "INFNR",
+        "nulls": 655,
+        "samples": [
+          "5300095408",
+          "5300102459",
+          "5300110094"
+        ]
+      },
+      {
+        "name": "MENGE",
+        "nulls": 0,
+        "samples": [
+          "72.000",
+          "12.000",
+          "144.000"
+        ]
+      },
+      {
+        "name": "MEINS",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "LE"
+        ]
+      },
+      {
+        "name": "NETPR",
+        "nulls": 0,
+        "samples": [
+          "2.140",
+          "9.720",
+          "3.280"
+        ]
+      },
+      {
+        "name": "PEINH",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "NETWR",
+        "nulls": 0,
+        "samples": [
+          "154.08",
+          "116.64",
+          "236.16"
+        ]
+      },
+      {
+        "name": "BRTWR",
+        "nulls": 0,
+        "samples": [
+          "154.08",
+          "116.64",
+          "236.16"
+        ]
+      },
+      {
+        "name": "ELIKZ",
+        "nulls": 933,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "KONNR",
+        "nulls": 13793,
+        "samples": []
+      },
+      {
+        "name": "KTPNR",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "PRDAT",
+        "nulls": 0,
+        "samples": [
+          "20250617",
+          "20251013",
+          "20250416"
+        ]
+      },
+      {
+        "name": "BSTYP",
+        "nulls": 0,
+        "samples": [
+          "F"
+        ]
+      },
+      {
+        "name": "EFFWR",
+        "nulls": 0,
+        "samples": [
+          "154.08",
+          "116.64",
+          "236.16"
+        ]
+      },
+      {
+        "name": "XOBLR",
+        "nulls": 2,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "FISTL",
+        "nulls": 655,
+        "samples": [
+          "80ADC04SCL"
+        ]
+      },
+      {
+        "name": "FIPOS",
+        "nulls": 655,
+        "samples": [
+          "1106021001",
+          "1106041001"
+        ]
+      },
+      {
+        "name": "BANFN",
+        "nulls": 38,
+        "samples": [
+          "0010860968",
+          "0010960792",
+          "0010802574"
+        ]
+      },
+      {
+        "name": "BNFPO",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "70",
+          "560"
+        ]
+      },
+      {
+        "name": "MTART",
+        "nulls": 655,
+        "samples": [
+          "ZMER",
+          "ZPRO"
+        ]
+      },
+      {
+        "name": "INCO2_L",
+        "nulls": 12921,
+        "samples": [
+          "PUERTO VALPARAISO"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-08"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "1EKPO_EKPO_20261008170229.dat"
+        ]
+      },
+      {
+        "name": "BPRME",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "LE"
+        ]
+      },
+      {
+        "name": "EMATN",
+        "nulls": 655,
+        "samples": [
+          "000000000000521343",
+          "000000000000498062",
+          "000000000000121411"
+        ]
+      },
+      {
+        "name": "KTMNG",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "BPUMZ",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "BPUMN",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "UMREZ",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "UMREN",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "0"
+        ]
+      },
+      {
+        "name": "WEBAZ",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_KNVV_202609301155.csv",
+    "bytes": 10620892,
+    "rows_examined": 60113,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "KUNNR",
+        "nulls": 0,
+        "samples": [
+          "0003871938",
+          "0003107906",
+          "0003144032"
+        ]
+      },
+      {
+        "name": "VKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "VTWEG",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "20",
+          "60"
+        ]
+      },
+      {
+        "name": "SPART",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "20"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 393,
+        "samples": [
+          "CALVAREZ",
+          "SD002",
+          "CROBLES"
+        ]
+      },
+      {
+        "name": "ERDAT",
+        "nulls": 0,
+        "samples": [
+          "20241213",
+          "20241231",
+          "00000000"
+        ]
+      },
+      {
+        "name": "AUFSD",
+        "nulls": 60113,
+        "samples": []
+      },
+      {
+        "name": "KALKS",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "KDGRP",
+        "nulls": 18,
+        "samples": [
+          "08",
+          "16",
+          "14"
+        ]
+      },
+      {
+        "name": "BZIRK",
+        "nulls": 3317,
+        "samples": [
+          "Z00004",
+          "Z00002",
+          "000002"
+        ]
+      },
+      {
+        "name": "KONDA",
+        "nulls": 60113,
+        "samples": []
+      },
+      {
+        "name": "PLTYP",
+        "nulls": 60113,
+        "samples": []
+      },
+      {
+        "name": "KZAZU",
+        "nulls": 306,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "LPRIO",
+        "nulls": 0,
+        "samples": [
+          "2",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "VSBED",
+        "nulls": 0,
+        "samples": [
+          "01"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "ZTERM",
+        "nulls": 414,
+        "samples": [
+          "Z002",
+          "Z030",
+          "Z060"
+        ]
+      },
+      {
+        "name": "VKGRP",
+        "nulls": 60113,
+        "samples": []
+      },
+      {
+        "name": "VKBUR",
+        "nulls": 452,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "KVGR1",
+        "nulls": 60113,
+        "samples": []
+      },
+      {
+        "name": "KVGR2",
+        "nulls": 0,
+        "samples": [
+          "107",
+          "109",
+          "103"
+        ]
+      },
+      {
+        "name": "KVGR3",
+        "nulls": 1,
+        "samples": [
+          "217",
+          "214",
+          "223"
+        ]
+      },
+      {
+        "name": "KVGR4",
+        "nulls": 23,
+        "samples": [
+          "307",
+          "309",
+          "308"
+        ]
+      },
+      {
+        "name": "KVGR5",
+        "nulls": 60099,
+        "samples": [
+          "1",
+          "Z01"
+        ]
+      },
+      {
+        "name": "KKBER",
+        "nulls": 304,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "CASSD",
+        "nulls": 60111,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "C:\\SAP\\20260930\\KNVV_KNVV_20260930013506.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_KONP_202610291017.csv",
+    "bytes": 56407379,
+    "rows_examined": 731965,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "KNUMH",
+        "nulls": 0,
+        "samples": [
+          "0000000002",
+          "0000000003",
+          "0000000006"
+        ]
+      },
+      {
+        "name": "KOPOS",
+        "nulls": 0,
+        "samples": [
+          "1"
+        ]
+      },
+      {
+        "name": "KAPPL",
+        "nulls": 0,
+        "samples": [
+          "TX",
+          "V",
+          "M"
+        ]
+      },
+      {
+        "name": "KSCHL",
+        "nulls": 0,
+        "samples": [
+          "MWAS",
+          "MWVS",
+          "MWRK"
+        ]
+      },
+      {
+        "name": "KRECH",
+        "nulls": 0,
+        "samples": [
+          "A",
+          "I",
+          "C"
+        ]
+      },
+      {
+        "name": "KBETR",
+        "nulls": 0,
+        "samples": [
+          "160.00",
+          "70.00",
+          "0.00"
+        ]
+      },
+      {
+        "name": "KONWA",
+        "nulls": 0,
+        "samples": [
+          "%",
+          "CLP",
+          "USD"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-29"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "KONP_KONP_20261029004025.dat"
+        ]
+      },
+      {
+        "name": "LOEVM_KO",
+        "nulls": 726194,
+        "samples": [
+          "X"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_LFB1_202609300917.csv",
+    "bytes": 22285,
+    "rows_examined": 197,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "LIFNR",
+        "nulls": 0,
+        "samples": [
+          "0004300571",
+          "0004300572",
+          "0005010860"
+        ]
+      },
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "ERDAT",
+        "nulls": 0,
+        "samples": [
+          "20260922",
+          "20260928",
+          "20250307"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 1,
+        "samples": [
+          "LSANCHEZQ",
+          "ILEBRUN",
+          "LCALQUINA"
+        ]
+      },
+      {
+        "name": "SPERR",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "LOEVM",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "ZUAWA",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "AKONT",
+        "nulls": 0,
+        "samples": [
+          "2102011003",
+          "2102011001",
+          "2103011001"
+        ]
+      },
+      {
+        "name": "VZSKZ",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "ZWELS",
+        "nulls": 31,
+        "samples": [
+          "T",
+          "V",
+          "C"
+        ]
+      },
+      {
+        "name": "XVERR",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "ZAHLS",
+        "nulls": 193,
+        "samples": [
+          "B"
+        ]
+      },
+      {
+        "name": "ZTERM",
+        "nulls": 24,
+        "samples": [
+          "Z030",
+          "Z007",
+          "Z001"
+        ]
+      },
+      {
+        "name": "KVERM",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "QSSKZ",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "AD_HASH",
+        "nulls": 197,
+        "samples": []
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "LFB1_LFB1_20260930055020.dat"
+        ]
+      },
+      {
+        "name": "CANAL_ENT",
+        "nulls": 93,
+        "samples": [
+          "Z01",
+          "Z05",
+          "Z04"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_LFM1_202609301151.csv",
+    "bytes": 59433,
+    "rows_examined": 500,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "LIFNR",
+        "nulls": 0,
+        "samples": [
+          "0004300571",
+          "0004300572",
+          "0001677877"
+        ]
+      },
+      {
+        "name": "EKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "ERDAT",
+        "nulls": 0,
+        "samples": [
+          "20260922",
+          "20190110",
+          "20190104"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 0,
+        "samples": [
+          "LSANCHEZQ",
+          "DVARELA",
+          "CMUNOZ"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP",
+          "PEN",
+          "USD"
+        ]
+      },
+      {
+        "name": "ZTERM",
+        "nulls": 2,
+        "samples": [
+          "Z030",
+          "Z090",
+          "Z060"
+        ]
+      },
+      {
+        "name": "WEBRE",
+        "nulls": 376,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "KALSK",
+        "nulls": 0,
+        "samples": [
+          "Z1",
+          "Z2"
+        ]
+      },
+      {
+        "name": "EKGRP",
+        "nulls": 121,
+        "samples": [
+          "C01",
+          "F03",
+          "D01"
+        ]
+      },
+      {
+        "name": "KZAUT",
+        "nulls": 498,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "LEBRE",
+        "nulls": 2,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "VSBED",
+        "nulls": 9,
+        "samples": [
+          "01"
+        ]
+      },
+      {
+        "name": "PLIFZ",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "TELF1",
+        "nulls": 498,
+        "samples": [
+          "6405204",
+          "2700147"
+        ]
+      },
+      {
+        "name": "LFABC",
+        "nulls": 500,
+        "samples": []
+      },
+      {
+        "name": "KZRET",
+        "nulls": 495,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "VERKF",
+        "nulls": 500,
+        "samples": []
+      },
+      {
+        "name": "SPERM",
+        "nulls": 499,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "AUBEL",
+        "nulls": 500,
+        "samples": []
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "LFM1_LFM1_20260930055020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MAKT_202609300925.csv",
+    "bytes": 23744242,
+    "rows_examined": 175974,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000386820",
+          "000000000000382990",
+          "000000000000386864"
+        ]
+      },
+      {
+        "name": "SPRAS",
+        "nulls": 0,
+        "samples": [
+          "S"
+        ]
+      },
+      {
+        "name": "MAKTX",
+        "nulls": 0,
+        "samples": [
+          "FUNDA P/ARCHIVO PP OF BLANCO 10UNI",
+          "CUADERNO COLLEGE LISO COMPOSICION 100HJ",
+          "CHALLA ADORNO FIESTA CAÃ‘ON CONFETI 100CM"
+        ]
+      },
+      {
+        "name": "MAKTG",
+        "nulls": 0,
+        "samples": [
+          "FUNDA P/ARCHIVO PP OF BLANCO 10UNI",
+          "CUADERNO COLLEGE LISO COMPOSICION 100HJ",
+          "CHALLA ADORNO FIESTA CAÃ‘ON CONFETI 100CM"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MAKT_MAKT_20260930054020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MARA_202609300926.csv",
+    "bytes": 45660004,
+    "rows_examined": 175974,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000396936",
+          "000000000000396922",
+          "000000000000396905"
+        ]
+      },
+      {
+        "name": "ERSDA",
+        "nulls": 0,
+        "samples": [
+          "20181221",
+          "20220520",
+          "20220523"
+        ]
+      },
+      {
+        "name": "ERNAM",
+        "nulls": 0,
+        "samples": [
+          "CARGA_INI_02",
+          "MHIGUERAS",
+          "CARGA_INI_01"
+        ]
+      },
+      {
+        "name": "LAEDA",
+        "nulls": 0,
+        "samples": [
+          "20260224",
+          "20260929",
+          "20221226"
+        ]
+      },
+      {
+        "name": "AENAM",
+        "nulls": 38,
+        "samples": [
+          "MHIGUERAS",
+          "CALVAREZ",
+          "BESPINOZA"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 172444,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MTART",
+        "nulls": 0,
+        "samples": [
+          "ZMER",
+          "ZINS",
+          "ZEMB"
+        ]
+      },
+      {
+        "name": "MBRSH",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "M"
+        ]
+      },
+      {
+        "name": "MATKL",
+        "nulls": 1,
+        "samples": [
+          "L08-COT",
+          "L09-HOG",
+          "L10-TYA"
+        ]
+      },
+      {
+        "name": "BISMT",
+        "nulls": 124778,
+        "samples": [
+          "PR459842",
+          "PR04777",
+          "PR10604"
+        ]
+      },
+      {
+        "name": "MEINS",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "CM",
+          "CS"
+        ]
+      },
+      {
+        "name": "BSTME",
+        "nulls": 175974,
+        "samples": []
+      },
+      {
+        "name": "GROES",
+        "nulls": 10200,
+        "samples": [
+          " 10,000X 10,000X 10,000",
+          "10,000X 10,000X 10,000",
+          "3.400X15.000X30.000"
+        ]
+      },
+      {
+        "name": "NORMT",
+        "nulls": 51813,
+        "samples": [
+          "0",
+          "60141401",
+          "60141001"
+        ]
+      },
+      {
+        "name": "EKWSL",
+        "nulls": 55888,
+        "samples": [
+          "Z001",
+          "Z002"
+        ]
+      },
+      {
+        "name": "BRGEW",
+        "nulls": 0,
+        "samples": [
+          "0.100",
+          "1.000",
+          "0.201"
+        ]
+      },
+      {
+        "name": "NTGEW",
+        "nulls": 0,
+        "samples": [
+          "0.100",
+          "1.000",
+          "0.201"
+        ]
+      },
+      {
+        "name": "GEWEI",
+        "nulls": 47,
+        "samples": [
+          "KG"
+        ]
+      },
+      {
+        "name": "VOLUM",
+        "nulls": 0,
+        "samples": [
+          "1000.000",
+          "0.001",
+          "578.000"
+        ]
+      },
+      {
+        "name": "VOLEH",
+        "nulls": 144,
+        "samples": [
+          "CCM",
+          "M3"
+        ]
+      },
+      {
+        "name": "SPART",
+        "nulls": 282,
+        "samples": [
+          "10",
+          "20"
+        ]
+      },
+      {
+        "name": "EANNR",
+        "nulls": 175974,
+        "samples": []
+      },
+      {
+        "name": "EAN11",
+        "nulls": 53941,
+        "samples": [
+          "8802020527879",
+          "8802020298021",
+          "8802020297970"
+        ]
+      },
+      {
+        "name": "NUMTP",
+        "nulls": 53941,
+        "samples": [
+          "HE",
+          "UC",
+          "IE"
+        ]
+      },
+      {
+        "name": "LAENG",
+        "nulls": 0,
+        "samples": [
+          "10.000",
+          "0.000",
+          "17.000"
+        ]
+      },
+      {
+        "name": "BREIT",
+        "nulls": 0,
+        "samples": [
+          "10.000",
+          "0.000",
+          "34.000"
+        ]
+      },
+      {
+        "name": "HOEHE",
+        "nulls": 0,
+        "samples": [
+          "10.000",
+          "0.000",
+          "1.000"
+        ]
+      },
+      {
+        "name": "MEABM",
+        "nulls": 5890,
+        "samples": [
+          "CM"
+        ]
+      },
+      {
+        "name": "PRDHA",
+        "nulls": 146,
+        "samples": [
+          "0801030102",
+          "0899999999",
+          "0801030509"
+        ]
+      },
+      {
+        "name": "EXTWG",
+        "nulls": 147,
+        "samples": [
+          "00079",
+          "01311",
+          "01240"
+        ]
+      },
+      {
+        "name": "MFRPN",
+        "nulls": 162509,
+        "samples": [
+          "2JYX2",
+          "HARDER / T37",
+          "HARDER / T38"
+        ]
+      },
+      {
+        "name": "PROFL",
+        "nulls": 175300,
+        "samples": [
+          "SOS",
+          "COR",
+          "BIO"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MARA_MARA_20260930054020.dat"
+        ]
+      },
+      {
+        "name": "MATNR_LIMPIO",
+        "nulls": 0,
+        "samples": [
+          "396936",
+          "396922",
+          "396905"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MARC_202609301149.csv",
+    "bytes": 897148,
+    "rows_examined": 2902,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000561886",
+          "000000000000561883",
+          "000000000000561876"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "MAABC",
+        "nulls": 7,
+        "samples": [
+          "C",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "name": "MAXLZ",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "360",
+          "180"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MARC_MARC_20260930021319.dat"
+        ]
+      },
+      {
+        "name": "TRAME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "UMLMC",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 2878,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "EKGRP",
+        "nulls": 5,
+        "samples": [
+          "F01",
+          "F00",
+          "F02"
+        ]
+      },
+      {
+        "name": "LZEIH",
+        "nulls": 2842,
+        "samples": [
+          "10"
+        ]
+      },
+      {
+        "name": "LADGR",
+        "nulls": 4,
+        "samples": [
+          "0001"
+        ]
+      },
+      {
+        "name": "MTVFP",
+        "nulls": 5,
+        "samples": [
+          "KP"
+        ]
+      },
+      {
+        "name": "XMCNG",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "MMSTA",
+        "nulls": 2329,
+        "samples": [
+          "10",
+          "01",
+          "09"
+        ]
+      },
+      {
+        "name": "KAUTB",
+        "nulls": 2847,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "PSTAT",
+        "nulls": 0,
+        "samples": [
+          "DELBV",
+          "DELV",
+          "VEDPLQB"
+        ]
+      },
+      {
+        "name": "BWTTY",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "XCHAR",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "MMSTD",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "KZKRI",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "AUSME",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "DISPR",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "DISMM",
+        "nulls": 1,
+        "samples": [
+          "ND"
+        ]
+      },
+      {
+        "name": "DISPO",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "KZDIE",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "PLIFZ",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "WEBAZ",
+        "nulls": 0,
+        "samples": [
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "PERKZ",
+        "nulls": 0,
+        "samples": [
+          "M"
+        ]
+      },
+      {
+        "name": "AUSSS",
+        "nulls": 0,
+        "samples": [
+          "0.00"
+        ]
+      },
+      {
+        "name": "DISLS",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "BESKZ",
+        "nulls": 1,
+        "samples": [
+          "F",
+          "X"
+        ]
+      },
+      {
+        "name": "SOBSL",
+        "nulls": 2886,
+        "samples": [
+          "30",
+          "20"
+        ]
+      },
+      {
+        "name": "MINBE",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "EISBE",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "BSTMI",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "BSTMA",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "BSTFE",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "BSTRF",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "MABST",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "LOSFX",
+        "nulls": 0,
+        "samples": [
+          "0.00"
+        ]
+      },
+      {
+        "name": "SBDKZ",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "LAGPR",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "ALTSL",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "KZAUS",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "AUSDT",
+        "nulls": 0,
+        "samples": [
+          "00000000"
+        ]
+      },
+      {
+        "name": "NFMAT",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "LGRAD",
+        "nulls": 0,
+        "samples": [
+          "0.0"
+        ]
+      },
+      {
+        "name": "BWSCL",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "MRPPP",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "FXHOR",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "STLAL",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "LOSGR",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "DISGR",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "LFRHY",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "AUTRU",
+        "nulls": 2900,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "LGFSB",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "EPRIO",
+        "nulls": 2902,
+        "samples": []
+      },
+      {
+        "name": "SHZET",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "MINLS",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "MAXLS",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "FIXLS",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "LTINC",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "EISLO",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "MATNR_LIMPIO",
+        "nulls": 0,
+        "samples": [
+          "561886",
+          "561883",
+          "561876"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MARD_202609301147.csv",
+    "bytes": 5818934,
+    "rows_examined": 43383,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EINME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "INSME",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "240.000",
+          "61.000"
+        ]
+      },
+      {
+        "name": "LABST",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "1.000",
+          "40.000"
+        ]
+      },
+      {
+        "name": "LFGJA",
+        "nulls": 0,
+        "samples": [
+          "2025",
+          "2018",
+          "2026"
+        ]
+      },
+      {
+        "name": "LFMON",
+        "nulls": 0,
+        "samples": [
+          "7",
+          "2",
+          "5"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM11",
+          "OM12",
+          "OM13"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 43023,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000100011",
+          "000000000000100021",
+          "000000000000100023"
+        ]
+      },
+      {
+        "name": "PSTAT",
+        "nulls": 0,
+        "samples": [
+          "DL",
+          "L",
+          "D"
+        ]
+      },
+      {
+        "name": "RETME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "SPEME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "SPERR",
+        "nulls": 43382,
+        "samples": [
+          "A"
+        ]
+      },
+      {
+        "name": "UMLME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MARD_MARD_20260930053020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MARM_202609301031.csv",
+    "bytes": 45491431,
+    "rows_examined": 370122,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000412687",
+          "000000000000412701",
+          "000000000000412697"
+        ]
+      },
+      {
+        "name": "MEINH",
+        "nulls": 0,
+        "samples": [
+          "EA",
+          "CS",
+          "PAL"
+        ]
+      },
+      {
+        "name": "UMREZ",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "20",
+          "5"
+        ]
+      },
+      {
+        "name": "UMREN",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "12",
+          "2"
+        ]
+      },
+      {
+        "name": "EANNR",
+        "nulls": 370122,
+        "samples": []
+      },
+      {
+        "name": "EAN11",
+        "nulls": 227317,
+        "samples": [
+          "27804685585480",
+          "7804685580566",
+          "17804685585483"
+        ]
+      },
+      {
+        "name": "NUMTP",
+        "nulls": 227317,
+        "samples": [
+          "IC",
+          "HE",
+          "UC"
+        ]
+      },
+      {
+        "name": "LAENG",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "4.800",
+          "2.400"
+        ]
+      },
+      {
+        "name": "BREIT",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "23.000",
+          "21.500"
+        ]
+      },
+      {
+        "name": "HOEHE",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "30.000",
+          "28.000"
+        ]
+      },
+      {
+        "name": "MEABM",
+        "nulls": 14015,
+        "samples": [
+          "CM",
+          "M"
+        ]
+      },
+      {
+        "name": "VOLUM",
+        "nulls": 0,
+        "samples": [
+          "0.001",
+          "3312.000",
+          "1444.800"
+        ]
+      },
+      {
+        "name": "VOLEH",
+        "nulls": 8267,
+        "samples": [
+          "CCM",
+          "CDM",
+          "M3"
+        ]
+      },
+      {
+        "name": "BRGEW",
+        "nulls": 0,
+        "samples": [
+          "0.001",
+          "14.160",
+          "0.708"
+        ]
+      },
+      {
+        "name": "GEWEI",
+        "nulls": 7936,
+        "samples": [
+          "KG",
+          "G"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MARM_MARM_20260930054520.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MBEW_202609301143.csv",
+    "bytes": 282902,
+    "rows_examined": 2897,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "BWKEY",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "BWTAR",
+        "nulls": 2897,
+        "samples": []
+      },
+      {
+        "name": "LBKUM",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "5.000",
+          "15.000"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 2873,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000004100000070",
+          "000000004100000051",
+          "000000004100000052"
+        ]
+      },
+      {
+        "name": "SALK3",
+        "nulls": 0,
+        "samples": [
+          "0.00",
+          "3292.65",
+          "205.65"
+        ]
+      },
+      {
+        "name": "VERPR",
+        "nulls": 0,
+        "samples": [
+          "0.00",
+          "0.01",
+          "117.08"
+        ]
+      },
+      {
+        "name": "VPRSV",
+        "nulls": 0,
+        "samples": [
+          "S",
+          "V"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MBEW_MBEW_20260930020020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MBEW_202610011022.csv",
+    "bytes": 282866,
+    "rows_examined": 2897,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "BWKEY",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "BWTAR",
+        "nulls": 2897,
+        "samples": []
+      },
+      {
+        "name": "LBKUM",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "5.000",
+          "15.000"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 2873,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000560713",
+          "000000000000354391",
+          "000000000000395753"
+        ]
+      },
+      {
+        "name": "SALK3",
+        "nulls": 0,
+        "samples": [
+          "0.00",
+          "3292.65",
+          "205.65"
+        ]
+      },
+      {
+        "name": "VERPR",
+        "nulls": 0,
+        "samples": [
+          "0.01",
+          "117.08",
+          "228.21"
+        ]
+      },
+      {
+        "name": "VPRSV",
+        "nulls": 0,
+        "samples": [
+          "V",
+          "S"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-01"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MBEW_MBEW_20261001020021.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MKPF_202609301710.csv",
+    "bytes": 2035929097,
+    "rows_examined": 10000,
+    "scope": "first_10000",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MBLNR",
+        "nulls": 0,
+        "samples": [
+          "4905309996",
+          "4905357614",
+          "4905363449"
+        ]
+      },
+      {
+        "name": "MJAHR",
+        "nulls": 0,
+        "samples": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "name": "VGART",
+        "nulls": 0,
+        "samples": [
+          "WL"
+        ]
+      },
+      {
+        "name": "BLART",
+        "nulls": 0,
+        "samples": [
+          "WL"
+        ]
+      },
+      {
+        "name": "BLAUM",
+        "nulls": 0,
+        "samples": [
+          "PR"
+        ]
+      },
+      {
+        "name": "BLDAT",
+        "nulls": 0,
+        "samples": [
+          "20220218",
+          "20220225",
+          "20220226"
+        ]
+      },
+      {
+        "name": "BUDAT",
+        "nulls": 0,
+        "samples": [
+          "20220218",
+          "20220225",
+          "20220226"
+        ]
+      },
+      {
+        "name": "CPUDT",
+        "nulls": 0,
+        "samples": [
+          "20220218",
+          "20220225",
+          "20220226"
+        ]
+      },
+      {
+        "name": "CPUTM",
+        "nulls": 0,
+        "samples": [
+          "182917",
+          "170551",
+          "140058"
+        ]
+      },
+      {
+        "name": "USNAM",
+        "nulls": 0,
+        "samples": [
+          "SD060",
+          "POSDI",
+          "POS4H"
+        ]
+      },
+      {
+        "name": "XBLNR",
+        "nulls": 0,
+        "samples": [
+          "9103188480",
+          "9103229036",
+          "9103234377"
+        ]
+      },
+      {
+        "name": "BKTXT",
+        "nulls": 10000,
+        "samples": []
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "Sep 30 2026  7:15AM"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MKPF_MKPF_20260930001019.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_MVKE_202609301029.csv",
+    "bytes": 1105495,
+    "rows_examined": 8700,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "KONDM",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "KTGRM",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "16",
+          "14"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 8627,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000561063",
+          "000000000000561027",
+          "000000000000561030"
+        ]
+      },
+      {
+        "name": "MVGR1",
+        "nulls": 3,
+        "samples": [
+          "Z01",
+          "Z02"
+        ]
+      },
+      {
+        "name": "MVGR2",
+        "nulls": 2,
+        "samples": [
+          "Z00"
+        ]
+      },
+      {
+        "name": "MVGR3",
+        "nulls": 3,
+        "samples": [
+          "Z01",
+          "Z05",
+          "Z04"
+        ]
+      },
+      {
+        "name": "MVGR4",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "MVGR5",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PMATN",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRAT1",
+        "nulls": 8383,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "PRAT2",
+        "nulls": 7841,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "PRAT3",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRAT4",
+        "nulls": 8699,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "PRAT5",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRODH",
+        "nulls": 10,
+        "samples": [
+          "0199999999",
+          "0120010101",
+          "0401010201"
+        ]
+      },
+      {
+        "name": "PROVG",
+        "nulls": 364,
+        "samples": [
+          "ZC",
+          "ZA",
+          "ZB"
+        ]
+      },
+      {
+        "name": "SCHME",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "SCMNG",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "VKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "VRKME",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "VTWEG",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MVKE_MVKE_20260930053520.dat"
+        ]
+      },
+      {
+        "name": "PRAT6",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRAT7",
+        "nulls": 8700,
+        "samples": []
+      }
+    ]
+  },
+  {
+    "file": "SAP_MVKE_202610011019.csv",
+    "bytes": 1105495,
+    "rows_examined": 8700,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "KONDM",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "KTGRM",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "16",
+          "14"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 8627,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000563592",
+          "000000000000561063",
+          "000000000000561027"
+        ]
+      },
+      {
+        "name": "MVGR1",
+        "nulls": 3,
+        "samples": [
+          "Z01",
+          "Z02"
+        ]
+      },
+      {
+        "name": "MVGR2",
+        "nulls": 2,
+        "samples": [
+          "Z00"
+        ]
+      },
+      {
+        "name": "MVGR3",
+        "nulls": 3,
+        "samples": [
+          "Z01",
+          "Z05",
+          "Z04"
+        ]
+      },
+      {
+        "name": "MVGR4",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "MVGR5",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PMATN",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRAT1",
+        "nulls": 8383,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "PRAT2",
+        "nulls": 7841,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "PRAT3",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRAT4",
+        "nulls": 8699,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "PRAT5",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRODH",
+        "nulls": 10,
+        "samples": [
+          "0199999999",
+          "0120010101",
+          "0401010201"
+        ]
+      },
+      {
+        "name": "PROVG",
+        "nulls": 364,
+        "samples": [
+          "ZC",
+          "ZB",
+          "ZA"
+        ]
+      },
+      {
+        "name": "SCHME",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "SCMNG",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "VKORG",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "VRKME",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "VTWEG",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "60",
+          "20"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-01"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MVKE_MVKE_20261001053521.dat"
+        ]
+      },
+      {
+        "name": "PRAT6",
+        "nulls": 8700,
+        "samples": []
+      },
+      {
+        "name": "PRAT7",
+        "nulls": 8700,
+        "samples": []
+      }
+    ]
+  },
+  {
+    "file": "SAP_PARAM_CLASE_DOCUMENTO_202610291059.csv",
+    "bytes": 2708,
+    "rows_examined": 111,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "CLASE",
+        "nulls": 0,
+        "samples": [
+          "10",
+          "12",
+          "13"
+        ]
+      },
+      {
+        "name": "DENOMINACION",
+        "nulls": 2,
+        "samples": [
+          "Recibo arrendamiento",
+          "Ticket maq. Registr.",
+          "Doc. banca y seguros"
+        ]
+      },
+      {
+        "name": "CONSIDERADO_LIBRO_VENTAS",
+        "nulls": 95,
+        "samples": [
+          "X"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_PARAM_TIPO_OC_202609301021.csv",
+    "bytes": 298,
+    "rows_examined": 13,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "CODPARAM",
+        "nulls": 0,
+        "samples": [
+          "ZACF",
+          "ZCOM",
+          "ZDEV"
+        ]
+      },
+      {
+        "name": "DESCPARAM",
+        "nulls": 0,
+        "samples": [
+          "OC Activo Fijo",
+          "OC Intercompañia",
+          "Devoluciones"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_PARAM_TIPO_OC_202610010954.csv",
+    "bytes": 298,
+    "rows_examined": 13,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "CODPARAM",
+        "nulls": 0,
+        "samples": [
+          "ZACF",
+          "ZCOM",
+          "ZDEV"
+        ]
+      },
+      {
+        "name": "DESCPARAM",
+        "nulls": 0,
+        "samples": [
+          "OC Activo Fijo",
+          "OC Intercompañia",
+          "Devoluciones"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_REGUP_202609301019.csv",
+    "bytes": 956256,
+    "rows_examined": 4640,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "LAUFD",
+        "nulls": 0,
+        "samples": [
+          "2025-09-05",
+          "2025-09-24",
+          "2025-10-03"
+        ]
+      },
+      {
+        "name": "LAUFI",
+        "nulls": 0,
+        "samples": [
+          "P0511",
+          "P2411",
+          "P0312"
+        ]
+      },
+      {
+        "name": "XVORL",
+        "nulls": 0,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "ZBUKR",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 25,
+        "samples": [
+          "0001001014",
+          "0001001288",
+          "0001747707"
+        ]
+      },
+      {
+        "name": "EMPFG",
+        "nulls": 4616,
+        "samples": [
+          "0000000288 Z",
+          "0000000269 Z",
+          "0000000253 Z"
+        ]
+      },
+      {
+        "name": "VBLNR",
+        "nulls": 2705,
+        "samples": [
+          "F110000008",
+          "F110000001",
+          "F110000002"
+        ]
+      },
+      {
+        "name": "BELNR",
+        "nulls": 0,
+        "samples": [
+          "1900000567",
+          "1900000729",
+          "1900000745"
+        ]
+      },
+      {
+        "name": "GJAHR",
+        "nulls": 0,
+        "samples": [
+          "2025",
+          "2026"
+        ]
+      },
+      {
+        "name": "BUZEI",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "ZLSCH",
+        "nulls": 2659,
+        "samples": [
+          "T",
+          "3",
+          "D"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP",
+          "USD"
+        ]
+      },
+      {
+        "name": "XBLNR",
+        "nulls": 43,
+        "samples": [
+          "261738",
+          "262379",
+          "262912"
+        ]
+      },
+      {
+        "name": "BLART",
+        "nulls": 0,
+        "samples": [
+          "KR",
+          "SA",
+          "KO"
+        ]
+      },
+      {
+        "name": "BUDAT",
+        "nulls": 0,
+        "samples": [
+          "2025-07-23",
+          "2025-08-01",
+          "2025-08-13"
+        ]
+      },
+      {
+        "name": "BLDAT",
+        "nulls": 0,
+        "samples": [
+          "2025-07-17",
+          "2025-07-29",
+          "2025-08-06"
+        ]
+      },
+      {
+        "name": "KOART",
+        "nulls": 0,
+        "samples": [
+          "K",
+          "D"
+        ]
+      },
+      {
+        "name": "BSCHL",
+        "nulls": 0,
+        "samples": [
+          "31",
+          "39",
+          "25"
+        ]
+      },
+      {
+        "name": "HKONT",
+        "nulls": 0,
+        "samples": [
+          "2102011001",
+          "2103011001",
+          "2102011003"
+        ]
+      },
+      {
+        "name": "SAKNR",
+        "nulls": 0,
+        "samples": [
+          "2102011001",
+          "2103011001",
+          "2102011003"
+        ]
+      },
+      {
+        "name": "PSWBT",
+        "nulls": 0,
+        "samples": [
+          "1880.68",
+          "5456.07",
+          "2007.48"
+        ]
+      },
+      {
+        "name": "KUNNR",
+        "nulls": 4615,
+        "samples": [
+          "0003955467",
+          "0004142366",
+          "0001401466"
+        ]
+      },
+      {
+        "name": "SHKZG",
+        "nulls": 0,
+        "samples": [
+          "H",
+          "S"
+        ]
+      },
+      {
+        "name": "ZWELS",
+        "nulls": 35,
+        "samples": [
+          "T",
+          "V",
+          "CETV"
+        ]
+      },
+      {
+        "name": "ZUONR",
+        "nulls": 3978,
+        "samples": [
+          "3128725",
+          "DIC. 2024",
+          "APORTE AFC IND D"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "REGUP_REGUP_20260930060021.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_REGUP_202610010950.csv",
+    "bytes": 956256,
+    "rows_examined": 4640,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "LAUFD",
+        "nulls": 0,
+        "samples": [
+          "2025-09-05",
+          "2025-09-24",
+          "2025-10-03"
+        ]
+      },
+      {
+        "name": "LAUFI",
+        "nulls": 0,
+        "samples": [
+          "P0511",
+          "P2411",
+          "P0312"
+        ]
+      },
+      {
+        "name": "XVORL",
+        "nulls": 0,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "ZBUKR",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "LIFNR",
+        "nulls": 25,
+        "samples": [
+          "0001001014",
+          "0001001151",
+          "0001001288"
+        ]
+      },
+      {
+        "name": "EMPFG",
+        "nulls": 4616,
+        "samples": [
+          "ALEJF-0000000009",
+          "0000000253 Z",
+          "0004286944 Z"
+        ]
+      },
+      {
+        "name": "VBLNR",
+        "nulls": 2705,
+        "samples": [
+          "F110000001",
+          "F110000002",
+          "F110000009"
+        ]
+      },
+      {
+        "name": "BELNR",
+        "nulls": 0,
+        "samples": [
+          "1900000567",
+          "1900000729",
+          "1900000745"
+        ]
+      },
+      {
+        "name": "GJAHR",
+        "nulls": 0,
+        "samples": [
+          "2025",
+          "2026"
+        ]
+      },
+      {
+        "name": "BUZEI",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "ZLSCH",
+        "nulls": 2659,
+        "samples": [
+          "T",
+          "3",
+          "D"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP",
+          "USD"
+        ]
+      },
+      {
+        "name": "XBLNR",
+        "nulls": 43,
+        "samples": [
+          "261738",
+          "262379",
+          "262912"
+        ]
+      },
+      {
+        "name": "BLART",
+        "nulls": 0,
+        "samples": [
+          "KR",
+          "SA",
+          "KO"
+        ]
+      },
+      {
+        "name": "BUDAT",
+        "nulls": 0,
+        "samples": [
+          "2025-07-23",
+          "2025-08-01",
+          "2025-08-13"
+        ]
+      },
+      {
+        "name": "BLDAT",
+        "nulls": 0,
+        "samples": [
+          "2025-07-17",
+          "2025-07-29",
+          "2025-08-06"
+        ]
+      },
+      {
+        "name": "KOART",
+        "nulls": 0,
+        "samples": [
+          "K",
+          "D"
+        ]
+      },
+      {
+        "name": "BSCHL",
+        "nulls": 0,
+        "samples": [
+          "31",
+          "39",
+          "25"
+        ]
+      },
+      {
+        "name": "HKONT",
+        "nulls": 0,
+        "samples": [
+          "2102011001",
+          "2103011001",
+          "2102011003"
+        ]
+      },
+      {
+        "name": "SAKNR",
+        "nulls": 0,
+        "samples": [
+          "2102011001",
+          "2103011001",
+          "2102011003"
+        ]
+      },
+      {
+        "name": "PSWBT",
+        "nulls": 0,
+        "samples": [
+          "1880.68",
+          "5456.07",
+          "2007.48"
+        ]
+      },
+      {
+        "name": "KUNNR",
+        "nulls": 4615,
+        "samples": [
+          "0003955467",
+          "0004142366",
+          "0001401466"
+        ]
+      },
+      {
+        "name": "SHKZG",
+        "nulls": 0,
+        "samples": [
+          "H",
+          "S"
+        ]
+      },
+      {
+        "name": "ZWELS",
+        "nulls": 35,
+        "samples": [
+          "T",
+          "V",
+          "CETV"
+        ]
+      },
+      {
+        "name": "ZUONR",
+        "nulls": 3978,
+        "samples": [
+          "3128725",
+          "DIC. 2024",
+          "APORTE AFC IND D"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-01"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "REGUP_REGUP_20261001060022.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_RUSA_202609301555.csv",
+    "bytes": 34668957,
+    "rows_examined": 259581,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "100021",
+          "100023",
+          "100024"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM06",
+          "OM08"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "Q_FIN_PERIODO",
+        "nulls": 0,
+        "samples": [
+          "35",
+          "400",
+          "2"
+        ]
+      },
+      {
+        "name": "V_FIN_PERIODO",
+        "nulls": 0,
+        "samples": [
+          "68565.00",
+          "778000.00",
+          "3316.00"
+        ]
+      },
+      {
+        "name": "BUDAT",
+        "nulls": 0,
+        "samples": [
+          "04-05-2025",
+          "01-02-2026",
+          "08-06-2025"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2025-05-05",
+          "2026-02-02",
+          "2025-06-09"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "RUSA_OFIMASTER_1_de_1_20250505_032445.dat",
+          "RUSA_OFIMASTER_1_de_1_20260202_032423.dat",
+          "RUSA_OFIMASTER_1_de_1_20250609_032433.dat"
+        ]
+      },
+      {
+        "name": "TIPO_CIERRE",
+        "nulls": 0,
+        "samples": [
+          "SEMANAL",
+          "DIARIO",
+          "MENSUAL"
+        ]
+      },
+      {
+        "name": "SAKNR",
+        "nulls": 39334,
+        "samples": [
+          "1106021001",
+          "1106041001"
+        ]
+      },
+      {
+        "name": "BUDAT_DATE",
+        "nulls": 0,
+        "samples": [
+          "2025-05-04",
+          "2026-02-01",
+          "2025-06-08"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_RUSA_MENSUAL_202609301556.csv",
+    "bytes": 5734175,
+    "rows_examined": 40390,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "100263",
+          "100265",
+          "100266"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM06",
+          "OM05"
+        ]
+      },
+      {
+        "name": "WAERS",
+        "nulls": 0,
+        "samples": [
+          "CLP"
+        ]
+      },
+      {
+        "name": "Q_FIN_PERIODO",
+        "nulls": 0,
+        "samples": [
+          "32",
+          "2",
+          "349"
+        ]
+      },
+      {
+        "name": "V_FIN_PERIODO",
+        "nulls": 0,
+        "samples": [
+          "34942.00",
+          "2184.00",
+          "442953.00"
+        ]
+      },
+      {
+        "name": "BUDAT",
+        "nulls": 0,
+        "samples": [
+          "30-11-2025",
+          "30-09-2025",
+          "31-05-2025"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2025-12-31",
+          "2025-10-31",
+          "2025-08-31"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "RUSA_OFIAMSTER_CIERRE_1_de_1_20251231_033148.dat",
+          "RUSA_OFIAMSTER_CIERRE_1_de_1_20251031_033113.dat",
+          "RUSA_CIERRE_012024_1_de_1_20250902_130827.dat"
+        ]
+      },
+      {
+        "name": "TIPO_CIERRE",
+        "nulls": 0,
+        "samples": [
+          "MENSUAL"
+        ]
+      },
+      {
+        "name": "SAKNR",
+        "nulls": 0,
+        "samples": [
+          "1106021001",
+          "1106041001"
+        ]
+      },
+      {
+        "name": "BUDAT_DATE",
+        "nulls": 0,
+        "samples": [
+          "2025-11-30",
+          "2025-09-30",
+          "2025-05-31"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_T001L_202609301017.csv",
+    "bytes": 1523,
+    "rows_examined": 15,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM02",
+          "OM04"
+        ]
+      },
+      {
+        "name": "LGOBE",
+        "nulls": 0,
+        "samples": [
+          "Disponible",
+          "Serv Dimerc Tech",
+          "Devol. Cliente"
+        ]
+      },
+      {
+        "name": "XLONG",
+        "nulls": 15,
+        "samples": []
+      },
+      {
+        "name": "XBUFX",
+        "nulls": 0,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "ZZCLASI",
+        "nulls": 0,
+        "samples": [
+          "VENDIBLE",
+          "MERMA",
+          "FULFILLMENT"
+        ]
+      },
+      {
+        "name": "ZZAGRU",
+        "nulls": 0,
+        "samples": [
+          "CD PUERTO VARAS"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "T001L_T001L_20260930001020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_T001L_OLD_202610010948.csv",
+    "bytes": 1591,
+    "rows_examined": 15,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM02",
+          "OM04"
+        ]
+      },
+      {
+        "name": "LGOBE",
+        "nulls": 0,
+        "samples": [
+          "Disponible",
+          "Serv Dimerc Tech",
+          "Devol. Cliente"
+        ]
+      },
+      {
+        "name": "XLONG",
+        "nulls": 15,
+        "samples": []
+      },
+      {
+        "name": "XBUFX",
+        "nulls": 0,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "ZZCLASI",
+        "nulls": 0,
+        "samples": [
+          "VENDIBLE",
+          "MERMA",
+          "FULFILLMENT"
+        ]
+      },
+      {
+        "name": "ZZAGRU",
+        "nulls": 0,
+        "samples": [
+          "CD PTO VARAS"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-02-24"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "T001L_T001L_20260224001012.dat"
+        ]
+      },
+      {
+        "name": "BUKRS",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_T024_202610010906.csv",
+    "bytes": 7069,
+    "rows_examined": 118,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EKGRP",
+        "nulls": 0,
+        "samples": [
+          "001",
+          "002",
+          "003"
+        ]
+      },
+      {
+        "name": "EKNAM",
+        "nulls": 0,
+        "samples": [
+          "EinkÃ¤ufer 1",
+          "EinkÃ¤ufer 2",
+          "EinkÃ¤ufer 3"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-01"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "T024_T024_20261001010021.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "SAP_T024_202610291152.csv",
+    "bytes": 7069,
+    "rows_examined": 118,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EKGRP",
+        "nulls": 0,
+        "samples": [
+          "001",
+          "002",
+          "003"
+        ]
+      },
+      {
+        "name": "EKNAM",
+        "nulls": 0,
+        "samples": [
+          "EinkÃ¤ufer 1",
+          "EinkÃ¤ufer 2",
+          "EinkÃ¤ufer 3"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-10-29"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "T024_T024_20261029010025.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "STATUSFEDEX_202610291153.csv",
+    "bytes": 928,
+    "rows_examined": 20,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "ITEM",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "name": "STATUS_FEDEX",
+        "nulls": 0,
+        "samples": [
+          "ASIGNACION DE RETIRO",
+          "RETIRO EFECTUADO",
+          "SALIDA EN CARTA DE PORTE"
+        ]
+      },
+      {
+        "name": "STATUS_DIMERC",
+        "nulls": 0,
+        "samples": [
+          "En Transito a Sucursal",
+          "Carga en Sucursal",
+          "Carga en Reparto"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "STOCK_SAP_1H_202609301016.csv",
+    "bytes": 361442,
+    "rows_examined": 2656,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EINME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "INSME",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "61.000",
+          "240.000"
+        ]
+      },
+      {
+        "name": "LABST",
+        "nulls": 0,
+        "samples": [
+          "23.000",
+          "107.000",
+          "282.000"
+        ]
+      },
+      {
+        "name": "LFGJA",
+        "nulls": 0,
+        "samples": [
+          "2026",
+          "2025"
+        ]
+      },
+      {
+        "name": "LFMON",
+        "nulls": 0,
+        "samples": [
+          "9",
+          "10",
+          "8"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM06",
+          "OM08"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 2655,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000120344",
+          "000000000000120345",
+          "000000000000120350"
+        ]
+      },
+      {
+        "name": "PSTAT",
+        "nulls": 0,
+        "samples": [
+          "DL",
+          "L"
+        ]
+      },
+      {
+        "name": "RETME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "SPEME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "SPERR",
+        "nulls": 2655,
+        "samples": [
+          "A"
+        ]
+      },
+      {
+        "name": "UMLME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MARDT_MARD_20260930100020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "STOCK_SAP_1H_202609301745.csv",
+    "bytes": 361740,
+    "rows_examined": 2658,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "EINME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "INSME",
+        "nulls": 0,
+        "samples": [
+          "0.000",
+          "61.000",
+          "240.000"
+        ]
+      },
+      {
+        "name": "LABST",
+        "nulls": 0,
+        "samples": [
+          "23.000",
+          "107.000",
+          "381.000"
+        ]
+      },
+      {
+        "name": "LFGJA",
+        "nulls": 0,
+        "samples": [
+          "2026",
+          "2025"
+        ]
+      },
+      {
+        "name": "LFMON",
+        "nulls": 0,
+        "samples": [
+          "9",
+          "10",
+          "8"
+        ]
+      },
+      {
+        "name": "LGORT",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM06",
+          "OM08"
+        ]
+      },
+      {
+        "name": "LVORM",
+        "nulls": 2657,
+        "samples": [
+          "X"
+        ]
+      },
+      {
+        "name": "MATNR",
+        "nulls": 0,
+        "samples": [
+          "000000000000120344",
+          "000000000000120345",
+          "000000000000120350"
+        ]
+      },
+      {
+        "name": "PSTAT",
+        "nulls": 0,
+        "samples": [
+          "DL",
+          "L"
+        ]
+      },
+      {
+        "name": "RETME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "SPEME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "SPERR",
+        "nulls": 2657,
+        "samples": [
+          "A"
+        ]
+      },
+      {
+        "name": "UMLME",
+        "nulls": 0,
+        "samples": [
+          "0.000"
+        ]
+      },
+      {
+        "name": "WERKS",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "FECHA_PROCESO",
+        "nulls": 0,
+        "samples": [
+          "2026-09-30"
+        ]
+      },
+      {
+        "name": "ARCHIVO",
+        "nulls": 0,
+        "samples": [
+          "MARDT_MARD_20260930170020.dat"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "tmp_resumen_comprometido_sap_202610291156.csv",
+    "bytes": 98316,
+    "rows_examined": 2672,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "codsap",
+        "nulls": 0,
+        "samples": [
+          "522200              ",
+          "522270              ",
+          "522281              "
+        ]
+      },
+      {
+        "name": "ctdad_sap",
+        "nulls": 0,
+        "samples": [
+          "2",
+          "8",
+          "1"
+        ]
+      },
+      {
+        "name": "ctdad_legado",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "diferencia",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "qnvt_sap",
+        "nulls": 0,
+        "samples": [
+          "1",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "name": "qnvt_legado",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      },
+      {
+        "name": "diferencia_nvt",
+        "nulls": 0,
+        "samples": [
+          "0"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "vw_KardexDomingos_202610291044.csv",
+    "bytes": 1145303,
+    "rows_examined": 12067,
+    "scope": "full",
+    "malformed": 0,
+    "columns": [
+      {
+        "name": "Fecha_Domingo",
+        "nulls": 0,
+        "samples": [
+          "2025-04-26",
+          "2026-01-24",
+          "2026-02-14"
+        ]
+      },
+      {
+        "name": "codpro",
+        "nulls": 0,
+        "samples": [
+          "100046",
+          "100081",
+          "100249"
+        ]
+      },
+      {
+        "name": "sociedad",
+        "nulls": 0,
+        "samples": [
+          "8000"
+        ]
+      },
+      {
+        "name": "CENTRO",
+        "nulls": 0,
+        "samples": [
+          "8001"
+        ]
+      },
+      {
+        "name": "almacen",
+        "nulls": 0,
+        "samples": [
+          "OM01",
+          "OM05"
+        ]
+      },
+      {
+        "name": "PROVEEDOR",
+        "nulls": 0,
+        "samples": [
+          "DIMERC S A ",
+          "EMPRESAS DEMARIA S.A. ",
+          "DISTRIBUIDORA Y COMERCIAL DIMAK LIM ITADA"
+        ]
+      },
+      {
+        "name": "Importe_Semana",
+        "nulls": 0,
+        "samples": [
+          "10650.00",
+          "4377.00",
+          "14590.00"
+        ]
+      },
+      {
+        "name": "Ultima_Fecha_Recepcion",
+        "nulls": 0,
+        "samples": [
+          "2025-04-24",
+          "2026-01-23",
+          "2026-02-10"
+        ]
+      },
+      {
+        "name": "MENOS84DIAS",
+        "nulls": 0,
+        "samples": [
+          "2025-01-30",
+          "2025-10-31",
+          "2025-11-18"
+        ]
+      },
+      {
+        "name": "Ultima_Recepcion_Arrastrada",
+        "nulls": 0,
+        "samples": [
+          "2025-04-25",
+          "2026-01-24",
+          "2026-02-13"
+        ]
+      }
+    ]
+  }
+]

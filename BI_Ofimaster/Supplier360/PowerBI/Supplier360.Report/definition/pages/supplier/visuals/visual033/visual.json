@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual033",
+  "position": {
+    "x": 20,
+    "y": 470,
+    "width": 1400,
+    "height": 370,
+    "z": 33,
+    "tabOrder": 33
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProducto"
+                    }
+                  },
+                  "Property": "Descripcion"
+                }
+              },
+              "queryRef": "DimProducto.Descripcion",
+              "nativeQueryRef": "Descripcion"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProducto"
+                    }
+                  },
+                  "Property": "Marca"
+                }
+              },
+              "queryRef": "DimProducto.Marca",
+              "nativeQueryRef": "Marca"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Posiciones OC"
+                }
+              },
+              "queryRef": "FactOC.Posiciones OC",
+              "nativeQueryRef": "Posiciones OC"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Fill Rate promedio posiciones"
+                }
+              },
+              "queryRef": "FactOC.Fill Rate promedio posiciones",
+              "nativeQueryRef": "Fill Rate promedio posiciones"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Valor OC moneda origen"
+                }
+              },
+              "queryRef": "FactOC.Valor OC moneda origen",
+              "nativeQueryRef": "Valor OC moneda origen"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Compra por producto; NC no integradas hasta validar mapeo'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

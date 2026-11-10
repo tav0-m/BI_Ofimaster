@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual006",
+  "position": {
+    "x": 730,
+    "y": 150,
+    "width": 330,
+    "height": 110,
+    "z": 6,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimMoneda"
+                    }
+                  },
+                  "Property": "Moneda"
+                }
+              },
+              "queryRef": "DimMoneda.Moneda",
+              "nativeQueryRef": "Moneda"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Moneda'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

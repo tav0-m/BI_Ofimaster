@@ -1,0 +1,149 @@
+{
+  "sheets": [
+    {
+      "name": "04 NCR Proveedores",
+      "sheetId": "5",
+      "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId1"
+    }
+  ],
+  "data": [
+    {
+      "file": "xl/worksheets/sheet1.xml",
+      "rows": 120,
+      "sample": [
+        {
+          "A1": "Prov",
+          "B1": "Fecha",
+          "C1": "Factura",
+          "D1": "Motivo",
+          "E1": "Cod Prod",
+          "F1": "Descripcion",
+          "G1": "Monto",
+          "H1": "OC",
+          "I1": "Resolucion"
+        },
+        {
+          "A2": "DIMERC",
+          "B2": "45304",
+          "C2": "11604544",
+          "D2": "4 CERAS LIQUIDAS 5 LT FACTURADAS Y NO ENTREGADAS",
+          "E2": "OFI101197 / Z401212",
+          "F2": "CERA LIQUIDA AMARILLA BIDON 5 LT VIRGINIA PRO",
+          "G2": "58692",
+          "H2": "",
+          "I2": "NC 1985187"
+        },
+        {
+          "A3": "DIMERC",
+          "B3": "45304",
+          "C3": "11601890",
+          "D3": "5 LINTERNAS FACTURADAS Y NO ENTREGADAS",
+          "E3": "OFI500911 / 122035",
+          "F3": "LINTERNA ALUMINIO 150L + 2 AA DURACELL",
+          "G3": "39100",
+          "H3": "",
+          "I3": "NC 1984706"
+        },
+        {
+          "A4": "DIMERC",
+          "B4": "45304",
+          "C4": "11587794",
+          "D4": "6 ROLLOS TÉRMICOS DESPACHADOS SIN FACTURAR",
+          "E4": "OFI101148 / 528838",
+          "F4": "ROLLO TERMICO 80X80 MTS X 10 ROLLOS 48 GR ENGATEL",
+          "G4": "52170",
+          "H4": "",
+          "I4": "DIMERC NO RETIRA PRODUCTO"
+        },
+        {
+          "A5": "DIMERC",
+          "B5": "45304",
+          "C5": "11587794",
+          "D5": "6 ROLLOS TÉRMICOS FACTURADOS Y NO ENTREGADOS",
+          "E5": "OFI500892 / H199627",
+          "F5": "ROLLO TERMICO 80X80 MTS X 10 ROLLOS 55 GR ENGATEL",
+          "G5": "58020",
+          "H5": "",
+          "I5": "NC 1984707"
+        },
+        {
+          "A6": "DIMERC",
+          "B6": "45304",
+          "C6": "11587795",
+          "D6": "26/50 FACTURADADOS Y NO ENTREGADOS",
+          "E6": "OFI101674 / L507004",
+          "F6": "MINAS 0.5 MM 2B 12 UNIDADES PILOT",
+          "G6": "5472",
+          "H6": "",
+          "I6": "NC 1984708"
+        },
+        {
+          "A7": "ESSITY",
+          "B7": "45674",
+          "C7": "2239501",
+          "D7": "IN76092 FACTURADO Y NO ENTREGADO",
+          "E7": "IN76092",
+          "F7": "PAÑAL TENA SLIP M (4 PQTES X 21 UN) TENA",
+          "G7": "127132",
+          "H7": "",
+          "I7": "REDESPACHO 27-01"
+        },
+        {
+          "A8": "ESSITY",
+          "B8": "45674",
+          "C8": "2239501",
+          "D8": "DI70029 FACTURADO Y NO ENTREGADO",
+          "E8": "DI70029",
+          "F8": "DISP. TOALLA INTERFOLIADA NEGRO ELEVATION TORK H2",
+          "G8": "83445",
+          "H8": "",
+          "I8": "REDESPACHO 27-01"
+        },
+        {
+          "A9": "ESSITY",
+          "B9": "45674",
+          "C9": "2239501",
+          "D9": "DI70045 FACTURADO Y NO ENTREGADO",
+          "E9": "DI70045",
+          "F9": "JABONERA P-SACHET ESPUMA 1 LT ELEVATION NEGRA S4",
+          "G9": "74448",
+          "H9": "",
+          "I9": "REDESPACHO 27-01"
+        },
+        {
+          "A10": "ESSITY",
+          "B10": "45674",
+          "C10": "2239502",
+          "D10": "DI70028 FACTURADO Y NO ENTREGADO",
+          "E10": "DI70028",
+          "F10": "DISP. TOALLA INTERFOLIADA BLANCO ELEVATION H2",
+          "G10": "16889",
+          "H10": "",
+          "I10": "REDESPACHO 27-01"
+        },
+        {
+          "A11": "DIMERC",
+          "B11": "45678",
+          "C11": "11618400",
+          "D11": "LAPICES DE COLORES FACTURADOS Y NO ENTREGADOS",
+          "E11": "U462873",
+          "F11": "LAPICES DE COLORES 12 UN JUMBO HEXAGONAL",
+          "G11": "42000",
+          "H11": "",
+          "I11": "NC 1985467"
+        },
+        {
+          "A12": "ESSITY",
+          "B12": "45684",
+          "C12": "2239502",
+          "D12": "DI70028 FACTURADO Y NO ENTREGADO",
+          "E12": "DI70028",
+          "F12": "DISP. TOALLA INTERFOLIADA BLANCO ELEVATION H2",
+          "G12": "16889",
+          "H12": "",
+          "I12": "NC 284627"
+        }
+      ]
+    }
+  ]
+}

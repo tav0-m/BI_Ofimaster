@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual015",
+  "position": {
+    "x": 20,
+    "y": 150,
+    "width": 680,
+    "height": 110,
+    "z": 15,
+    "tabOrder": 15
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DimProveedor"
+                    }
+                  },
+                  "Property": "Nombre"
+                }
+              },
+              "queryRef": "DimProveedor.Nombre",
+              "nativeQueryRef": "Nombre"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Nombre'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

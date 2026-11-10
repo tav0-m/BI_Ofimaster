@@ -1,0 +1,1014 @@
+Filtrar campos por:1. SAP_EKKO: información general del pedido
+Una fila representa la cabecera de una orden de compra. Aquí encontramos quién provee, la moneda y quién gestiona la compra.
+Campo
+Qué significa
+Para qué sirve
+EBELN
+Número del documento de compras: la OC en este contexto.
+Identificar el pedido y relacionarlo con sus productos y entregas.
+BUKRS
+Sociedad SAP.
+Separar la información de cada empresa y aplicar el alcance autorizado.
+LIFNR
+Código SAP del proveedor.
+Relacionar el pedido con el proveedor. No es necesariamente su RUT.
+BSART
+Clase o tipo de documento de compras.
+Distinguir tipos de pedidos según la configuración de la empresa.
+BEDAT
+Fecha del documento de compras.
+Consultar cuándo se emitió el pedido y analizar su antigüedad.
+EKORG
+Organización de compras.
+Identificar la unidad organizativa que gestiona las compras.
+EKGRP
+Grupo de compras.
+Agrupar pedidos según el equipo o grupo comprador.
+WAERS
+Moneda del pedido.
+Mostrar los importes correctamente y evitar sumar monedas diferentes.
+WKURS
+Tipo de cambio registrado.
+Apoyar conversiones monetarias, respetando las reglas de SAP.
+La extracción de cabeceras también contempla:
+Campo
+Qué significa
+Para qué sirve
+BSTYP
+Categoría del documento de compras.
+Diferenciar familias de documentos.
+LOEKZ
+Indicador de borrado de la cabecera.
+Reconocer documentos marcados para eliminación y conservar su trazabilidad.
+Ejemplo: EBELN identifica el pedido y LIFNR identifica a quién se lo compraste.
+2. SAP_EKPO: productos o posiciones del pedido
+Una OC puede tener varios productos. Cada línea se identifica con EBELN + EBELP.
+Campo
+Qué significa
+Para qué sirve
+EBELN
+Número de OC.
+Vincular la línea con su pedido.
+EBELP
+Posición dentro de la OC.
+Distinguir cada línea, incluso si un material aparece varias veces.
+MATNR
+Código SAP del material.
+Identificar el producto.
+TXZ01
+Descripción de la posición.
+Mostrar qué producto o servicio se pidió.
+WERKS
+Centro SAP.
+Identificar el centro asociado a la compra.
+LGORT
+Almacén SAP.
+Identificar la ubicación de almacenamiento asociada.
+MENGE
+Cantidad solicitada en la posición.
+Establecer cuánto se pidió y calcular el cumplimiento.
+MEINS
+Unidad de medida del pedido.
+Saber si la cantidad está expresada en unidades, cajas u otra medida.
+NETPR
+Precio neto.
+Consultar el precio pactado, junto con su base y unidad.
+PEINH
+Cantidad base del precio.
+Saber si el precio corresponde, por ejemplo, a 1, 10 o 100 unidades.
+BPRME
+Unidad de medida del precio.
+Interpretar correctamente el precio cuando difiere de la unidad del pedido.
+NETWR
+Valor neto de la posición.
+Mostrar el importe neto total de esa línea.
+INFNR
+Número del registro info de compras.
+Relacionar el material con información comercial del proveedor.
+LOEKZ
+Indicador de borrado de la posición.
+Reconocer líneas eliminadas sin perder el historial.
+ELIKZ
+Indicador de entrega final.
+Reconocer que SAP considera terminada la entrega de esa posición.
+UMREZ
+Numerador de conversión de la unidad del pedido a la unidad base.
+Convertir cantidades entre unidades.
+UMREN
+Denominador de esa conversión.
+Completar el factor de conversión.
+BPUMZ
+Numerador de conversión entre unidad de precio y unidad del pedido.
+Interpretar el precio con la unidad correcta.
+BPUMN
+Denominador de esa conversión.
+Completar la conversión correspondiente al precio.
+La extracción también utiliza BUKRS para comprobar la sociedad de la posición.
+Importante: ELIKZ indica cierre de entrega en SAP; no demuestra que todos los productos llegaron físicamente conformes. Lo aceptado y rechazado necesita el registro de recepción.
+3. SAP_EKET: programación y cantidades recibidas
+Una posición puede tener varios repartos: entregas previstas en diferentes fechas.
+Campo
+Qué significa
+Para qué sirve
+EBELN
+Número de OC.
+Relacionar la programación con el pedido.
+EBELP
+Posición de la OC.
+Relacionarla con el producto específico.
+ETENR
+Número de reparto o línea de programación.
+Distinguir varias entregas de una misma posición.
+EINDT
+Fecha de entrega programada.
+Determinar cuándo debía llegar el producto.
+SLFDT
+Fecha de entrega relevante para estadísticas.
+Apoyar evaluaciones de entrega según la configuración de SAP.
+MENGE
+Cantidad programada para ese reparto.
+Conocer cuánto corresponde a cada entrega prevista.
+WEMNG
+Cantidad recibida contabilizada en SAP para el reparto.
+Comparar lo programado con lo recibido registrado en SAP.
+Diferencia clave: EKPO.MENGE es la cantidad pedida en la posición; EKET.MENGE es la cantidad programada en cada reparto. No deben sumarse entre sí como si fueran compras diferentes.
+4. prov: maestro de proveedores
+Campo
+Qué significa
+Para qué sirve
+sociedad
+Empresa a la que corresponde el registro.
+Buscar al proveedor dentro de la sociedad correcta.
+id_proveedor
+Identificador del proveedor en este maestro.
+Asociarlo con LIFNR, mediante la normalización acordada.
+nombre
+Nombre del proveedor.
+Mostrar un nombre legible en filtros, tablas y reportes.
+pais
+País del proveedor.
+Segmentar proveedores por procedencia.
+moneda
+Moneda registrada en el maestro.
+Dar contexto comercial; no reemplaza la moneda específica de cada OC.
+id_plazo_pago_prov
+Código del plazo o condición de pago.
+Consultar condiciones comerciales mediante su catálogo.
+bloqueo_compra
+Indicador de bloqueo para compras.
+Advertir restricciones comerciales del proveedor.
+5. mat: clasificación comercial de materiales
+Campo
+Qué significa
+Para qué sirve
+sociedad
+Sociedad del maestro.
+Seleccionar la clasificación correspondiente.
+material
+Código del producto.
+Relacionar el maestro con pedidos e inventario.
+descripcion
+Nombre o descripción del material.
+Mostrar el producto de forma comprensible.
+linea
+Nivel de clasificación comercial.
+Agrupar materiales para análisis.
+seccion
+Nivel de clasificación comercial.
+Crear filtros y agrupaciones.
+rubro
+Clasificación por rubro.
+Analizar familias de productos.
+subrubro
+Clasificación más específica.
+Desglosar los rubros.
+grupo
+Agrupación comercial registrada.
+Complementar la categorización.
+marca
+Marca del producto.
+Filtrar y comparar por marca.
+Unidad_medida_base
+Unidad base registrada en este maestro.
+Ayudar a interpretar cantidades y contrastarlas con SAP.
+La jerarquía exacta entre línea, sección, rubro y grupo debe respetar el catálogo de la empresa; no conviene inventar una clasificación diferente.
+6. SAP_MARA: datos generales del material
+Campo
+Qué significa
+Para qué sirve
+MATNR
+Código SAP del material.
+Identificar el producto.
+MEINS
+Unidad de medida base.
+Dar una referencia común para cantidades e inventario.
+BSTME
+Unidad de pedido del maestro.
+Consultar la unidad de compra configurada por defecto.
+MATKL
+Grupo de artículos o materiales.
+Clasificar materiales según SAP.
+MTART
+Tipo de material.
+Diferenciar clases de materiales según configuración.
+LVORM
+Indicador de borrado.
+Advertir materiales marcados para eliminación.
+EAN11
+Código EAN registrado.
+Apoyar identificación mediante código de barras.
+7. SAP_MARM: unidades alternativas del material
+Campo
+Qué significa
+Para qué sirve
+MATNR
+Código de material.
+Identificar a qué producto corresponde la conversión.
+MEINH
+Unidad de medida alternativa.
+Identificar otra presentación: caja, paquete, etc.
+UMREZ
+Numerador del factor de conversión.
+Convertir la unidad alternativa a la base.
+UMREN
+Denominador del factor.
+Completar la conversión.
+EAN11
+EAN de la unidad o presentación.
+Reconocer una presentación mediante lectura de código.
+EANNR
+Campo adicional de EAN en la extracción.
+Conservar identificadores alternativos; su uso concreto debe validarse.
+Impacto: evita comparar, por ejemplo, 10 cajas solicitadas con 10 unidades recibidas como si fueran equivalentes.
+8. SAP_EINA: relación general proveedor–material
+Campo
+Qué significa
+Para qué sirve
+INFNR
+Número de registro info.
+Identificar la relación comercial.
+LIFNR
+Código SAP del proveedor.
+Saber a qué proveedor corresponde.
+MATNR
+Código SAP del material.
+Identificar el producto interno.
+IDNLF
+Código del material utilizado por el proveedor.
+Relacionar códigos de facturas o documentos con el material SAP.
+LOEKZ
+Indicador de borrado.
+Reconocer relaciones marcadas para eliminación.
+MEINS
+Unidad de pedido del registro info.
+Interpretar cómo se compra al proveedor.
+LMEIN
+Unidad base del
+
+Sí. Los ordeno por tabla, indicando qué significa cada campo y para qué sirve en tu proyecto.
+Me baso en el [diccionario de campos del proyecto](reports/contrato_plataforma_20261016/Campos_DWH.csv). Son los campos seleccionados para las extracciones y contratos de la API, no todas las columnas existentes en SAP. Algunos ya alimentan la simulación; otros son complementarios o necesitan validación antes de utilizarlos.
+1. SAP_EKKO: información general del pedido
+Una fila representa la cabecera de un documento de compras. Describe quién compra, a quién y bajo qué condiciones.
+Campo
+Qué significa
+Para qué sirve en la app
+EBELN
+Número del documento de compras: OC o pedido, según su tipo.
+Identificar el pedido y relacionarlo con sus productos y entregas.
+BUKRS
+Código de sociedad.
+Separar los datos de cada empresa y filtrar el alcance del proyecto.
+LIFNR
+Código SAP del proveedor. No es necesariamente su RUT.
+Relacionar pedidos con el maestro de proveedores.
+BSART
+Clase o tipo de documento de compras.
+Distinguir compras, servicios, traslados u otros tipos configurados.
+BEDAT
+Fecha del documento de compras.
+Consultar antigüedad y filtrar pedidos por fecha.
+EKORG
+Organización de compras.
+Identificar la organización responsable de la compra.
+EKGRP
+Grupo de compras.
+Agrupar pedidos por equipo o responsable de compras.
+WAERS
+Moneda del documento.
+Mostrar correctamente los importes y evitar mezclar monedas.
+WKURS
+Tipo de cambio registrado en el documento.
+Apoyar conversiones monetarias, validando previamente su convención.
+En la extracción actual también se conservan BSTYP, categoría del documento, y LOEKZ, indicador de borrado de cabecera. Ayudan a interpretar y auditar el estado administrativo del pedido.
+Ejemplo: EBELN identifica el pedido; LIFNR identifica al proveedor de ese pedido.
+2. SAP_EKPO: productos o posiciones del pedido
+Un pedido puede contener varios productos. Cada línea se identifica mediante EBELN + EBELP.
+Campo
+Qué significa
+Para qué sirve en la app
+EBELN
+Número del pedido.
+Vincular la posición con su cabecera.
+EBELP
+Número de posición dentro del pedido.
+Diferenciar los productos o líneas de una misma OC.
+MATNR
+Código SAP del material.
+Relacionar el producto con su descripción, categoría, stock y unidades.
+TXZ01
+Descripción breve de la posición.
+Mostrar qué producto o servicio se solicitó.
+WERKS
+Centro asociado a la posición.
+Filtrar el establecimiento o centro correspondiente.
+LGORT
+Almacén asociado a la posición.
+Identificar dónde corresponde gestionar el material.
+MENGE
+Cantidad solicitada en la posición.
+Base para calcular lo recibido y lo pendiente.
+MEINS
+Unidad de medida del pedido.
+Interpretar si la cantidad representa unidades, cajas u otra unidad.
+NETPR
+Precio neto por la base de precio indicada.
+Consultar el precio pactado.
+PEINH
+Cantidad de unidades a la que corresponde el precio.
+Interpretar si el precio es por 1, 10, 100 unidades, etc.
+BPRME
+Unidad de medida utilizada para el precio.
+Evitar confundir la unidad del precio con la unidad del pedido.
+NETWR
+Valor neto de la posición.
+Mostrar el importe neto de esa línea.
+INFNR
+Número del registro info de compras.
+Relacionar proveedor, material y condiciones comerciales.
+LOEKZ
+Indicador de borrado de la posición.
+Detectar líneas eliminadas administrativamente y conservar su historial.
+ELIKZ
+Indicador de entrega final.
+Identificar posiciones marcadas como finalizadas en SAP.
+UMREZ
+Numerador de conversión entre unidad de pedido y unidad base.
+Convertir cantidades a una unidad comparable.
+UMREN
+Denominador de esa conversión.
+Completar el factor de conversión.
+BPUMZ
+Numerador de conversión entre unidad de precio y unidad de pedido.
+Interpretar precios cuando ambas unidades son diferentes.
+BPUMN
+Denominador de esa conversión.
+Completar la conversión de unidades de precio.
+La extracción también conserva BUKRS para controlar la sociedad.
+Importante: ELIKZ no demuestra que todo llegó físicamente ni que llegó conforme. Es un estado administrativo de SAP.
+3. SAP_EKET: programación y recepción registrada en SAP
+Una posición puede tener varias entregas programadas. Cada reparto se identifica mediante EBELN + EBELP + ETENR.
+Campo
+Qué significa
+Para qué sirve en la app
+EBELN
+Número del pedido.
+Relacionar la programación con la OC.
+EBELP
+Posición del pedido.
+Asociar la entrega con el producto correcto.
+ETENR
+Número de reparto o línea de programación.
+Diferenciar entregas programadas de una misma posición.
+EINDT
+Fecha de entrega programada.
+Mostrar compromisos y detectar atrasos.
+SLFDT
+Fecha de entrega relevante para evaluación estadística.
+Apoyar una futura evaluación de puntualidad, validando su uso empresarial.
+MENGE
+Cantidad programada en ese reparto.
+Saber cuánto corresponde entregar en cada programación.
+WEMNG
+Cantidad recibida registrada en SAP para el reparto.
+Calcular recepción SAP y saldo pendiente.
+Aquí MENGE no representa exactamente lo mismo que en EKPO:
+En EKPO: cantidad solicitada de la posición.
+En EKET: cantidad programada de un reparto.
+Los repartos se agrupan antes de unirlos con las posiciones para no duplicar cantidades.
+4. prov: maestro de proveedores
+Campo
+Qué significa
+Para qué sirve en la app
+sociedad
+Empresa a la que pertenece el registro.
+Consultar el proveedor en el contexto correcto.
+id_proveedor
+Identificador del proveedor.
+Asociarlo con LIFNR, mediante la normalización validada.
+nombre
+Nombre del proveedor.
+Mostrar nombres legibles en tablas, filtros y gráficos.
+pais
+País registrado.
+Clasificación y consultas por origen.
+moneda
+Moneda registrada para el proveedor.
+Referencia comercial; no sustituye la moneda de cada OC.
+id_plazo_pago_prov
+Código de condición o plazo de pago.
+Consultar las condiciones de pago; requiere interpretar su catálogo.
+bloqueo_compra
+Indicador de bloqueo de compras.
+Advertir restricciones comerciales.
+5. mat: maestro comercial de materiales
+Esta tabla ayuda especialmente a clasificar los productos.
+Campo
+Qué significa
+Para qué sirve en la app
+sociedad
+Empresa del registro.
+Seleccionar el maestro correspondiente.
+material
+Código del producto.
+Relacionarlo con pedidos, stock y movimientos.
+descripcion
+Nombre o descripción del material.
+Mostrar el producto de forma comprensible.
+linea
+Clasificación comercial de línea.
+Agrupar productos.
+seccion
+Clasificación comercial de sección.
+Filtrar y analizar familias.
+rubro
+Clasificación comercial de rubro.
+Construir categorías y gráficos.
+subrubro
+Clasificación más detallada del rubro.
+Analizar grupos específicos.
+grupo
+Agrupación comercial registrada.
+Complementar la clasificación.
+marca
+Marca del producto.
+Filtrar y analizar por marca.
+Unidad_medida_base
+Unidad base del maestro comercial.
+Apoyar la interpretación de cantidades y contrastarla con SAP.
+Los niveles linea, seccion, rubro, subrubro y grupo deben respetar el catálogo de la empresa; no conviene inventar una jerarquía distinta.
+6. SAP_MARA: características generales del material
+Campo
+Qué significa
+Para qué sirve en la app
+MATNR
+Código SAP del material.
+Identificación del producto.
+MEINS
+Unidad de medida base.
+Expresar stock y conversiones de forma consistente.
+BSTME
+Unidad de compra del maestro.
+Referencia de compra; la unidad efectiva de una OC está en EKPO.
+MATKL
+Grupo de artículos o materiales.
+Clasificación SAP del producto.
+MTART
+Tipo de material.
+Diferenciar clases de materiales configuradas.
+LVORM
+Indicador de borrado a este nivel del maestro.
+Advertir materiales marcados para eliminación.
+EAN11
+Código EAN registrado.
+Apoyar identificación mediante código de barras.
+7. SAP_MARM: unidades y conversiones del material
+Campo
+Qué significa
+Para qué sirve en la app
+MATNR
+Código del material.
+Identificar a qué producto corresponde la conversión.
+MEINH
+Unidad de medida alternativa.
+Registrar unidades distintas de la base, como caja o paquete.
+UMREZ
+Numerador de conversión a unidad base.
+Calcular equivalencias.
+UMREN
+Denominador de conversión a unidad base.
+Completar la equivalencia.
+EAN11
+EAN asociado a la unidad.
+Identificar una presentación del producto.
+EANNR
+Identificador EAN adicional presente en la extracción.
+Complementar la búsqueda; su uso concreto debe validarse.
+Por ejemplo, una caja puede equivaler a varias unidades base. Sin esa conversión, el fill rate podría comparar cajas con unidades y dar un resultado incorrecto.
+8. SAP_EINA: relación general proveedor–material
+Campo
+Qué significa
+Para qué sirve en la app
+INFNR
+Número del registro info.
+Identificar la relación comercial.
+LIFNR
+Código del proveedor.
+Saber qué proveedor ofrece el material.
+MATNR
+Código SAP del material.
+Identificar el producto interno.
+IDNLF
+Código del material utilizado por el proveedor.
+Asociar códigos de facturas o documentos escaneados con el material SAP.
+LOEKZ
+Indicador de borrado del registro.
+Evitar usar relaciones eliminadas como vigentes.
+MEINS
+Unidad de pedido del registro info.
+Interpretar cómo se compra al proveedor.
+LMEIN
+Unidad base del material.
+Comparar la unidad de compra con la base.
+UMREZ
+Numerador de conversión.
+Convertir cantidades.
+UMREN
+Denominador de conversión.
+Completar el factor de conversión.
+Esta tabla es importante para el escáner, pero una coincidencia puede devolver varios candidatos: no siempre permite asignar automáticamente un producto.
+9. SAP_MARD: stock por material, centro y almacén
+Campo
+Qué significa
+Para qué sirve en la app
+MATNR
+Material.
+Consultar existencias del producto.
+WERKS
+Centro.
+Ubicar las existencias por centro.
+LGORT
+Almacén.
+Ubicar las existencias por almacén.
+LABST
+Stock de libre utilización.
+Mostrar disponibilidad libre registrada.
+INSME
+Stock en inspección de calidad.
+Diferenciar cantidades pendientes de inspección.
+SPEME
+Stock bloqueado.
+Mostrar cantidades no disponibles como stock libre.
+UMLME
+Stock en traslado entre almacenes.
+Consultar stock en transferencia a ese nivel.
+RETME
+Stock bloqueado de devoluciones.
+Identificar existencias asociadas a devoluciones.
+EINME
+Stock de utilización restringida.
+Separar existencias con restricciones.
+LVORM
+Indicador de borrado del registro de almacén.
+Controlar la vigencia administrativa del registro.
+Stock en traslado de MARD no equivale automáticamente a todos los pedidos pendientes de la app. Son conceptos y fuentes diferentes.
+10. Catálogos: almacenes, grupos de compras y tipos de OC
+Tabla
+Campo
+Qué significa y para qué sirve
+SAP_T001L
+WERKS
+Centro al que pertenece el almacén.
+SAP_T001L
+LGORT
+Código del almacén.
+SAP_T001L
+LGOBE
+Nombre del almacén para mostrarlo en pantalla.
+SAP_T001L
+ZZCLASI
+Clasificación personalizada; necesita definición empresarial.
+SAP_T001L
+ZZAGRU
+Agrupación personalizada; necesita definición empresarial.
+SAP_T024
+EKGRP
+Código del grupo de compras.
+SAP_T024
+EKNAM
+Nombre del grupo de compras.
+SAP_PARAM_TIPO_OC
+CODPARAM
+Código del tipo de pedido.
+SAP_PARAM_TIPO_OC
+DESCPARAM
+Descripción del tipo de pedido.
+Sirven para mostrar nombres en lugar de códigos y construir filtros comprensibles.
+11. PROVEEDOR_X_SOCIEDAD: relación comercial por sociedad
+Campo
+Qué significa
+Para qué sirve en la app
+SOCIEDAD
+Empresa de la relación comercial.
+Delimitar el registro.
+REGISTRO_INFO
+Registro info asociado.
+Relacionar datos comerciales.
+MATERIAL
+Código del producto.
+Identificar el material.
+PROVEEDOR
+Identificador del proveedor.
+Relacionar proveedor y producto.
+PXS
+Campo propio de esta fuente.
+Su significado exacto debe confirmarse; no debe usarse en cálculos sin definición.
+BLOQUEADO
+Indicador de bloqueo.
+Advertir relaciones restringidas.
+MWSKZ
+Código de impuesto.
+Interpretar el tratamiento tributario mediante su catálogo.
+12. SAP_EINE: condiciones de compra del registro info
+Campo
+Qué significa
+Para qué sirve en la app
+INFNR
+Registro info.
+Vincular condiciones con la relación proveedor–material.
+EKORG
+Organización de compras.
+Consultar condiciones del ámbito correcto.
+WERKS
+Centro, cuando corresponde.
+Aplicar condiciones específicas del centro.
+NETPR
+Precio neto registrado.
+Consultar una referencia comercial.
+PEINH
+Base de cantidad del precio.
+Interpretar correctamente el precio.
+WAERS
+Moneda.
+Mostrar la referencia monetaria.
+BPRME
+Unidad del precio.
+Interpretar a qué unidad corresponde.
+PRDAT
+Fecha de validez del precio.
+Evaluar la vigencia de la referencia.
+LOEKZ
+Indicador de borrado.
+Excluir relaciones eliminadas de consultas vigentes.
+APLFZ
+Plazo de entrega previsto.
+Apoyar la planificación de compras.
+El precio de referencia de EINE no debe reemplazar sin más el precio pactado en una OC concreta.
+13. SAP_A017 y SAP_A018: vigencia de condiciones comerciales
+Ambas relacionan proveedor y material con un registro de condición. A017 incluye el centro.
+Campo
+Qué significa
+Para qué sirve en la app
+KAPPL en A017 / KPPL en tu archivo A018
+Aplicación de la condición; A018 presenta ese nombre de columna en la extracción.
+Identificar el ámbito de la condición, validando la equivalencia.
+KSCHL
+Tipo de condición.
+Diferenciar precios, descuentos u otros conceptos configurados.
+LIFNR
+Proveedor.
+Buscar condiciones del proveedor.
+MATNR
+Material.
+Buscar condiciones del producto.
+EKORG
+Organización de compras.
+Aplicar el contexto comercial correcto.
+WERKS —solo A017—
+Centro.
+Consultar condiciones específicas por centro.
+DATAB
+Inicio de vigencia.
+Saber desde cuándo aplica la condición.
+DATBI
+Fin de vigencia.
+Detectar condiciones vencidas.
+KNUMH
+Número de registro de condición.
+Unir con los importes de KONP.
+14. SAP_KONP: detalle de las condiciones
+Campo
+Qué significa
+Para qué sirve en la app
+KNUMH
+Registro de condición.
+Vincular con A017 o A018.
+KOPOS
+Posición de la condición.
+Diferenciar detalles del registro.
+KAPPL
+Aplicación.
+Interpretar el ámbito de uso.
+KSCHL
+Tipo de condición.
+Identificar el concepto comercial.
+KRECH
+Tipo de cálculo.
+Interpretar si el valor se calcula como porcentaje, importe u otra modalidad.
+KBETR
+Importe o tasa original de la condición.
+Consultar el valor, respetando su tipo de cálculo y representación.
+KONWA
+Moneda o unidad de la condición.
+Interpretar el valor correctamente.
+LOEVM_KO
+Indicador de borrado.
+Identificar condiciones eliminadas.
+Limitación: la extracción disponible no contiene todos los campos necesarios para certificar un precio final por unidad. No conviene usar KBETR directamente como “precio del producto”.
+15. KARDEX: movimientos de inventario
+Campo
+Qué significa
+Para qué sirve en la app
+SOCIEDAD
+Empresa del movimiento.
+Filtrar el ámbito empresarial.
+CENTRO
+Centro del movimiento.
+Ubicar la operación.
+ALMACEN
+Almacén del movimiento.
+Ubicar las existencias afectadas.
+EBELN
+Pedido relacionado.
+Asociar el movimiento con la OC.
+EBELP
+Posición del pedido.
+Asociarlo con la línea correcta.
+LIFNR
+Proveedor asociado.
+Consultar movimientos por proveedor.
+CODPRO
+Código del material.
+Identificar el producto.
+CODGLOSA
+Código de movimiento de esta fuente.
+Clasificar la operación mediante su catálogo.
+GLOSA
+Descripción del movimiento.
+Mostrar qué operación se registró.
+ENTRA
+Cantidad de entrada.
+Analizar entradas según su tipo de movimiento.
+SALE
+Cantidad de salida.
+Analizar salidas, devoluciones y otras operaciones.
+UM_BASE
+Unidad base de las cantidades.
+Comparar movimientos en una unidad coherente.
+BPRME
+Unidad de precio.
+Interpretar los valores asociados.
+FECHA_DOC
+Fecha del documento.
+Consultar la fecha documental de la operación.
+FECHA_CONTAB
+Fecha de contabilización.
+Ordenar y analizar el registro contable.
+HORA_CONTAB
+Hora de contabilización.
+Complementar la secuencia temporal.
+FOLIO
+Folio de factura, según la asociación confirmada para esta fuente.
+Buscar el documento comercial.
+XBLNR
+Referencia de OC en esta fuente.
+Complementar la asociación documental.
+SECUEN
+Secuencia del registro.
+Apoyar trazabilidad y control de duplicados.
+ZEILE
+Posición del documento de origen.
+Identificar el detalle del movimiento.
+DEBE_HABER
+Indicador de debe/haber.
+Interpretar el sentido contable, sin aplicar signos dos veces.
+MONEDA
+Moneda del importe.
+Interpretar los valores monetarios.
+IMPORTE
+Importe original del movimiento.
+Analizar valorización.
+ENTREGA_FINAL
+Indicador de entrega final presente en la fuente.
+Complementar el estado administrativo.
+CENTRO_RECEPTOR
+Centro destinatario.
+Analizar traslados.
+ALMACEN_RECEPTOR
+Almacén destinatario.
+Identificar el destino del traslado.
+No toda entrada es una recepción de compra: hay que interpretar movimientos, devoluciones y anulaciones antes de calcular indicadores.
+16. SAP_RUSA y SAP_RUSA_MENSUAL: inventario histórico valorizado
+Comparten estos campos; cambia el contexto del cierre diario o mensual.
+Campo
+Qué significa
+Para qué sirve en la app
+MATNR
+Material.
+Consultar la evolución del producto.
+WERKS
+Centro.
+Separar inventario por centro.
+LGORT
+Almacén.
+Separar inventario por almacén.
+BUDAT_DATE
+Fecha del cierre.
+Construir series históricas.
+TIPO_CIERRE
+Tipo de cierre registrado.
+Distinguir cierres y evitar mezclar períodos.
+SAKNR
+Cuenta contable.
+Analizar valorización por cuenta.
+Q_FIN_PERIODO
+Cantidad al final del período.
+Mostrar existencias históricas.
+V_FIN_PERIODO
+Valor al final del período.
+Mostrar inventario valorizado histórico.
+WAERS
+Moneda.
+Interpretar la valorización.
+Sirven para tendencias de inventario; no prueban por sí solas cuánto se aceptó o rechazó físicamente en una entrega.
+17. PROV_PROD: referencias históricas proveedor–producto
+Campo
+Qué significa
+Para qué sirve en la app
+CODEMP
+Código de empresa.
+Delimitar la referencia.
+RUTPRV
+Identificador del proveedor en esta fuente.
+Buscar referencias, validando su equivalencia con el proveedor SAP.
+CODPRO
+Código del producto.
+Asociar el material.
+CODPRV
+Código del producto para el proveedor.
+Complementar la identificación de documentos.
+COSTOS
+Costo de referencia registrado.
+Consultar antecedentes históricos.
+UNICOM
+Unidad asociada al costo comercial.
+Interpretar la referencia de costo.
+MONEDA
+Moneda del costo.
+Evitar comparaciones monetarias incorrectas.
+FECHA_REG
+Fecha de registro de la referencia.
+Evaluar su antigüedad.
+No debe asumirse que RUTPRV = LIFNR ni que el costo histórico sea el precio vigente.
+18. DOC_TRIBUTARIO: documentos tributarios por validar
+Estos campos existen en la extracción, pero todavía no corresponde tratarlos automáticamente como las NC de proveedores del proyecto.
+Campo
+Qué significa
+Uso posible
+CODEMP
+Código de empresa.
+Delimitar documentos.
+TIPDOC
+Tipo de documento.
+Diferenciar documentos mediante su catálogo.
+NUMDOC
+Número del documento.
+Identificar el registro.
+POSICION
+Línea o posición.
+Identificar el detalle.
+FECEMI
+Fecha de emisión.
+Filtrar por fecha documental.
+FOLIO_SAP
+Folio registrado en SAP.
+Trazabilidad con SAP.
+FECHA_SAP
+Fecha asociada al registro SAP.
+Contrastar fechas, previa validación de su definición.
+COD_CLIENTE
+Código del cliente.
+Identificar la contraparte cliente.
+RUTCLI
+RUT del cliente.
+Identificación tributaria.
+NOMCLI
+Nombre del cliente.
+Mostrar la contraparte.
+MONEDA
+Moneda del documento.
+Interpretar importes.
+VALOR_CAMBIO
+Tipo de cambio.
+Analizar conversiones monetarias.
+SUBTOT
+Subtotal del documento.
+Consulta financiera, validando su definición.
+TOTNET
+Total neto del documento.
+Consulta de importes netos.
+TOTIVA
+Total de IVA.
+Consulta tributaria.
+CODPROD
+Código del producto.
+Asociar materiales.
+CANTID
+Cantidad del detalle.
+Consultar cantidades documentales.
+PRECIO_DET
+Precio del detalle.
+Consultar el precio registrado.
+SUBTOT_DET
+Subtotal del detalle.
+Analizar importes de la línea.
+TOTNET_DET
+Neto del detalle.
+Analizar valores netos de la línea.
+DOC_OC
+Referencia de OC en el origen.
+Buscar una posible asociación con pedidos.
+TIPDOC_REF
+Tipo del documento referenciado.
+Interpretar relaciones documentales.
+DOC_REF
+Documento de referencia.
+Vincular documentos.
+ID_DOC_REF
+Identificador de referencia.
+Complementar la relación documental.
+NCR_CLASIF
+Código de clasificación NCR del origen.
+Interpretar su clasificación cuando se valide el catálogo.
+NCR_CLASIG_OBSERV
+Observación de esa clasificación.
+Consultar antecedentes.
+ESTADO
+Estado del documento en el origen.
+Interpretar su situación mediante el catálogo correspondiente.
+FOLIO_ANULACION
+Folio asociado a anulación.
+Detectar documentos anulados o relacionados con anulaciones.
+URL
+Dirección del documento.
+Abrir el respaldo, respetando permisos.
+La presencia de campos de cliente obliga a confirmar el dominio de estos documentos. Tus NC operacionales continúan en Excel.
+19. Campos de trazabilidad que se repiten
+Los agrupo aquí para no repetirlos en cada tabla.
+Campo
+Qué significa
+Para qué sirve
+FECHA_PROCESO
+Fecha de procesamiento de la fuente.
+Mostrar el corte y detectar información desactualizada.
+ARCHIVO
+Archivo de origen registrado.
+Rastrear de dónde salió un dato.
+FECHA_REG
+Fecha de registro en la fuente.
+Consultar la antigüedad del registro; su significado depende de la tabla.
+FECHA_BULK —KARDEX—
+Fecha de carga masiva.
+Auditar cuándo se cargó el movimiento.
+ARCHIVO_BULK —KARDEX—
+Archivo de carga masiva.
+Rastrear el origen de la carga.
+La fecha de procesamiento no necesariamente es la fecha real de recepción.
+20. Datos que calcula o registra la app
+No todos los valores que ves en pantalla vienen directamente del DWH.
+Dato
+De dónde sale / para qué sirve
+Cantidad pendiente SAP
+Se calcula comparando lo solicitado y lo recibido en SAP.
+Estado de plazo
+Se calcula con la fecha comprometida y la fecha de consulta.
+Cantidad recibida físicamente
+Registro operacional de la recepción. Debe distinguirse de la recepción SAP.
+Cantidad aceptada
+Evaluación física registrada por recepción.
+Cantidad rechazada
+Evaluación física registrada por recepción.
+Motivo del rechazo
+Detalle operacional ingresado o revisado en la app.
+Observación / NC
+Gestión operacional que mantiene su fuente Excel.
+Fill rate de cantidad
+Indicador calculado con cantidades comparables y una fuente de recepción definida.
+Indicador de calidad
+Se calcula con las cantidades evaluadas, aceptadas y rechazadas.
+Tiempo de resolución
+Se calcula a partir de fechas verificables de apertura y resolución.
+Cómo se relaciona lo principal
+La asociación central del proyecto es:
+Pedido EBELN → posición EBELP → material MATNR → programación ETENR.
+El proveedor se vincula por LIFNR; el lugar, por WERKS + LGORT.
+Con esa estructura podemos mostrar qué se pidió, a quién, cuánto debía llegar, cuánto figura recibido en SAP y qué se recibió y evaluó físicamente, sin confundir recepción contable con conformidad del producto.

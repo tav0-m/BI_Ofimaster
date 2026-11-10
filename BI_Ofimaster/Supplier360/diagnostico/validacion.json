@@ -1,0 +1,105 @@
+{
+  "checks": [
+    {
+      "control": "DimProveedor clave unica",
+      "ok": true
+    },
+    {
+      "control": "DimProducto clave unica",
+      "ok": true
+    },
+    {
+      "control": "DimProveedorNC clave unica",
+      "ok": true
+    },
+    {
+      "control": "DimFecha clave unica",
+      "ok": true
+    },
+    {
+      "control": "FactOC clave unica",
+      "ok": true
+    },
+    {
+      "control": "FactRepartos clave unica",
+      "ok": true
+    },
+    {
+      "control": "FactReclamosNC clave unica",
+      "ok": true
+    },
+    {
+      "control": "FactOC integridad DimProveedor",
+      "ok": true
+    },
+    {
+      "control": "FactOC integridad DimProducto",
+      "ok": true
+    },
+    {
+      "control": "FactRepartos integridad DimProveedor",
+      "ok": true
+    },
+    {
+      "control": "FactRepartos integridad DimProducto",
+      "ok": true
+    },
+    {
+      "control": "FactMovimientos integridad DimProveedor",
+      "ok": true
+    },
+    {
+      "control": "FactMovimientos integridad DimProducto",
+      "ok": true
+    },
+    {
+      "control": "Fill rate acotado y saldo no negativo",
+      "ok": true
+    },
+    {
+      "control": "OTIF no fabricado",
+      "ok": true
+    },
+    {
+      "control": "NC no contabilizadas sin evidencia",
+      "ok": true
+    },
+    {
+      "control": "FactOC cobertura calendario",
+      "ok": true
+    },
+    {
+      "control": "FactRepartos cobertura calendario",
+      "ok": true
+    },
+    {
+      "control": "FactMovimientos cobertura calendario",
+      "ok": true
+    },
+    {
+      "control": "FactReclamosNC cobertura calendario",
+      "ok": true
+    },
+    {
+      "control": "Pendiente reparto concilia posicion",
+      "ok": true
+    },
+    {
+      "control": "Cantidades de repartos conciliadas con posiciones elegibles",
+      "ok": true
+    }
+  ],
+  "filas_modelo": {
+    "ControlCarga": 7,
+    "DimFecha": 1084,
+    "DimMoneda": 2,
+    "DimProducto": 2904,
+    "DimProveedor": 199,
+    "DimProveedorNC": 12,
+    "FactMovimientos": 12935,
+    "FactOC": 13793,
+    "FactReclamosNC": 119,
+    "FactRepartos": 13793,
+    "MapProveedorNC": 12
+  }
+}

@@ -1,0 +1,55 @@
+// Crear cada medida por separado en Power BI. Las razones devuelven BLANK sin denominador.
+Posiciones OC = COUNTROWS(FactOC)
+
+OC distintas = DISTINCTCOUNT(FactOC[OC])
+
+Proveedores con OC = DISTINCTCOUNT(FactOC[ClaveProveedor])
+
+Cobertura datos Fill Rate = DIVIDE(SUM(FactOC[ElegibleFillRate]), SUM(FactOC[ElegibleCompras]))
+
+// La suma de unidades solo tiene sentido dentro de una unidad compatible.
+Cantidad pedida evaluable = IF(HASONEVALUE(FactOC[UnidadOC]), SUM(FactOC[CantidadElegible]))
+
+Cantidad cubierta = IF(HASONEVALUE(FactOC[UnidadOC]), SUM(FactOC[CantidadCubierta]))
+
+Fill Rate acumulado unidades = DIVIDE([Cantidad cubierta], [Cantidad pedida evaluable])
+
+// Alternativa agregable sin mezclar cantidades de distintas unidades: promedio por posición.
+Fill Rate promedio posiciones = AVERAGEX(FILTER(FactOC, FactOC[ElegibleFillRate] = 1), DIVIDE(FactOC[CantidadCubierta], FactOC[CantidadElegible]))
+
+Posiciones completas = COUNTROWS(FILTER(FactOC, FactOC[ElegibleFillRate] = 1 && FactOC[CantidadFaltante] = 0))
+
+Porcentaje posiciones completas = DIVIDE([Posiciones completas], SUM(FactOC[ElegibleFillRate]))
+
+Valor OC moneda origen = IF(HASONEVALUE(FactOC[Moneda]), SUM(FactOC[ValorNetoOC]))
+
+Valor pendiente moneda origen = IF(HASONEVALUE(FactRepartos[Moneda]), SUM(FactRepartos[ValorPendienteMonedaOC]))
+
+Valor pendiente vencido = CALCULATE([Valor pendiente moneda origen], FactRepartos[VencidoAlCorte] = 1)
+
+Repartos pendientes = COUNTROWS(FILTER(FactRepartos, FactRepartos[Elegible] = 1 && FactRepartos[CantidadPendienteAbierta] > 0))
+
+Repartos vencidos = COUNTROWS(FILTER(FactRepartos, FactRepartos[Elegible] = 1 && FactRepartos[CantidadPendienteAbierta] > 0 && FactRepartos[VencidoAlCorte] = 1))
+
+Maximo atraso dias = MAXX(FILTER(FactRepartos, FactRepartos[Elegible] = 1 && FactRepartos[CantidadPendienteAbierta] > 0), FactRepartos[DiasAtraso])
+
+OTIF repartos = DIVIDE(SUM(FactRepartos[OTIFCumple]), SUM(FactRepartos[OTIFEvaluable]))
+
+Repartos evaluables OTIF = SUM(FactRepartos[OTIFEvaluable])
+
+Casos reclamo = COUNTROWS(FactReclamosNC)
+
+Casos con referencia NC = COUNTROWS(FILTER(FactReclamosNC, NOT ISBLANK(FactReclamosNC[NCReferencia]) && FactReclamosNC[NCReferencia] <> ""))
+
+Casos sin resolucion informada = CALCULATE([Casos reclamo], FactReclamosNC[EstadoDocumental] = "Sin resolucion informada")
+
+// No publicar montos monetarios mientras el Excel carezca de moneda confirmada.
+Monto reclamado confirmado = IF(HASONEVALUE(FactReclamosNC[Moneda]) && SELECTEDVALUE(FactReclamosNC[Moneda]) <> "SIN_CONFIRMAR", SUM(FactReclamosNC[MontoReclamado]))
+
+Monto NC contabilizado = IF(HASONEVALUE(FactReclamosNC[Moneda]) && SELECTEDVALUE(FactReclamosNC[Moneda]) <> "SIN_CONFIRMAR", CALCULATE(SUM(FactReclamosNC[MontoNCContable]), FactReclamosNC[ContabilizadaVerificada] = 1))
+
+Fecha corte compras = MAX(FactOC[FechaCorte])
+
+Posiciones sin proveedor maestro = CALCULATE([Posiciones OC], FactOC[ProveedorEnMaestro] = 0)
+
+Posiciones con descuadre = SUM(FactOC[DescuadreRepartos])

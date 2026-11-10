@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual039",
+  "position": {
+    "x": 20,
+    "y": 510,
+    "width": 1400,
+    "height": 110,
+    "z": 39,
+    "tabOrder": 39
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Estado OTIF"
+                }
+              },
+              "queryRef": "FactOC.Estado OTIF",
+              "nativeQueryRef": "Estado OTIF"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Estado OTIF'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

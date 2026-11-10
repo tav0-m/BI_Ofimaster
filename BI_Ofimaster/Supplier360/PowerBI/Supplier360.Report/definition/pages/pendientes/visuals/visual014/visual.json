@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual014",
+  "position": {
+    "x": 1085,
+    "y": 20,
+    "width": 330,
+    "height": 120,
+    "z": 14,
+    "tabOrder": 14
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactOC"
+                    }
+                  },
+                  "Property": "Maximo atraso dias"
+                }
+              },
+              "queryRef": "FactOC.Maximo atraso dias",
+              "nativeQueryRef": "Maximo atraso dias"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Maximo atraso dias'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

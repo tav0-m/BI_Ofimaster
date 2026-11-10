@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual017",
+  "position": {
+    "x": 1085,
+    "y": 150,
+    "width": 330,
+    "height": 110,
+    "z": 17,
+    "tabOrder": 17
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactRepartos"
+                    }
+                  },
+                  "Property": "VencidoAlCorte"
+                }
+              },
+              "queryRef": "FactRepartos.VencidoAlCorte",
+              "nativeQueryRef": "VencidoAlCorte"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'VencidoAlCorte'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

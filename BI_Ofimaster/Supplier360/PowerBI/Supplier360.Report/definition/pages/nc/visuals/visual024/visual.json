@@ -1,0 +1,143 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "visual024",
+  "position": {
+    "x": 20,
+    "y": 280,
+    "width": 1400,
+    "height": 570,
+    "z": 24,
+    "tabOrder": 24
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactReclamosNC"
+                    }
+                  },
+                  "Property": "IdCaso"
+                }
+              },
+              "queryRef": "FactReclamosNC.IdCaso",
+              "nativeQueryRef": "IdCaso"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactReclamosNC"
+                    }
+                  },
+                  "Property": "ProveedorTexto"
+                }
+              },
+              "queryRef": "FactReclamosNC.ProveedorTexto",
+              "nativeQueryRef": "ProveedorTexto"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactReclamosNC"
+                    }
+                  },
+                  "Property": "FechaCaso"
+                }
+              },
+              "queryRef": "FactReclamosNC.FechaCaso",
+              "nativeQueryRef": "FechaCaso"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactReclamosNC"
+                    }
+                  },
+                  "Property": "FacturaReferencia"
+                }
+              },
+              "queryRef": "FactReclamosNC.FacturaReferencia",
+              "nativeQueryRef": "FacturaReferencia"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactReclamosNC"
+                    }
+                  },
+                  "Property": "Motivo"
+                }
+              },
+              "queryRef": "FactReclamosNC.Motivo",
+              "nativeQueryRef": "Motivo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactReclamosNC"
+                    }
+                  },
+                  "Property": "NCReferencia"
+                }
+              },
+              "queryRef": "FactReclamosNC.NCReferencia",
+              "nativeQueryRef": "NCReferencia"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactReclamosNC"
+                    }
+                  },
+                  "Property": "ResolucionTexto"
+                }
+              },
+              "queryRef": "FactReclamosNC.ResolucionTexto",
+              "nativeQueryRef": "ResolucionTexto"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Casos documentales — importes y proveedor SAP pendientes de validar'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
